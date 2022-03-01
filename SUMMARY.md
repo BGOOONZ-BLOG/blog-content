@@ -2,7 +2,6 @@
 
 * [Blog](README.md)
 * [Content](content.md)
-* [Page 1](page-1.md)
 * [New Conference](new-conference.md)
 * [What is THIS](what-is-this.md)
 * [Introducing JSX](introducing-jsx.md)
