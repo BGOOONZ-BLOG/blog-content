@@ -1,336 +1,429 @@
----
-title: Web Dev Hub Home
-sections:
-  - section_id: Intro
-    type: section_hero
-    title: 'I am a musician, electrical engineer & web developer'
-    image: images/api-c99e353f761d318322c853c03ebcf21b.gif
-    content: "\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![](https://img.icons8.com/color/96/000000/youtube.png)](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)[![](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)[![](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)\n\n[ ](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryans github activity graph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python) ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5) ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js) ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github) ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab) ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)\n"
-    actions:
-      - label: Contact
-        url: 'https://sidebar-blog.netlify.app/contact/'
-        style: secondary
-        icon_class: linkedin
-        new_window: true
-        no_follow: false
-        type: action
-  - section_id: features
-    type: section_grid
-    col_number: three
-    grid_items:
-      - content: |
-          Memoization, Tabulation, and Sorting Algorithms by Example
-          Why is looking at runtime not a reliable method of calculating time
-          complexity?
-        actions:
-          - label: Get Started
-            url: /docs
-            style: link
-        title: A Quick Guide To Big O
-        image: images/my-back.png
-        title_url: >-
-          https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
-      - content: |
-          *Python has a built in help function that let's you see a description
-          of the source code without having to navigate to it… "-SickNasty …
-          Autor Unknown"  .*
-        actions:
-          - label: View Posts
-            url: >-
-              https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
-            style: link
-        image_alt: python
-        title: Python Guide
-        title_url: >-
-          https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
-        image: images/smiling-maple.png
-      - content: |
-          <div id="search"></div> <div id="search" />
-        actions:
-          - label: Learn More
-            url: /docs/tools
-            style: link
-        title: Guitar Effects Triggering w DTW
-        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-        image: images/panoramic-owl.png
-      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
-        image_alt: img of dtw
-        content: |
-          As I learn to build web applications in React I will blog about it in
-          this series in an attempt to capture the questions that a complete
-          beginner might encounter that a more seasoned developer would take for
-          granted!
-        actions: []
-        type: grid_item
-        title: Beginner Guide React
-        image: images/successful-panda.gif
-      - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
-        image_alt: img of react
-        content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
-        actions: []
-        type: grid_item
-        image: images/pleasant-birch.png
-        title: Scope & Closure
-      - image_alt: Every idea needs a medium
-        content: |
-          PostgreSQL Cheat Sheet, Everything You Need to Get Started With VSCode
-          + Extensions & Resources, Super Simple Intro To HTML,  Understanding
-          Git... etc....
-        actions: []
-        type: grid_item
-        title: Web Audio Daw
-        image: images/7a8bc98e902a2f6dea90386cdfb154c2-2d55c637.png
-  - title: Current Interests
-    section_id: interests
-    subtitle: From github repositories to existential questions.
-    col_number: three
-    grid_items:
-      - title: Angolia
-        title_url: angolia
-        image_alt: angolia
-        content: |
-          ## Full Text Search
-          [Full Text Search](https://www.algolia.com/)
-          ## &#xA;
-        actions: []
-        type: grid_item
-        image: images/spectacular-turmeric.png
-      - title: Convolutional Neural Networks
-        title_url: neural networks
-        image_alt: neural networks
-        content: >
-          Artificial neural networks, usually simply called neural networks, are
-          computing systems vaguely inspired by the biological [neural
-          networks](https://github.com/tensorflow/tensorflow)![](/\_static/app-assets/neural.PNG)
-        actions: []
-        type: grid_item
-        image: images/neural.PNG
-      - title: Jamstack
-        title_url: jamstack
-        image_alt: jamstack
-        content: |
-          ##### Why Jamstack Jamstack is the new standard architecture for the
-          web. Using Git workflows and modern build tools, pre-rendered content
-          is served to a CDN and made dynamic through APIs and serverless
-          functions. Technologies in the stack include JavaScript frameworks,
-          Static Site Generators, Headless CMSs, and CDNs.
-        actions: []
-        type: grid_item
-        image: images/jamstack.png
-      - title: Asynchronous JavaScript
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
-        content: "The term\_**asynchronous**\_refers to\_two or more objects or events\_**not**\_existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete).\_In computing, the word \"asynchronous\" is used in two major contexts.\n\n"
-        actions:
-          - label: lorem-ipsum
-            url: '#'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
-        type: grid_item
-        image: images/eventloop.gif
-      - title: NJ Devils
-        image_alt: nj-devils
-        content: "# New Jersey Devils Hockey Team\n\n### (Hockey in general)\n\n## Team identity\n\n[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)\n\nThe old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery)\_of the\_[New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers)\_attempts to distract Brodeur during the\_[2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008\\_Stanley_Cup_playoffs). The playoff series was the fifth to feature the\_[Devil-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).\n"
-        actions:
-          - label: lorem-ipsum
-            url: '#'
-            style: link
-            icon_class: dev
-            new_window: false
-            no_follow: false
-        type: grid_item
-        image: images/njdev-219301cd.jpg
-        title_url: 'https://www.allaboutthejersey.com/'
-      - title: ITER Fusion Reactor Experiment (Southern France)
-        title_url: lorem-ipsum
-        image_alt: lorem-ipsum
-        content: |
-          # Break Even Nuclear Fusion Candidate
-          In December, researchers at the Joint European Torus (JET) started
-          conducting fusion experiments with tritium — a rare and radioactive
-          isotope of hydrogen. The facility is a one-tenth-volume mock-up of the
-          US$22-billion ITER project and has the same doughnut-shaped 'tokamak'
-          design — the world's most developed approach to fusion energy. It is
-          the first time since 1997 that researchers have done experiments in a
-          tokamak with any significant amount of tritium.
-        actions: []
-        type: grid_item
-        image: images/iter-c7508519.jpg
-    type: section_grid
-  - section_id: features-two-col
-    type: section_grid
-    title: Resume & Portfolio
-    col_number: two
-    grid_items:
-      - title: Resume
-        actions:
-          - label: Learn More
-            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
-            style: link
-          - label: Download PDF
-            url: >-
-              https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf
-            style: secondary
-            icon_class: dev
-            new_window: false
-            no_follow: false
-            type: action
-        image: images/image-of-resume.png
-        title_url: >-
-          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
-      - title: Showcase
-        content: |
-          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
-        actions:
-          - label: Learn More
-            url: /showcase
-            style: secondary
-        image_alt: portfolio of websites
-        image: images/portfolio-pic-494ea398.png
-  - title: Blog-Archive-And-Mini-Projects
-    section_id: Projects
-    image_alt: rotating pages
-    image_position: left
-    content: |
-    <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://random-static-html-deploys.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
-  - title: Latest & Greatest
-    section_id: new content
-    image_alt: animated gif
-    image_position: right
-    content: |+
-      # ***What I've been working on lately:***
-      ## Web Dev Utilitiy Tools
-  <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://cheatsheets-42.netlify.app/"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class="block-content" width="100%  width="1200px!important"
-      height="1000px!important"
-        src="https://github.com/bgoonz/fb-and-twitter-api-embeds"
-       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    actions: []
-    type: section_content
-    image: images/cool annimation.gif
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    image_position: left
-    content: >-
-      Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non
-      efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor
-      pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque
-      imperdiet venenatis.
-      > Vestibulum ullamcorper risus auctor eleifend consequat.
-      ![Placeholder
-      Image](https://assets.stackbit.com/components/images/default/post-4.jpeg)
-      In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl
-      elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam
-      malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis.
-      Vestibulum quis elit magna. Vestibulum accumsan blandit consequat.
-      Phasellus quis posuere quam.
-      Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum
-      ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo
-      euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat
-      et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque
-      lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat
-      efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis
-      ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus
-      ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris,
-      viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus,
-      vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna
-      non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac
-      dui. Integer vel convallis justo.
-    actions: []
-    type: section_content
-  - section_id: Web Audio DAW
-    image_alt: medium
-    image_position: left
-    actions:
-      - label: Go To Web Audio Daw
-        url: 'https://mihirbegmusiclab.netlify.app/'
-        style: primary
-        icon_class: dev
-        new_window: true
-        no_follow: false
-        type: action
-    type: section_content
-    title: Web Audio DAW
-    image: images/goals.jpg
-  - title: Quick Links
-    section_id: navigate from the home page
-    col_number: two
-    type: section_docs
-    subtitle: quick links home
-  - title: Contact
-    section_id: contact
-    actions:
-      - label: Contact
-        url: /docs/faq/contact
-        style: primary
-        icon_class: dev
-        new_window: false
-        no_follow: false
-        type: action
-      - label: email
-        url: 'mailto:bryan.guner@gmail.com'
-        style: primary
-        icon_class: dev
-        new_window: false
-        no_follow: false
-      - label: Subscribe (Youtube)
-        url: ' https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA?sub_confirmation=1'
-        style: primary
-        icon_class: dev
-        new_window: false
-        no_follow: false
-    type: section_cta
-    subtitle: get in touch! +1 (551) - 254 - 5505
-seo:
-  title: Web-Dev-Hub
-  description: |-
-    bigO, Python, Javascript, Audio, Processing, Learning, Blog, React,
-    PostgreSQL, Scope, Closure, Web Development, Embed, API, Website, Design,
-    Music, Search
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Web-Dev-Hub
-      keyName: property
-    - name: 'og:description'
-      value: |-
-        my resource sharing and blog site ... centered mostly on web development
-        and just a bit of audio production / generally nerdy things I find
-        interesting.
-      keyName: property
-    - name: 'og:image'
-      value: images/code.png
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: summary_large_image
-    - name: 'twitter:title'
-      value: Web-Dev-Hub
-    - name: 'twitter:description'
-      value: Web-Dev-Hub
-    - name: 'twitter:image'
-      value: images/4.jpg
-      relativeUrl: true
-template: advanced
----
+# index
+
+This appendix is a non-exhaustive list of new syntactic features and methods that were added to JavaScript in ES6. These features are the most commonly used and most helpful.
+
+While this appendix doesn't cover ES6 classes, we go over the basics while learning about components in the book. In addition, this appendix doesn't include descriptions of some larger new features like promises and generators. If you'd like more info on those or on any topic below, we encourage you to reference the [Mozilla Developer Network's website](https://developer.mozilla.org) (MDN).
+
+## Prefer `const` and `let` over `var`
+
+If you've worked with ES5 JavaScript before, you're likely used to seeing variables declared with `var`:
+
+```
+ar myVariable = 5;
+```
+
+Both the `const` and `let` statements also declare variables. They were introduced in ES6.
+
+Use `const` in cases where a variable is never re-assigned. Using `const` makes this clear to whoever is reading your code. It refers to the "constant" state of the variable in the context it is defined within.
+
+If the variable will be re-assigned, use `let`.
+
+We encourage the use of `const` and `let` instead of `var`. In addition to the restriction introduced by `const`, both `const` and `let` are _block scoped_ as opposed to _function scoped_. This scoping can help avoid unexpected bugs.
+
+## Arrow functions
+
+There are three ways to write arrow function bodies. For the examples below, let's say we have an array of city objects:
+
+```
+onst cities = [
+  { name: 'Cairo', pop: 7764700 },
+  { name: 'Lagos', pop: 8029200 },
+];
+```
+
+If we write an arrow function that spans multiple lines, we must use braces to delimit the function body like this:
+
+```
+const formattedPopulations = cities.map((city) => {
+  const popMM = (city.pop / 1000000).toFixed(2);
+  return popMM + ' million';
+});
+console.log(formattedPopulations);
+```
+
+Note that we must also explicitly specify a `return` for the function.
+
+However, if we write a function body that is only a single line (or single expression) we can use parentheses to delimit it:
+
+```
+const formattedPopulations2 = cities.map((city) => (
+  (city.pop / 1000000).toFixed(2) + ' million'
+));
+```
+
+Notably, we don't use `return` as it's implied.
+
+Furthermore, if your function body is terse you can write it like so:
+
+```
+const pops = cities.map(city => city.pop);
+console.log(pops);
+```
+
+The terseness of arrow functions is one of two reasons that we use them. Compare the one-liner above to this:
+
+```
+const popsNoArrow = cities.map(function(city) { return city.pop });
+```
+
+Of greater benefit, though, is how arrow functions bind the `this` object.
+
+The traditional JavaScript function declaration syntax (`function () {}`) will bind `this` in anonymous functions to the global object. To illustrate the confusion this causes, consider the following example:
+
+```
+unction printSong() {
+  console.log("Oops - The Global Object");
+}
+
+const jukebox = {
+  songs: [
+    {
+      title: "Wanna Be Startin' Somethin'",
+      artist: "Michael Jackson",
+    },
+    {
+      title: "Superstar",
+      artist: "Madonna",
+    },
+  ],
+  printSong: function (song) {
+    console.log(song.title + " - " + song.artist);
+  },
+  printSongs: function () {
+
+    this.songs.forEach(function(song) {
+
+      this.printSong(song);
+    });
+  },
+}
+
+jukebox.printSongs();
+```
+
+The method `printSongs()` iterates over `this.songs` with `forEach()`. In this context, `this` is bound to the object (`jukebox`) as expected. However, the anonymous function passed to `forEach()` binds its internal `this` to the global object. As such, `this.printSong(song)` calls the function declared at the top of the example, _not_ the method on `jukebox`.
+
+JavaScript developers have traditionally used workarounds for this behavior, but arrow functions solve the problem by **capturing the `this` value of the enclosing context**. Using an arrow function for `printSongs()` has the expected result:
+
+```
+  printSongs: function () {
+    this.songs.forEach((song) => {
+
+      this.printSong(song);
+    });
+  },
+}
+
+jukebox.printSongs();
+```
+
+For this reason, throughout the book we use arrow functions for all anonymous functions.
+
+## Modules
+
+ES6 formally supports modules using the `import`/`export` syntax.
+
+**Named exports**
+
+Inside any file, you can use `export` to specify a variable the module should expose. Here's an example of a file that exports two functions:
+
+```
+export const sayHi = () => (console.log('Hi!'));
+export const sayBye = () => (console.log('Bye!'));
+
+const saySomething = () => (console.log('Something!'));
+```
+
+Now, anywhere we wanted to use these functions we could use `import`. We need to specify which functions we want to import. A common way of doing this is using ES6's destructuring assignment syntax to list them out like this:
+
+```
+import { sayHi, sayBye } from './greetings';
+
+sayHi();
+sayBye();
+```
+
+Importantly, the function that was _not_ exported (`saySomething`) is unavailable outside of the module.
+
+Also note that we supply a **relative path** to `from`, indicating that the ES6 module is a local file as opposed to an npm package.
+
+Instead of inserting an `export` before each variable you'd like to export, you can use this syntax to list off all the exposed variables in one area:
+
+```
+const sayHi = () => (console.log('Hi!'));
+const sayBye = () => (console.log('Bye!'));
+
+const saySomething = () => (console.log('Something!'));
+
+export { sayHi, sayBye };
+```
+
+We can also specify that we'd like to import all of a module's functionality underneath a given namespace with the `import * as <Namespace>` syntax:
+
+```
+import * as Greetings from './greetings';
+
+Greetings.sayHi();
+
+Greetings.sayBye();
+
+Greetings.saySomething();
+```
+
+**Default export**
+
+The other type of export is a default export. A module can only contain one default export:
+
+```
+const sayHi = () => (console.log('Hi!'));
+const sayBye = () => (console.log('Bye!'));
+
+const saySomething = () => (console.log('Something!'));
+
+const Greetings = { sayHi, sayBye };
+
+export default Greetings;
+```
+
+This is a common pattern for libraries. It means you can easily import the library wholesale without specifying what individual functions you want:
+
+```
+import Greetings from './greetings';
+
+Greetings.sayHi();
+Greetings.sayBye();
+```
+
+It's not uncommon for a module to use a mix of both named exports and default exports. For instance, with `react-dom`, you can import `ReactDOM` (a default export) like this:
+
+```
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+
+);
+```
+
+Or, if you're only going to use the `render()` function, you can import the named `render()` function like this:
+
+```
+import { render } from 'react-dom';
+
+render(
+
+);
+```
+
+To achieve this flexibility, the export implementation for `react-dom` looks something like this:
+
+```
+export const render = (component, target) => {
+
+};
+
+const ReactDOM = {
+  render,
+
+};
+
+export default ReactDOM;
+```
+
+If you want to play around with the module syntax, check out the folder `code/webpack/es6-modules`.
+
+For more reading on ES6 modules, see this article from Mozilla: "[ES6 in Depth: Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)".
+
+## `Object.assign()`
+
+We use `Object.assign()` often throughout the book. We use it in areas where we want to create a modified version of an existing object.
+
+`Object.assign()` accepts any number of objects as arguments. When the function receives two arguments, it _copies_ the properties of the second object onto the first, like so:
+
+```
+onst coffee = { };
+const noCream = { cream: false };
+const noMilk = { milk: false };
+Object.assign(coffee, noCream);
+```
+
+It is idiomatic to pass in three arguments to `Object.assign()`. The first argument is a new JavaScript object, the one that `Object.assign()` will ultimately return. The second is the object whose properties we'd like to build off of. The last is the changes we'd like to apply:
+
+```
+const coffeeWithMilk = Object.assign({}, coffee, { milk: true });
+```
+
+`Object.assign()` is a handy method for working with "immutable" JavaScript objects.
+
+## Template literals
+
+In ES5 JavaScript, you'd interpolate variables into strings like this:
+
+```
+var greeting = 'Hello, ' + user + '! It is ' + degF + ' degrees outside.';
+```
+
+With ES6 template literals, we can create the same string like this:
+
+```
+const greeting = `Hello, ${user}! It is ${degF} degrees outside.`;
+```
+
+## The spread operator (`...`)
+
+In arrays, the ellipsis `...` operator will _expand_ the array that follows into the parent array. The spread operator enables us to succinctly construct new arrays as a composite of existing arrays.
+
+Here is an example:
+
+```
+onst a = [ 1, 2, 3 ];
+const b = [ 4, 5, 6 ];
+const c = [ ...a, ...b, 7, 8, 9 ];
+
+console.log(c);
+```
+
+Notice how this is different than if we wrote:
+
+```
+const d = [ a, b, 7, 8, 9 ];
+console.log(d);
+```
+
+## Enhanced object literals
+
+In ES5, all objects were required to have explicit key and value declarations:
+
+```
+const explicit = {
+  getState: getState,
+  dispatch: dispatch,
+};
+```
+
+In ES6, you can use this terser syntax whenever the property name and variable name are the same:
+
+```
+const implicit = {
+  getState,
+  dispatch,
+};
+```
+
+Lots of open source libraries use this syntax, so it's good to be familiar with it. But whether you use it in your own code is a matter of stylistic preference.
+
+## Default arguments
+
+With ES6, you can specify a default value for an argument in the case that it is `undefined` when the function is called.
+
+This:
+
+```
+unction divide(a, b) {
+
+  const divisor = typeof b === 'undefined' ? 1 : b;
+
+  return a / divisor;
+}
+```
+
+Can be written as this:
+
+```
+function divide(a, b = 1) {
+  return a / b;
+}
+```
+
+In both cases, using the function looks like this:
+
+```
+divide(14, 2);
+
+divide(14, undefined);
+
+divide(14);
+```
+
+Whenever the argument `b` in the example above is `undefined`, the default argument is used. Note that `null` will not use the default argument:
+
+```
+divide(14, null);
+```
+
+## Destructuring assignments
+
+### For arrays
+
+In ES5, extracting and assigning multiple elements from an array looked like this:
+
+```
+ar fruits = [ 'apples', 'bananas', 'oranges' ];
+var fruit1 = fruits[0];
+var fruit2 = fruits[1];
+```
+
+In ES6, we can use the destructuring syntax to accomplish the same task like this:
+
+```
+const [ veg1, veg2 ] = [ 'asparagus', 'broccoli', 'onion' ];
+console.log(veg1);
+console.log(veg2);
+```
+
+The variables in the array on the left are "matched" and assigned to the corresponding elements in the array on the right. Note that `'onion'` is ignored and has no variable bound to it.
+
+### For objects
+
+We can do something similar for extracting object properties into variables:
+
+```
+const smoothie = {
+  fats: [ 'avocado', 'peanut butter', 'greek yogurt' ],
+  liquids: [ 'almond milk' ],
+  greens: [ 'spinach' ],
+  fruits: [ 'blueberry', 'banana' ],
+};
+
+const { liquids, fruits } = smoothie;
+
+console.log(liquids);
+console.log(fruits);
+```
+
+### Parameter context matching
+
+We can use these same principles to bind arguments inside a function to properties of an object supplied as an argument:
+
+```
+const containsSpinach = ({ greens }) => {
+  if (greens.find(g => g === 'spinach')) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+containsSpinach(smoothie);
+```
+
+We do this often with functional React components:
+
+```
+const IngredientList = ({ ingredients, onClick }) => (
+  <ul className='IngredientList'>
+    {
+      ingredients.map(i => (
+        <li
+          key={i.id}
+          onClick={() => onClick(i.id)}
+          className='item'
+        >
+          {i.name}
+        </li>
+      ))
+    }
+  </ul>
+)
+```
+
+Here, we use destructuring to extract the props into variables (`ingredients` and `onClick`) that we then use inside the component's function body.
