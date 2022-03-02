@@ -18,7 +18,7 @@
   * [Interactive](content/interactive.md)
   * [React Class Components Demo](content/react-class-components-demo.md)
   * [Python Quiz](content/python-quiz.md)
-  * [Lorem ipsum](content/lorem-ipsum.md)
+  * Lorem ipsum
   * [My Favorite VSCode Themes](content/my-favorite-vscode-themes.md)
   * [Basic Web Development Environment Setup](content/basic-web-development-environment-setup.md)
   * [Installation](content/installation.md)
@@ -32,18 +32,18 @@
   * [with some basic knowledge of React](content/with-some-basic-knowledge-of-react.md)
   * [google-sheets-api](content/google-sheets-api.md)
   * [19. Remove Nth Node From End of List](content/19.-remove-nth-node-from-end-of-list.md)
-  * [Bash Commands That Save Me Time and Frustration](content/bash-commands-that-save-me-time-and-frustration.md)
+  * [Bash Commands That Save Me Time and Frustration](content/bash-commands.md)
   * [Intro To React](content/intro-to-react.md)
   * [New Conference](content/new-conference.md)
   * [What is THIS](content/what-is-this.md)
   * [Introducing JSX](content/introducing-jsx.md)
   * [Tools](content/tools-1.md)
-  * [RECENT PROJECTS](content/recent-projects-1.md)
-  * [14. Longest Common Prefix](content/14.-longest-common-prefix-1.md)
+  * RECENT PROJECTS
+  * 14. Longest Common Prefix
   * [index](content/index.md)
   * [Data Structures Interview](content/data-structures-interview.md)
   * [Overview](content/overview.md)
-  * [19. Remove Nth Node From End of List](content/19.-remove-nth-node-from-end-of-list-1.md)
+  * 19. Remove Nth Node From End of List
   * [Starter Theme](starter-theme.md)
   * [The Node.js Event Loop](the-node.js-event-loop.md)
   * [Visualizing the Discrete Fourier Transform](visualizing-the-discrete-fourier-transform.md)
@@ -58,7 +58,7 @@
   * [Showcase](content/showcase.md)
   * [Search:](content/search.md)
   * [Resume](content/resume.md)
-  * [The Node.js Event Loop](content/the-node.js-event-loop-1.md)
+  * The Node.js Event Loop
   * [Understanding PATH](content/understanding-path.md)
   * [dynamic-time-warping](content/dynamic-time-warping.md)
   * [Clock](content/clock.md)
@@ -66,7 +66,7 @@
   * [where-is-npm-pack](content/where-is-npm-pack.md)
   * [10. Regular Expression Matching](content/10.-regular-expression-matching.md)
   * [Gatsby Paginate](content/gatsby-paginate.md)
-  * [All the Things You Can Do With GitHub API and Python](content/all-the-things-you-can-do-with-github-api-and-python.md)
+  * [All the Things You Can Do With GitHub API and Python](content/github-api-and-python.md)
   * [Zumzi Instant Messenger](content/zumzi-instant-messenger.md)
   * [Pull Requests](content/pull-requests.md)
   * [Process in Linux](content/process-in-linux.md)
@@ -79,19 +79,19 @@
   * [Jupyter Notebooks](content/jupyter-notebooks.md)
   * [Semantic Versioning](content/semantic-versioning.md)
   * [Node Export Module](content/node-export-module.md)
-  * [Basic Web Development Environment Setup](content/basic-web-development-environment-setup-1.md)
-  * [Javascript and Node](content/javascript-and-node-1.md)
-  * [React Class Components Demo](content/react-class-components-demo-1.md)
+  * Basic Web Development Environment Setup
+  * Javascript and Node
+  * React Class Components Demo
   * [Web Apis](content/web-apis.md)
   * [Node Buffers](content/node-buffers.md)
-  * [Python Quiz](content/python-quiz-1.md)
+  * Python Quiz
   * [README](content/readme.md)
   * [React Docs](content/react-docs.md)
   * [HTML SPEC](content/html-spec-1.md)
-  * [Intro To React](content/intro-to-react-1.md)
+  * Intro To React
   * [Python Snippets](content/python-snippets.md)
   * [Javascript Interview Questions:](content/javascript-interview-questions.md)
-  * [Javascript Practice](content/javascript-practice-1.md)
+  * Javascript Practice
   * [Es6 Features](content/es6-features.md)
   * [Phone Number](content/phone-number.md)
   * [8. String to Integer (atoi)](content/8.-string-to-integer-atoi.md)
@@ -100,15 +100,15 @@
   * [Articles](content/articles.md)
   * [Community](content/community.md)
   * [Node Export Module](content/node-export-module-1.md)
-  * [Leetcode](content/leetcode-2.md)
+  * Leetcode
   * [Showcase](content/showcase-1.md)
   * [Content](content/content.md)
   * [Starter Theme](content/starter-theme-1.md)
   * [Trouble Shooting](content/trouble-shooting.md)
   * [Understanding PATH](content/understanding-path-1.md)
-  * [lorem-ipsum](content/lorem-ipsum-1.md)
+  * lorem-ipsum
   * [Blog](content/blog.md)
-  * [What is THIS](content/what-is-this-1.md)
+  * What is THIS
   * [History API](content/history-api.md)
   * [Introduction to npm](content/introduction-to-npm.md)
   * [Javascript and Node](content/javascript-and-node-2.md)
@@ -118,9 +118,9 @@
   * [Bookmarks](content/bookmarks.md)
   * [Node APIs With Express](content/node-apis-with-express-1.md)
   * [Python Snippets](content/python-snippets-1.md)
-  * [HTML SPEC](content/html-spec-2.md)
+  * HTML SPEC
   * [Javascript Practice](content/javascript-practice-2.md)
   * [Javascript Interview Questions:](content/javascript-interview-questions-1.md)
   * [Cool Github Profiles](content/cool-github-profiles.md)
-  * [Data Structures Interview](content/data-structures-interview-1.md)
+  * Data Structures Interview
   * [Node Docs](content/node-docs.md)
