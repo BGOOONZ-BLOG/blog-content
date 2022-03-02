@@ -1,7 +1,6 @@
 # Cheatsheet:
 
 ```js
-
 // Single-line comments start with two slashes.
 /* Multiline comments start with slash-star,
    and end with star-slash */
@@ -246,8 +245,8 @@ for (var x in person){
     description += person[x] + " ";
 } // description = 'Paul Ken 18 '
 
-// The for/of statement allows iteration over iterable objects (including the built-in String, 
-// Array, e.g. the Array-like arguments or NodeList objects, TypedArray, Map and Set, 
+// The for/of statement allows iteration over iterable objects (including the built-in String,
+// Array, e.g. the Array-like arguments or NodeList objects, TypedArray, Map and Set,
 // and user-defined iterables).
 var myPets = "";
 var pets = ["cat", "dog", "hamster", "hedgehog"];
@@ -1576,7 +1575,7 @@ logPokemon('sushi', 'algorithms'); // Pika Chu loves sushi and algorithms
 
 ```
 function Person(name) {
-    // this.name = name; 
+    // this.name = name;
     // let that = this;
 
     setTimeout(function() {
@@ -2027,9 +2026,9 @@ Aside from that you also have additional escape characters:
 * `\\` — Backslash
 * `\b` — Backspace
 * `\f` — Form feed
-*  — New line
-*  — Carriage return
-*  — Horizontal tabulator
+* — New line
+* — Carriage return
+* — Horizontal tabulator
 * `\v` — Vertical tabulator
 
 ## String Methods
@@ -2087,10 +2086,10 @@ Regular expressions are search patterns used to match character combinations in 
 * `\b` — Find a match at the beginning/end of a word
 * `\B` — A match not at the beginning/end of a word
 * `\0` — NUL character
-*  — A new line character
+* — A new line character
 * `\f` — Form feed character
-*  — Carriage return character
-*  — Tab character
+* — Carriage return character
+* — Tab character
 * `\v` — Vertical tab character
 * `\xxx` — The character specified by an octal number xxx
 * `\xdd` — Character specified by a hexadecimal number dd

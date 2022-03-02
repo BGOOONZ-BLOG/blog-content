@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Blog](README.md)
+* [Blog](./)
 * [Content](content.md)
   * [Reference](content/reference.md)
   * [Blog Archive](content/blog-archive.md)
@@ -49,7 +49,7 @@
   * [Visualizing the Discrete Fourier Transform](visualizing-the-discrete-fourier-transform.md)
   * [Typography](typography.md)
   * [Web Developer Tools](web-developer-tools.md)
-  * [HTML SPEC](html-spec.md)
+  * [HTML SPEC](broken-reference)
   * [Javascript Practice](javascript-practice.md)
   * [React In Depth](react-in-depth.md)
   * [How to install Python 2.7 on Ubuntu 20.04 LTS](content/how-to-install-python-2.7-on-ubuntu-20.04-lts.md)
@@ -85,7 +85,7 @@
   * [Web Apis](content/web-apis.md)
   * [Node Buffers](content/node-buffers.md)
   * [Python Quiz](content/python-quiz-1.md)
-  * [README](content/readme.md)
+  * [README](content/)
   * [React Docs](content/react-docs.md)
   * [HTML SPEC](content/html-spec-1.md)
   * [Intro To React](content/intro-to-react-1.md)
