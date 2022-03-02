@@ -1,6 +1,6 @@
 # The Node.js Event Loop
 
-### Introduction
+## Introduction
 
 The **Event Loop** is one of the most important aspects to understand about Node.js.
 
