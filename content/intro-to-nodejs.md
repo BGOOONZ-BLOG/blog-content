@@ -32,7 +32,7 @@ The `createServer()` method of `http` creates a new HTTP server and returns it.
 
 The server is set to listen on the specified port and host name. When the server is ready, the callback function is called, in this case informing us that the server is running.
 
-Whenever a new request is received, the [`request` event](https://nodejs.org/api/http.html#http\_event\_request) is called, providing two objects: a request (an [`http.IncomingMessage`](https://nodejs.org/api/http.html#http\_class\_http\_incomingmessage) object) and a response (an [`http.ServerResponse`](https://nodejs.org/api/http.html#http\_class\_http\_serverresponse) object).
+Whenever a new request is received, the [`request` event](https://nodejs.org/api/http.html#http_event_request) is called, providing two objects: a request (an [`http.IncomingMessage`](https://nodejs.org/api/http.html#http_class_http_incomingmessage) object) and a response (an [`http.ServerResponse`](https://nodejs.org/api/http.html#http_class_http_serverresponse) object).
 
 Those 2 objects are essential to handle the HTTP call.
 
@@ -66,23 +66,23 @@ Node.js is a low-level platform. In order to make things easy and exciting for d
 
 Many of those established over time as popular options. Here is a non-comprehensive list of the ones worth learning:
 
-* [**AdonisJS**](https://adonisjs.com): A TypeScript-based fully featured framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.
-* [**Egg.js**](https://eggjs.org/en/): A framework to build better enterprise frameworks and apps with Node.js & Koa.
-* [**Express**](https://expressjs.com): It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
-* [**Fastify**](https://fastify.io): A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js web frameworks.
-* [**FeatherJS**](https://feathersjs.com): Feathers is a lightweight web-framework for creating real-time applications and REST APIs using JavaScript or TypeScript. Build prototypes in minutes and production-ready apps in days.
-* [**Gatsby**](https://www.gatsbyjs.com): A [React](https://reactjs.org)-based, [GraphQL](https://graphql.org) powered, static site generator with a very rich ecosystem of plugins and starters.
-* [**hapi**](https://hapijs.com): A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
-* [**koa**](http://koajs.com): It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatible changes without disrupting the existing community.
-* [**Loopback.io**](https://loopback.io): Makes it easy to build modern applications that require complex integrations.
-* [**Meteor**](https://meteor.com): An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs [React](https://reactjs.org), [Vue](https://vuejs.org), and [Angular](https://angular.io). Can be used to create mobile apps as well.
-* [**Micro**](https://github.com/zeit/micro): It provides a very lightweight server to create asynchronous HTTP microservices.
-* [**NestJS**](https://nestjs.com): A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
-* [**Next.js**](https://nextjs.org): [React](https://reactjs.org) framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
-* [**Nx**](https://nx.dev): A toolkit for full-stack monorepo development using NestJS, Express, [React](https://reactjs.org), [Angular](https://angular.io), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
-* [**Sapper**](https://sapper.svelte.dev): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
-* [**Socket.io**](https://socket.io): A real-time communication engine to build network applications.
-* [**Strapi**](https://strapi.io): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
+- [**AdonisJS**](https://adonisjs.com): A TypeScript-based fully featured framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.
+- [**Egg.js**](https://eggjs.org/en/): A framework to build better enterprise frameworks and apps with Node.js & Koa.
+- [**Express**](https://expressjs.com): It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
+- [**Fastify**](https://fastify.io): A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js web frameworks.
+- [**FeatherJS**](https://feathersjs.com): Feathers is a lightweight web-framework for creating real-time applications and REST APIs using JavaScript or TypeScript. Build prototypes in minutes and production-ready apps in days.
+- [**Gatsby**](https://www.gatsbyjs.com): A [React](https://reactjs.org)-based, [GraphQL](https://graphql.org) powered, static site generator with a very rich ecosystem of plugins and starters.
+- [**hapi**](https://hapijs.com): A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
+- [**koa**](http://koajs.com): It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatible changes without disrupting the existing community.
+- [**Loopback.io**](https://loopback.io): Makes it easy to build modern applications that require complex integrations.
+- [**Meteor**](https://meteor.com): An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs [React](https://reactjs.org), [Vue](https://vuejs.org), and [Angular](https://angular.io). Can be used to create mobile apps as well.
+- [**Micro**](https://github.com/zeit/micro): It provides a very lightweight server to create asynchronous HTTP microservices.
+- [**NestJS**](https://nestjs.com): A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
+- [**Next.js**](https://nextjs.org): [React](https://reactjs.org) framework that gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.
+- [**Nx**](https://nx.dev): A toolkit for full-stack monorepo development using NestJS, Express, [React](https://reactjs.org), [Angular](https://angular.io), and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
+- [**Sapper**](https://sapper.svelte.dev): Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. Offers SSR and more!
+- [**Socket.io**](https://socket.io): A real-time communication engine to build network applications.
+- [**Strapi**](https://strapi.io): Strapi is a flexible, open-source Headless CMS that gives developers the freedom to choose their favorite tools and frameworks while also allowing editors to easily manage and distribute their content. By making the admin panel and API extensible through a plugin system, Strapi enables the world's largest companies to accelerate content delivery while building beautiful digital experiences.
 
 ## Extended Version:
 
@@ -94,13 +94,13 @@ JavaScript is a dynamically typed language which means a variable can hold any d
 
 JavaScript is interactive, which means you can directly feed JavaScript code to the interpreter and it will be executed immediately. You can try this by opening [DevTools](https://developers.google.com/web/tools/chrome-devtools/) in the browser (\_in Chrome, press \_`*command** + **option** + **i*`) or right-click anywhere on the page and click inspect. Then go to the console tab, here you can type any valid JavaScript code and press enter to run it. Use `shift + enter` to add a new-line in your code.
 
-![](https://miro.medium.com/max/675/1\*iSdHW-r4lmJ41vrpm\_0lxQ.png)
+![](https://miro.medium.com/max/675/1*iSdHW-r4lmJ41vrpm_0lxQ.png)
 
 (interacting with JavaScript interpreter)
 
 Every browser ships a JavaScript Interpreter also called a JavaScript Engine. [V8](https://v8.dev) is the JavaScript engine designed by Google and used in the Google Chrome browser while [SpiderMonkey](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey) is a JavaScript engine developed by Mozilla for their Firefox browser.
 
-Since JavaScript engine designed by every browser is different, [ECMA](https://en.wikipedia.org/wiki/Ecma\_International) standardizes features of JavaScript. This standard is known as [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) (_pronounced as ek-ma-script_). Whenever ECMA adds a feature to this JavaScript standard, the browser has to add it in their JavaScript engine to stay in the competition (_though this process is very slow_).
+Since JavaScript engine designed by every browser is different, [ECMA](https://en.wikipedia.org/wiki/Ecma_International) standardizes features of JavaScript. This standard is known as [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) (_pronounced as ek-ma-script_). Whenever ECMA adds a feature to this JavaScript standard, the browser has to add it in their JavaScript engine to stay in the competition (_though this process is very slow_).
 
 JavaScript is a very easy language to learn and fun to write. Every year, new features are added to ECMAScript which brings JavaScript one more step closer to dominate the planet. The latest major revision of JavaScript is [ES6](http://es6-features.org) or ECMAScript 6 or ECMAScript 2015 which has dumped a ton of features to make it more fun to code in. At the moment, JavaScript supports the OOP paradigm very well and can be used in functional programming as well.
 
@@ -118,7 +118,7 @@ JavaScript is a single-threaded language, it knows how to get things done one at
 
 Since JavaScript is used on the web, it needs to be secure. Hence, using JavaScript, you can't access the computer it is running on, like File System, IO, Networking, etc. and neither ECMAScript has specifications for that.
 
-So it is up to the browser vendors to extend JavaScript engine with APIs that can do other things. For example, DOM API is responsible to print an HTML code into actual pixels on the screen, I have explained this process in [my Medium article](https://itnext.io/how-the-browser-renders-a-web-page-dom-cssom-and-rendering-df10531c9969?source=your\_stories\_page---------------------------). Also, the [XMLHttpRequest](https://javascript.info/xmlhttprequest) API gives us the ability to send network requests to fetch data from a remote server in the background.
+So it is up to the browser vendors to extend JavaScript engine with APIs that can do other things. For example, DOM API is responsible to print an HTML code into actual pixels on the screen, I have explained this process in [my Medium article](https://itnext.io/how-the-browser-renders-a-web-page-dom-cssom-and-rendering-df10531c9969?source=your_stories_page---------------------------). Also, the [XMLHttpRequest](https://javascript.info/xmlhttprequest) API gives us the ability to send network requests to fetch data from a remote server in the background.
 
 These sorts of APIs are responsible to perform other operations that JavaScript is not designed to perform. These APIs are provided by the browser and they are called [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API). These APIs are written in some Low-Level languages like C or C++ but their interface is made available through JavaScript.
 
@@ -128,9 +128,9 @@ These Web APIs sometimes do their job in separate thread allowing other JavaScri
 
 For example, `[setTimeout(callback, delay)](https://www.w3schools.com/jsref/met_win_settimeout.asp)` function is not part of ECMAScript specification, it is provided by the browser to perform an asynchronous operation. The `callback` function is executed in the main JavaScript thread once `delay` milliseconds has elapsed.
 
-![](https://miro.medium.com/max/20/1\*Lyq6NipNFEgLwjXs0-BDgA.png?q=20)
+![](https://miro.medium.com/max/20/1*Lyq6NipNFEgLwjXs0-BDgA.png?q=20)
 
-![](https://miro.medium.com/max/473/1\*Lyq6NipNFEgLwjXs0-BDgA.png)
+![](https://miro.medium.com/max/473/1*Lyq6NipNFEgLwjXs0-BDgA.png)
 
 (an oversimplification of how JavaScript runs in a browser)
 
@@ -138,13 +138,13 @@ So far we know that JavaScript is essential in a browser. But if you think about
 
 The concept of server-side JavaScript comes from this simple idea. You can take any JavaScript engine, wrap inside an application that gives a clean interface to take the user's JavaScript code and execute it in the JavaScript engine. You can also provide APIs to perform operations like File System IO, Networking, etc. which do not run on JavaScript engine.
 
-![](https://miro.medium.com/max/20/1\*i1b-kgRTc9KPvHjvBifoyA.png?q=20)
+![](https://miro.medium.com/max/20/1*i1b-kgRTc9KPvHjvBifoyA.png?q=20)
 
-![](https://miro.medium.com/max/473/1\*i1b-kgRTc9KPvHjvBifoyA.png)
+![](https://miro.medium.com/max/473/1*i1b-kgRTc9KPvHjvBifoyA.png)
 
 (an oversimplification of how JavaScript runs on a server)
 
-[Ryan Dahl](https://en.wikipedia.org/wiki/Ryan\_Dahl) took this idea and made Node.js.
+[Ryan Dahl](https://en.wikipedia.org/wiki/Ryan_Dahl) took this idea and made Node.js.
 
 > To understand more about how a JavaScript engine works in a browser, you should read my article on [How JavaScript engine works in browser and Node](https://itnext.io/how-javascript-works-in-browser-and-node-ab7d0d09ac2f). This article also explain concept of Web APIs in depth.
 
@@ -154,7 +154,7 @@ Sometimes, Node.js is also called simply Node or node.
 
 Node.js is a framework that contains the V8 JavaScript engine, the standard library of packages, and some binaries. In reality, it is more complex than that as explained in the below diagram (_follow the link for more details_).
 
-![](https://miro.medium.com/max/405/1\*iTdvBPVxYZdJZQKsP3yILw.jpeg)
+![](https://miro.medium.com/max/405/1*iTdvBPVxYZdJZQKsP3yILw.jpeg)
 
 (Source: [Stackoverflow](https://stackoverflow.com/questions/36766696/which-is-correct-node-js-architecture))
 
@@ -177,7 +177,7 @@ You should install Node.js from their official website at [nodejs.org](https://n
 
 When you install Node.js, you get `node` and `npm` binaries added to your path. That means, now you can use `node` and `npm` command. We will talk about `npm` later, but for now, let's focus on the `node`.
 
-![](https://miro.medium.com/max/459/1\*jjZ-5MLgkPDNd-6j6x52rQ.png)
+![](https://miro.medium.com/max/459/1*jjZ-5MLgkPDNd-6j6x52rQ.png)
 
 Using `-v` or `--version` flag, we can check the version of the Node installed. The latest node will have the latest V8 engine, hence latest JavaScript features. If you need the flexibility to change Node version at any given time, in that case, you should not install Node.js using above method. Instead, you should use Node Version Manager or [NVM](https://github.com/nvm-sh/nvm).
 
@@ -185,9 +185,9 @@ Using `-v` or `--version` flag, we can check the version of the Node installed. 
 
 Like we saw in DevTools of the browser, using the simple command `node` will open a JavaScript interpreter in the terminal. This way we can run some simple JavaScript code to amuse yourself.
 
-![](https://miro.medium.com/max/20/1\*yfvMB7k2KBIylz\_ISFUL-Q.png?q=20)
+![](https://miro.medium.com/max/20/1*yfvMB7k2KBIylz_ISFUL-Q.png?q=20)
 
-![](https://miro.medium.com/max/459/1\*yfvMB7k2KBIylz\_ISFUL-Q.png)
+![](https://miro.medium.com/max/459/1*yfvMB7k2KBIylz_ISFUL-Q.png)
 
 (node interpreter)
 
@@ -197,7 +197,7 @@ Now that we have a good understanding of what Node.js is and how JavaScript engi
 
 Using an interpreter we can perform some basic arithmetics and other basic stuff. But most of the time, your actual JavaScript code will be in a `.js` file. Instead of giving one line at a time to the interpreter, we need to give whole file content at once. We can do that by using `node /path/to/file.js` command.
 
-![](https://miro.medium.com/max/675/1\*UdmQcaaaqcGtbzgWUFtE2A.png)
+![](https://miro.medium.com/max/675/1*UdmQcaaaqcGtbzgWUFtE2A.png)
 
 ([hello-world.js](https://github.com/course-one/node-js-introduction/blob/master/hello-world.js))
 
@@ -205,7 +205,7 @@ In the above example, we have created `hello-world.js` file and it contains `hel
 
 Since `node` can only execute `.js` files, adding `.js` extension to the file path is optional. If we provide a directory path instead of file path to `node`, Node.js will try to resolve `index.js` file inside that directory.
 
-![](https://miro.medium.com/max/675/1\*J1cd4WNICvBUcuDpUfvecA.png)
+![](https://miro.medium.com/max/675/1*J1cd4WNICvBUcuDpUfvecA.png)
 
 (executing index.js in the current directory with Node)
 
@@ -331,7 +331,7 @@ This continues until the last directory in the file system is reached. If it doe
 
 Let's create `node_modules` directory in our project and clone `lib` directory there. From `src/compute.js`, we will call the `add` function as before.
 
-![](https://miro.medium.com/max/675/1\*o2PkxJ468fIvuQaZojV-sw.png)
+![](https://miro.medium.com/max/675/1*o2PkxJ468fIvuQaZojV-sw.png)
 
 ([package introduction](https://github.com/course-one/node-js-introduction/tree/master/lib))
 
@@ -355,7 +355,7 @@ When we have a remote package in our project, it is called as a dependency since
 
 This file is essential for NPM. To create this file using `npm`, use `npm init` command. This command will ask you some question to fill project-specific data in `package.json` and eventually create `package.json` file. You can bypass the questions using `-y` flag.
 
-![](https://miro.medium.com/max/675/1\*QIqW9G-YXcvQAs0xl0zh2A.png)
+![](https://miro.medium.com/max/675/1*QIqW9G-YXcvQAs0xl0zh2A.png)
 
 (Initializing [package.json](https://github.com/course-one/node-js-introduction/blob/master/package.json))
 
@@ -373,7 +373,7 @@ This command will do the following things.
 
 Let's actually install `lodash` package and see how `node_modules` and `package.json` file looks like after the install.
 
-![](https://miro.medium.com/max/675/1\*xPtGu4bjhl4YJlH9PvwH9A.png)
+![](https://miro.medium.com/max/675/1*xPtGu4bjhl4YJlH9PvwH9A.png)
 
 (npm install -- save lodash)
 
@@ -387,7 +387,7 @@ console.log( result ); // HELLO WORLD!
 
 When we run this file using the command `node src/transform.js`, we get `HELLO WORLD!` printed in the terminal.
 
-When you install a package, NPM also creates `package-lock.json` file if not already present. This file contains a list of dependency packages with their versions that your project has installed as well as dependencies of those packages (_because a package might use other packages and so on_). This file including `package.json` should be tracked by your [VCS](https://en.wikipedia.org/wiki/Version\_control) while `node_module` directory should be ignored (_reasons explained later_).
+When you install a package, NPM also creates `package-lock.json` file if not already present. This file contains a list of dependency packages with their versions that your project has installed as well as dependencies of those packages (_because a package might use other packages and so on_). This file including `package.json` should be tracked by your [VCS](https://en.wikipedia.org/wiki/Version_control) while `node_module` directory should be ignored (_reasons explained later_).
 
 > NPM and package management is far more sophisticated (and for good) than this but we will discuss it later in details.
 
@@ -407,7 +407,7 @@ These packages do not exist on disk like `lodash`. They are compiled into low-le
 
 According to the above project structure, we have `hello-world.txt` file which contains `Hello World!` text. Using `fs-example.js`, we want to read the text in the file and log in to the console.
 
-![](https://miro.medium.com/max/675/1\*78ejxNXflo4CGZ18gRXPhQ.png)
+![](https://miro.medium.com/max/675/1*78ejxNXflo4CGZ18gRXPhQ.png)
 
 (Sample `fs` and `path` module introduction)
 
@@ -431,7 +431,7 @@ Notice the console log. The first `-end-of-the-program-` statement got printed a
 
 Node.js can also perform synchronous (blocking) operations. For example, using `[fs.readFileSync](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options)`, we can block the JavaScript thread until the file is read. This way, we can make sure, JavaScript code run sequentially.
 
-![](https://miro.medium.com/max/675/1\*FmUCo0e0Cs\_QKxEGZ509nQ.png)
+![](https://miro.medium.com/max/675/1*FmUCo0e0Cs_QKxEGZ509nQ.png)
 
 ([Reading a file synchronously](https://github.com/course-one/node-js-introduction/blob/master/fs-example.js))
 
@@ -447,13 +447,13 @@ npm install --save express
 
 Then we will import this package and create a basic HTTP server inside `server.js` file. We will follow their [startup documentation](https://github.com/expressjs/express).
 
-![](https://miro.medium.com/max/675/1\*6yP5kysrs9UIKk8RYnR0AQ.png)
+![](https://miro.medium.com/max/675/1*6yP5kysrs9UIKk8RYnR0AQ.png)
 
 ([Sample express HTTP server](https://github.com/course-one/node-js-introduction/blob/master/server.js))
 
 When we executed `server.js` file with `node`, ExpressJS will lock the Node process as we want the server to be running forever. Now that server is running on the port `9000`, we can open the browser and access URL `<http://localhost:9000/>` which will execute the `.get` callback.
 
-![](https://miro.medium.com/max/473/1\*evvJp-ynknMqnUTbW4dssw.png)
+![](https://miro.medium.com/max/473/1*evvJp-ynknMqnUTbW4dssw.png)
 
 `(<http://localhost:9000/>)`
 
@@ -471,9 +471,9 @@ Node.js provides a built-in `[child_process](https://nodejs.org/api/child_proces
 
 Let's create a `echo.js` file that executes `echo Hello World!` Bash command.
 
-![](https://miro.medium.com/max/675/1\*NGwvmLnmj436x2EXbWAJvg.png)
+![](https://miro.medium.com/max/675/1*NGwvmLnmj436x2EXbWAJvg.png)
 
-([child\_process example](https://github.com/course-one/node-js-introduction/blob/master/echo.js))
+([child_process example](https://github.com/course-one/node-js-introduction/blob/master/echo.js))
 
 In the above program, the callback function to `child_process.exec` receives the [standard output](https://www.computerhope.com/jargon/s/stdout.htm) of the program.
 
@@ -489,7 +489,7 @@ So if our project is managed using a VCS like Git then should we commit all our 
 
 ## .gitignore\\
 
-node\_modules
+node_modules
 
 But then when your buddy takes the clone or a pull of the project, he/she won't get `node_modules`. Nothing to worry about here because NPM can take care of that.
 
@@ -499,4 +499,4 @@ When we used `npm install <packagename>` command for the first time, NPM created
 
 By ignoring `node_modules`, we are actually saving a lot of time and bandwidth of transferring the project from a development machine to production.
 
-[![Edit nodejs-examples](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nodejs-examples-4ohjz?autoresize=1\&expanddevtools=1\&fontsize=13\&hidenavigation=1\&theme=light\&view=editor)
+[![Edit nodejs-examples](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nodejs-examples-4ohjz?autoresize=1&expanddevtools=1&fontsize=13&hidenavigation=1&theme=light&view=editor)

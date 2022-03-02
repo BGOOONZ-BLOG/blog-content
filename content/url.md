@@ -6,7 +6,7 @@ URLs are not only useful for HTTP addresses. Other _schemes_ are allowed and the
 
 For the HTTP scheme the pattern is:
 
-The first part \<net\_loc> is the network location of the resource: the domain name of the web server that holds the web page we want. This is preceded by two forward slashes and followed by a single forward slash. Then follows the \<path> which the server will use to identify which page we want. The ;\<params>?\<query>#\<fragment> are used to further qualify the resource that we want; we'll see some examples of how they are used later in the book.
+The first part \<net_loc> is the network location of the resource: the domain name of the web server that holds the web page we want. This is preceded by two forward slashes and followed by a single forward slash. Then follows the \<path> which the server will use to identify which page we want. The ;\<params>?\<query>#\<fragment> are used to further qualify the resource that we want; we'll see some examples of how they are used later in the book.
 
 The URL is a unique form of identifier in that it has two roles. First, it identifies a document, video or music file that's out on the web (we call these things _resources_). Each resource has a unique URL and you can refer to them via the URL. If we two people refer to the same URL, then they know they have read the same document. Secondly, the URL contains enough information for a web client to retrieve a copy of the resource. The client can use the scheme defined (HTTP) to connect to the server and send an HTTP request for the path part of the URL.
 

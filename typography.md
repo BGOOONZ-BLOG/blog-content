@@ -22,15 +22,15 @@ Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit
 
 > “Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live” ― John Woods
 
-***
+---
 
 ### Unordered Lists
 
-* Donec non tortor in arcu mollis feugiat
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-* Donec id eros eget quam aliquam gravida
-* Vivamus convallis urna id felis
-* Nulla porta tempus sapien
+- Donec non tortor in arcu mollis feugiat
+- Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+- Donec id eros eget quam aliquam gravida
+- Vivamus convallis urna id felis
+- Nulla porta tempus sapien
 
 ### Ordered Lists
 
@@ -45,9 +45,8 @@ Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit
 Blocks of code are either fenced by `lines with three back-ticks`, or are indented with four spaces.
 
 ```css
-<!-- Some example CSS code -->
-body {
-  color:red;
+<!-- Some example CSS code -- > body {
+  color: red;
 }
 ```
 

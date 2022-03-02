@@ -2,9 +2,9 @@
 
 Three different aspects of web site production:
 
-* Content -- the text, images, etc. What the user wants to read.
-* Style -- how the content is arranged on the page, fonts, colours, page style.
-* Behaviour -- how users interact with the site, data processing, dynamic page elements.
+- Content -- the text, images, etc. What the user wants to read.
+- Style -- how the content is arranged on the page, fonts, colours, page style.
+- Behaviour -- how users interact with the site, data processing, dynamic page elements.
 
 Since each requires different skills, a good (software) design would seperate them.
 
@@ -14,9 +14,9 @@ Note that it hasn't always been this way, HTML can do a bunch of Style things (e
 
 ### Document Production
 
-![](http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal\_movable\_type.jpg/640px-Metal\_movable\_type.jpg)
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/640px-Metal_movable_type.jpg)
 
-Moveable type, source [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Metal\_movable\_type.jpg)
+Moveable type, source [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Metal_movable_type.jpg)
 
 Many years ago, when printed pages were made with moveable type, the printer who assembled the page of type was responsible for all aspects of the page design. They would choose the typeface, and in the early days even make the matrix and cast the type themselves. They would lay out the lines of text, choosing suitable spacing in each line, deciding where to break the line and adding hyphens to improve the overall look of the page while maintaining readability. The page was then set in the press and pages were printed.
 
@@ -46,9 +46,9 @@ All of these additions to HTML and the mis-use of existing tags meant that a lan
 
 The current suite of web languages understood by your browser (HTML, CSS and Javascript) each serve different roles in the web development process:
 
-* HTML - Content
-* CSS - Style
-* Javascript - Behaviour
+- HTML - Content
+- CSS - Style
+- Javascript - Behaviour
 
 The third of these - Javascript and Behaviour - refer to the way that Javascript can be used to change the way that the user interacts with the page. This doesn't really have an analogue in the print document production world but it's an important aspect of modern web content production. It fits into this framework because the behavioural changes that Javascript can introduce should not be the concern of the content author or the visual designer (though both might have opinions on what they'd like to see).
 
@@ -56,9 +56,9 @@ It is useful to think of these three aspects of web design as independent things
 
 ### The Separation of Concerns
 
-From a Computer Science/Software Engineering point of view there is a very important principle called the [Separation of Concerns](http://en.wikipedia.org/wiki/Separation\_of\_concerns) (SoC) that is illustrated perfectly by the way that the various web languages have evolved. The SoC principle is about partitioning the work that we do in software development into parts that can be considered separately. This is achieved by _modularisation_ within a software project and is helped by things like classes and interface descriptions between modules
+From a Computer Science/Software Engineering point of view there is a very important principle called the [Separation of Concerns](http://en.wikipedia.org/wiki/Separation_of_concerns) (SoC) that is illustrated perfectly by the way that the various web languages have evolved. The SoC principle is about partitioning the work that we do in software development into parts that can be considered separately. This is achieved by _modularisation_ within a software project and is helped by things like classes and interface descriptions between modules
 
-* in fact these things have been developed to support SoC.
+- in fact these things have been developed to support SoC.
 
 The SoC principle allows us to develop large complex software by allowing us to concentrate on different aspects of the solution. It could be that we do that alone, spending time on one aspect and then another, or as a team with different people assigned to different aspects. Either way, being able to work on part of the problem makes it manageable and improves the overall quality of the solution.
 
@@ -66,7 +66,7 @@ In web development, the separation of concerns is supported by the different lan
 
 ### Semantic HTML Markup
 
-One corollary of this kind of thinking is that each component that we use should be used as it was designed and according to it's role in the overall picture. In particular for HTML this implies that the markup we use should encode only the _structure_ of the document rather than aspects of the _appearance_ which is properly dealt with using CSS. Further, this means that we should use markup in a way that imparts useful _meaning_ to the document structure. This is generally known as using _Semantic HTML_ ([Wikipedia](http://en.wikipedia.org/wiki/Semantic\_HTML), [POSH](http://microformats.org/wiki/posh) on Microformats.org) and is the current best practice in HTML authoring.
+One corollary of this kind of thinking is that each component that we use should be used as it was designed and according to it's role in the overall picture. In particular for HTML this implies that the markup we use should encode only the _structure_ of the document rather than aspects of the _appearance_ which is properly dealt with using CSS. Further, this means that we should use markup in a way that imparts useful _meaning_ to the document structure. This is generally known as using _Semantic HTML_ ([Wikipedia](http://en.wikipedia.org/wiki/Semantic_HTML), [POSH](http://microformats.org/wiki/posh) on Microformats.org) and is the current best practice in HTML authoring.
 
 To clarify this point we can look at some examples. Writing semantic HTML means using the HTML tags as they were designed to be used - to convey the meaning of a particular document structure or textual element. So a good example is when we want to encode the main heading in a page I would use the H1 tag:
 
@@ -95,9 +95,9 @@ Another motivation for using semantic markup is for users who cannot read via a 
 #### Exercises
 
 1. Find an appropriate HTML tag to mark up the following items:
-   * the name of a book that you are citing in an essay
-   * a fragment of computer code, eg. a bit of Python
-   * an abbreviation or acronym and it's expansion (e.g. HTML - Hypertext Markup language)
+   - the name of a book that you are citing in an essay
+   - a fragment of computer code, eg. a bit of Python
+   - an abbreviation or acronym and it's expansion (e.g. HTML - Hypertext Markup language)
 
 ### Extending the Semantics of HTML
 
@@ -123,8 +123,8 @@ Rather than being a chapter that will teach you the HTML language this will be a
 
 Most people will know some HTML by now (assuming you've been studying computing for a while or have a general interest in the web). My task here is not to teach you HTML or act as a reference for the language, there are plenty of resources around that will do this. Some examples are:
 
-* [w3schools HTML tutorial](http://www.w3schools.com/html/default.asp) w3schools is one of the most widely used tutorial and reference sites on the web for HTML and other web technologies.
-* [Learn HTML](https://developer.mozilla.org/en-US/learn/html) from the Mozilla Developer Network, the organisation that produces the Firefox browser. This page has pointers to a number of HTML tutorials and resources.
+- [w3schools HTML tutorial](http://www.w3schools.com/html/default.asp) w3schools is one of the most widely used tutorial and reference sites on the web for HTML and other web technologies.
+- [Learn HTML](https://developer.mozilla.org/en-US/learn/html) from the Mozilla Developer Network, the organisation that produces the Firefox browser. This page has pointers to a number of HTML tutorials and resources.
 
 ### About HTML
 
@@ -142,7 +142,7 @@ Importantly, HTML is a _markup language_ not a _programming language_. The job o
 
 ### Versions of HTML
 
-The first version of HTML was developed by Tim Berners-Lee as part of his World Wide Web project along with the HTTP protocol and the URL syntax. At first it was a very simple language for encoding articles and so had tags for headings, paragraphs, lists etc. Later, the language evolved to encompas new features in the browser such as the ability to display images, tables and modify the font that text was displayed in. The evolution of HTML has been quite gradual and at times part of intense competition between browser vendors (look up the [Browser Wars](http://en.wikipedia.org/wiki/Browser\_wars) to get the full story). The Internet Engineering Task Force (IETF) and later the World Wide Web Consortium (W3C) tried to standardise the language but it took some time for industry practice to align with the W3C standards. Luckily now we are in a period of relative stability where the standards process aligns well with what the major browsers are able to understand.
+The first version of HTML was developed by Tim Berners-Lee as part of his World Wide Web project along with the HTTP protocol and the URL syntax. At first it was a very simple language for encoding articles and so had tags for headings, paragraphs, lists etc. Later, the language evolved to encompas new features in the browser such as the ability to display images, tables and modify the font that text was displayed in. The evolution of HTML has been quite gradual and at times part of intense competition between browser vendors (look up the [Browser Wars](http://en.wikipedia.org/wiki/Browser_wars) to get the full story). The Internet Engineering Task Force (IETF) and later the World Wide Web Consortium (W3C) tried to standardise the language but it took some time for industry practice to align with the W3C standards. Luckily now we are in a period of relative stability where the standards process aligns well with what the major browsers are able to understand.
 
 A version of HTML is defined by a Document Type Definintion (DTD) - a formal definition of the allowed tags and attributes and the allowed structure of an HTML document. The DTD says that you can have a \<p> tag and that it can contain a \<strong> tag but that a \<li> has to be inside a \<ul> or \<ol> tag and so on. If a document conforms to the DTD (follows the rules) we say that it is _valid_, if it contains errors such as having an unknown tag or a tag in the wrong place it is invalid.
 
@@ -154,7 +154,7 @@ In 1997 the XML standard was introduced. XML was intended to generalise the use 
 
 One of the motivations for introducing XHTML was to try to encourage web developers to adhere more closely to the published standards. The web had grown up with a culture of view-source where people would learn how to encode web pages by looking at the source HTML of other web pages rather than by reading the standard. They would then write their own pages and if they looked ok in the browser, they would publish them. To cope with the amount of badly formed HTML content on the web, the browser vendors built thier HTML parsers to be very forgiving. If you put a paragraph inside an image tag or a header inside a paragraph it would have a go at rendering the content. As a consequence, very few web publishers cared about generating proper HTML and anyone who wanted to parse web content had to make very few assumptions about HTML structure.
 
-Around this time there was a move towards having more automated clients consuming web content. One group was the search engine developers who were just interested in the textual content of pages but other groups were trying to glean real data from the web. For example, price comparison services were starting up which tried to extract pricing information from store listings. Other services might try to find event information from web pages. All of these services needed to parse the HTML structure and had problems when the HTML was badly structured; this became known as [Tag Soup](http://essaysfromexodus.scripting.com/whatIsTagSoup) since one could not rely on proper HTML structure it was just treated as an unstructured collection of tagged text. Permissive parsers such as [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/) (Python) and [Tagsoup](http://home.ccil.org/\~cowan/XML/tagsoup/) (Java) were developed to cope with the messy markup and give the developer as much detail as possible from the page.
+Around this time there was a move towards having more automated clients consuming web content. One group was the search engine developers who were just interested in the textual content of pages but other groups were trying to glean real data from the web. For example, price comparison services were starting up which tried to extract pricing information from store listings. Other services might try to find event information from web pages. All of these services needed to parse the HTML structure and had problems when the HTML was badly structured; this became known as [Tag Soup](http://essaysfromexodus.scripting.com/whatIsTagSoup) since one could not rely on proper HTML structure it was just treated as an unstructured collection of tagged text. Permissive parsers such as [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/) (Python) and [Tagsoup](http://home.ccil.org/~cowan/XML/tagsoup/) (Java) were developed to cope with the messy markup and give the developer as much detail as possible from the page.
 
 ## HTML5
 

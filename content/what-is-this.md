@@ -42,7 +42,7 @@ With arrow functions, the value of `this` _can't_ be changed by calling the func
 
 ### 'Bound' instance methods [#](https://web.dev/javascript-this/#'bound'-instance-methods)
 
-With instance methods, if you want to ensure `this` always refers to the class instance, the best way is to use arrow functions and [class fields](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Public\_class\_fields):
+With instance methods, if you want to ensure `this` always refers to the class instance, the best way is to use arrow functions and [class fields](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Public_class_fields):
 
 ```
 class Whatever {  someMethod = () => {    // Always the instance of Whatever:    console.log(this);  };}
@@ -184,7 +184,7 @@ Warning: Don't transplant a function onto an object just to set `this` to some v
 function someFunction() {  'use strict';  return this;}// Logs `true`:console.log(someFunction() === undefined);
 ```
 
-In this case, the value of `this` is undefined. `'use strict'` isn't needed in the function if the parent scope is in [strict mode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict\_mode) (and all modules are in strict mode).
+In this case, the value of `this` is undefined. `'use strict'` isn't needed in the function if the parent scope is in [strict mode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode) (and all modules are in strict mode).
 
 Warning: Don't rely on this. I mean, there are easier ways to get an `undefined` value 😀.
 

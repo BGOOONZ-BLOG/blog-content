@@ -3,35 +3,29 @@
 \
 \
 
-
 ## Markdown tools
 
 \
 &#x20;\
 
-
-***
+---
 
 \
 \
 \
-
 
 ## PDF Tools
 
 \
 \
 
-
-***
-
-\
-
-
-***
+---
 
 \
 
+---
+
+\
 
 ## React Calculator
 
@@ -39,13 +33,11 @@
 \
 \
 
+---
 
-***
-
-***
+---
 
 \
-
 
 ## Number Base Converter
 
@@ -53,18 +45,15 @@
 \
 \
 
-
 ## Text Tools
 
 \
-
 
 ## Paste excel to HTML
 
 \
 \
 \
-
 
 ## Awesome Search
 
@@ -75,20 +64,17 @@
 \
 \
 
-
 ## Github HTML Render from link
 
 \
 \
 \
 
-
-***
+---
 
 \
 \
 \
-
 
 ## Form Builder GUI
 
@@ -96,14 +82,12 @@
 \
 \
 
-
 ##
 
 \
 \
 \
 \
-
 
 ##
 

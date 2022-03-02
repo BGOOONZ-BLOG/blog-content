@@ -14,15 +14,15 @@ Through a process called rehashing, pyenv maintains shims in that directory to m
 
 Shims are lightweight executables that simply pass your command along to pyenv. So with pyenv installed, when you run, say, pip, your operating system will do the following:
 
-* Search your PATH for an executable file named pip
-* Find the pyenv shim named pip at the beginning of your PATH
-* Run the shim named pip, which in turn passes the command along to pyenv
+- Search your PATH for an executable file named pip
+- Find the pyenv shim named pip at the beginning of your PATH
+- Run the shim named pip, which in turn passes the command along to pyenv
 
 #### Choosing the Python Version
 
 When you execute a shim, pyenv determines which Python version to use by reading it from the following sources, in this order:
 
-1. The PYENV\_VERSION environment variable (if specified). You can use the [pyenv shell](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md#pyenv-shell) command to set this environment variable in your current shell session.
+1. The PYENV_VERSION environment variable (if specified). You can use the [pyenv shell](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md#pyenv-shell) command to set this environment variable in your current shell session.
 2. The application-specific .python-version file in the current directory (if present). You can modify the current directory's .python-version file with the [pyenv local](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md#pyenv-local) command.
 3. The first .python-version file found (if any) by searching each parent directory, until reaching the root of your filesystem.
 4. The global $(pyenv root)/version file. You can modify this file using the [pyenv global](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md#pyenv-global) command. If the global version file is not present, pyenv assumes you want to use the "system" Python. (In other words, whatever version would run if pyenv weren't in your PATH.)
@@ -37,9 +37,9 @@ Each Python version is installed into its own directory under $(pyenv root)/vers
 
 For example, you might have these versions installed:
 
-* $(pyenv root)/versions/2.7.8/
-* $(pyenv root)/versions/3.4.2/
-* $(pyenv root)/versions/pypy-2.4.0/
+- $(pyenv root)/versions/2.7.8/
+- $(pyenv root)/versions/3.4.2/
+- $(pyenv root)/versions/pypy-2.4.0/
 
 As far as Pyenv is concerned, version names are simply directories under $(pyenv root)/versions.
 

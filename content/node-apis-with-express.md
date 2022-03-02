@@ -27,7 +27,7 @@ router.use('/clients', clientRoutes);
 module.exports = router; // standard convention dictates that this is the last line on the file
 ```
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### Objective 1 — explain the role of a foreign key
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### Objective 1 — explain the role of a foreign key
 
 #### Overview
 
@@ -47,7 +47,7 @@ If we could only see the `ranchers` table, we would know that John, Jane, and Je
 
 #### Challenge
 
-Open [SQLTryIT (Links to an external site.)](https://www.w3schools.com/sql/trysql.asp?filename=trysql\_op\_in).
+Open [SQLTryIT (Links to an external site.)](https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in).
 
 How many records in the products table belong to the category “confections”?
 
@@ -61,22 +61,22 @@ We can use a `JOIN` to combine query data from multiple tables using a single `S
 
 There are different types of joins; some are listed below:
 
-* inner joins.
-* outer joins.
-* left joins.
-* right joins.
-* cross joins.
-* non-equality joins.
-* self joins.
+- inner joins.
+- outer joins.
+- left joins.
+- right joins.
+- cross joins.
+- non-equality joins.
+- self joins.
 
-Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department\_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department\_id_ field of the employee table, we can use those fields to join both tables like so:
+Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
 ```
 select * from employees
 join departments on employees.department_id = departments.id
 ```
 
-This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department_id or where the value stored in the field does not correspond to an existing id in the_ departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department\_id for an employee, it won't be able to join.
+This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
 
 We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:
 
@@ -106,11 +106,11 @@ A good explanation of how the different types of joins can be seen [in this arti
 
 #### Challenge
 
-Use [this online tool (Links to an external site.)](https://www.w3schools.com/Sql/tryit.asp?filename=trysql\_select\_top) to write the following queries:
+Use [this online tool (Links to an external site.)](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top) to write the following queries:
 
-* list the products, including their category name.
-* list the products, including the supplier name.
-* list the products, including both the category name and supplier name.
+- list the products, including their category name.
+- list the products, including the supplier name.
+- list the products, including both the category name and supplier name.
 
 #### What is SQL Joins?
 
@@ -124,10 +124,10 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 #### Join vs. Subquery
 
-* JOINs are faster than a subquery and it is very rare that the opposite.
-* In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.
-* A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.
-* When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.
+- JOINs are faster than a subquery and it is very rare that the opposite.
+- In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.
+- A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.
+- When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.
 
 #### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
@@ -171,7 +171,7 @@ join_type table2
 
 **Pictorial Presentation of SQL Joins:**
 
-![](https://cdn-images-1.medium.com/max/800/0\*bbwqJEpV2a9WZG-t.gif)\*\*Example:\*\*
+![](https://cdn-images-1.medium.com/max/800/0*bbwqJEpV2a9WZG-t.gif)\*\*Example:\*\*
 
 **Sample table: company**
 
@@ -222,58 +222,58 @@ COMPAN COMPANY_NAME              ITEM_ID  ITEM_NAME
 
 **JOINS: Relational Databases**
 
-* [**Oracle JOINS**](https://www.w3resource.com/oracle/joins/index.php)
-* [**MySQL JOINS**](https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php)
-* [**PostgreSQL JOINS**](https://www.w3resource.com/PostgreSQL/postgresql-join.php)
-* [**SQLite JOINS**](https://www.w3resource.com/sqlite/sqlite-inner-join.php)
+- [**Oracle JOINS**](https://www.w3resource.com/oracle/joins/index.php)
+- [**MySQL JOINS**](https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php)
+- [**PostgreSQL JOINS**](https://www.w3resource.com/PostgreSQL/postgresql-join.php)
+- [**SQLite JOINS**](https://www.w3resource.com/sqlite/sqlite-inner-join.php)
 
 **Key points to remember:**
 
 _Click on the following to get the slides presentation -_
 
-![](https://cdn-images-1.medium.com/max/800/0\*lP\_nQo6VtVu\_68nx.png)###
+![](https://cdn-images-1.medium.com/max/800/0*lP_nQo6VtVu_68nx.png)###
 
 **Practice SQL Exercises**
 
-* [**SQL Exercises, Practice, Solution**](https://www.w3resource.com/sql-exercises/index.php)
-* [**SQL Retrieve data from tables \[33 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php)
-* [**SQL Boolean and Relational operators \[12 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-boolean-operators.php)
-* [**SQL Wildcard and Special operators \[22 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php)
-* [**SQL Aggregate Functions \[25 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php)
-* [**SQL Formatting query output \[10 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php)
-* [**SQL Quering on Multiple Tables \[7 Exercises\]**](https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php)
-* [**FILTERING and SORTING on HR Database \[38 Exercises\]**](https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php)
-* SQL JOINS
-* [**SQL JOINS \[29 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-joins-exercises.php)
-* [**SQL JOINS on HR Database \[27 Exercises\]**](https://www.w3resource.com/sql-exercises/joins-hr/index.php)
-*
-* SQL SUBQUERIES
-* [**SQL SUBQUERIES \[39 Exercises\]**](https://www.w3resource.com/sql-exercises/subqueries/index.php)
-* [**SQL SUBQUERIES on HR Database \[55 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-subqueries-exercises.php)
-*
-* [**SQL Union\[9 Exercises\]**](https://www.w3resource.com/sql-exercises/union/sql-union.php)
-* [**SQL View\[16 Exercises\]**](https://www.w3resource.com/sql-exercises/view/sql-view.php)
-* [**SQL User Account Management \[16 Exercise\]**](https://www.w3resource.com/sql-exercises/sql-user-management.php)
-* Movie Database
-* [**BASIC queries on movie Database \[10 Exercises\]**](https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php)
-* [**SUBQUERIES on movie Database \[16 Exercises\]**](https://www.w3resource.com/sql-exercises/movie-database-exercise/subqueries-exercises-on-movie-database.php)
-* [**JOINS on movie Database \[24 Exercises\]**](https://www.w3resource.com/sql-exercises/movie-database-exercise/joins-exercises-on-movie-database.php)
-*
-* Soccer Database
-* [**Introduction**](https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php)
-* [**BASIC queries on soccer Database \[29 Exercises\]**](https://www.w3resource.com/sql-exercises/soccer-database-exercise/basic-exercises-on-soccer-database.php)
-* [**SUBQUERIES on soccer Database \[33 Exercises\]**](https://www.w3resource.com/sql-exercises/soccer-database-exercise/subqueries-exercises-on-soccer-database.php)
-* [**JOINS queries on soccer Database \[61 Exercises\]**](https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php)
-*
-* Hospital Database
-* [**Introduction**](https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php)
-* [**BASIC, SUBQUERIES, and JOINS \[39 Exercises\]**](https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php)
-*
-* Employee Database
-* [**BASIC queries on employee Database \[115 Exercises\]**](https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php)
-* [**SUBQUERIES on employee Database \[77 Exercises\]**](https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php)
-*
-* More to come!
+- [**SQL Exercises, Practice, Solution**](https://www.w3resource.com/sql-exercises/index.php)
+- [**SQL Retrieve data from tables \[33 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php)
+- [**SQL Boolean and Relational operators \[12 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-boolean-operators.php)
+- [**SQL Wildcard and Special operators \[22 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php)
+- [**SQL Aggregate Functions \[25 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php)
+- [**SQL Formatting query output \[10 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php)
+- [**SQL Quering on Multiple Tables \[7 Exercises\]**](https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php)
+- [**FILTERING and SORTING on HR Database \[38 Exercises\]**](https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php)
+- SQL JOINS
+- [**SQL JOINS \[29 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-joins-exercises.php)
+- [**SQL JOINS on HR Database \[27 Exercises\]**](https://www.w3resource.com/sql-exercises/joins-hr/index.php)
+-
+- SQL SUBQUERIES
+- [**SQL SUBQUERIES \[39 Exercises\]**](https://www.w3resource.com/sql-exercises/subqueries/index.php)
+- [**SQL SUBQUERIES on HR Database \[55 Exercises\]**](https://www.w3resource.com/sql-exercises/sql-subqueries-exercises.php)
+-
+- [**SQL Union\[9 Exercises\]**](https://www.w3resource.com/sql-exercises/union/sql-union.php)
+- [**SQL View\[16 Exercises\]**](https://www.w3resource.com/sql-exercises/view/sql-view.php)
+- [**SQL User Account Management \[16 Exercise\]**](https://www.w3resource.com/sql-exercises/sql-user-management.php)
+- Movie Database
+- [**BASIC queries on movie Database \[10 Exercises\]**](https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php)
+- [**SUBQUERIES on movie Database \[16 Exercises\]**](https://www.w3resource.com/sql-exercises/movie-database-exercise/subqueries-exercises-on-movie-database.php)
+- [**JOINS on movie Database \[24 Exercises\]**](https://www.w3resource.com/sql-exercises/movie-database-exercise/joins-exercises-on-movie-database.php)
+-
+- Soccer Database
+- [**Introduction**](https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php)
+- [**BASIC queries on soccer Database \[29 Exercises\]**](https://www.w3resource.com/sql-exercises/soccer-database-exercise/basic-exercises-on-soccer-database.php)
+- [**SUBQUERIES on soccer Database \[33 Exercises\]**](https://www.w3resource.com/sql-exercises/soccer-database-exercise/subqueries-exercises-on-soccer-database.php)
+- [**JOINS queries on soccer Database \[61 Exercises\]**](https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php)
+-
+- Hospital Database
+- [**Introduction**](https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php)
+- [**BASIC, SUBQUERIES, and JOINS \[39 Exercises\]**](https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php)
+-
+- Employee Database
+- [**BASIC queries on employee Database \[115 Exercises\]**](https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php)
+- [**SUBQUERIES on employee Database \[77 Exercises\]**](https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php)
+-
+- More to come!
 
 #### Objective 3 — write database access methods
 
@@ -358,7 +358,7 @@ router.get('/', (req, res) => {
 
 There should no be `knex` code in the endpoints themselves.
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### A database is a collection of data organized for easy retrieval and manipulation.
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### A database is a collection of data organized for easy retrieval and manipulation.
 
 We're concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store “related” data, are the oldest and most common type of database in use today.
 
@@ -392,7 +392,7 @@ These kinds of databases are relational because a _relation_ is a mathematical i
 
 > Foreign keys represent the relationships with other tables.
 
-![](https://cdn-images-1.medium.com/max/800/0\*7ZPYzWNRcs2PBL6p.jpg)![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### SQL:
+![](https://cdn-images-1.medium.com/max/800/0*7ZPYzWNRcs2PBL6p.jpg)![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### SQL:
 
 SQL is a standard language, which means that it almost certainly will be supported, no matter how your database is managed. That said, be aware that the SQL language can vary depending on database management tools. This lesson focuses on a set of core commands that never change. Learning the standard commands is an excellent introduction since the knowledge transfers between database products.
 
@@ -402,17 +402,17 @@ It is declarative and concise, which means there is a lot less to learn to use i
 
 When learning SQL, it is helpful to understand that each command is designed for a different purpose. If we classify the commands by purpose, we'll end up with the following sub-categories of SQL:
 
-* **Data Definition Language (DDL)**: used to modify database objects. Some examples are: `CREATE TABLE`, `ALTER TABLE`, and `DROP TABLE`.
-* **Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: `INSERT`, `UPDATE`, and `DELETE`.
-* **Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is `SELECT`, and it falls in this category.
-* **Data Control Language (DCL)**: used to manage database security and user's access to data. These commands fall into the realm of Database Administrators. Some examples are `GRANT` and `REVOKE`.
-* **Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are `COMMIT` and `ROLLBACK`.
+- **Data Definition Language (DDL)**: used to modify database objects. Some examples are: `CREATE TABLE`, `ALTER TABLE`, and `DROP TABLE`.
+- **Data Manipulation Language (DML)**: used to manipulate the data stored in the database. Some examples are: `INSERT`, `UPDATE`, and `DELETE`.
+- **Data Query Language (DQL)**: used to ask questions about the data stored in the database. The most commonly used SQL command is `SELECT`, and it falls in this category.
+- **Data Control Language (DCL)**: used to manage database security and user's access to data. These commands fall into the realm of Database Administrators. Some examples are `GRANT` and `REVOKE`.
+- **Transaction Control Commands**: used for managing groups of statements that must execute as a unit or not execute at all. Examples are `COMMIT` and `ROLLBACK`.
 
 As a developer, you'll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)The four SQL operations covered in this section will allow a user to \*\*query\*\*, \*\*insert\*\*, and \*\*modify\*\* a database table.
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)The four SQL operations covered in this section will allow a user to \*\*query\*\*, \*\*insert\*\*, and \*\*modify\*\* a database table.
 
 #### Query
 
@@ -477,7 +477,7 @@ delete from <table name> where <condition>;
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### Filtering results using WHERE clause
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### Filtering results using WHERE clause
 
 When querying a database, the default result will be every entry in the given table. However, often, we are looking for a specific record or a set of records that meets certain criteria.
 
@@ -608,7 +608,7 @@ Once again, the `WHERE` clause is not required, but leaving it off would remove 
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)Raw SQL is a critical baseline skill. However, Node developers generally use an \*\*Object Relational Mapper (ORM)\*\* or \*\*query builder\*\* to write database commands in a backend codebase. Both \*\*ORMs\*\* and \*\*query builders\*\* are JavaScript libraries that allow us to interface with the database using a JavaScript version of the SQL language.
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)Raw SQL is a critical baseline skill. However, Node developers generally use an \*\*Object Relational Mapper (ORM)\*\* or \*\*query builder\*\* to write database commands in a backend codebase. Both \*\*ORMs\*\* and \*\*query builders\*\* are JavaScript libraries that allow us to interface with the database using a JavaScript version of the SQL language.
 
 For example, instead of a raw SQL `SELECT`:
 
@@ -628,7 +628,7 @@ We will use a **query builder** called [knex.js (Links to an external site.)](ht
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### Knex Setup
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### Knex Setup
 
 To use Knex in a repository, we'll need to add two libraries:
 
@@ -757,11 +757,11 @@ db('users').where({ age: 33}).del();
 
 Once again, the `where` must come before the `del`. This method will resolve to a count of records removed.
 
-***
+---
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)###
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)###
 
 #### Here's a small project you can practice with.
 
@@ -795,7 +795,7 @@ For a more detailed look at SQLite Studio, follow along in the video above.
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)A \*\*database schema\*\* is the shape of our database. It defines what tables we'll have, which columns should exist within the tables and any restrictions on each column.
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)A \*\*database schema\*\* is the shape of our database. It defines what tables we'll have, which columns should exist within the tables and any restrictions on each column.
 
 A well-designed database schema keeps the data well organized and can help ensure high-quality data.
 
@@ -803,13 +803,13 @@ Note that while schema design is usually left to Database Administrators (DBAs),
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)For a look at schema design in SQLite Studio, follow along in the video above.
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)For a look at schema design in SQLite Studio, follow along in the video above.
 
 When designing a single table, we need to ask three things:
 
-* What fields (or columns) are present?
-* What type of data do we expect for each field?
-* Are there other restrictions needed for each column?
+- What fields (or columns) are present?
+- What type of data do we expect for each field?
+- Are there other restrictions needed for each column?
 
 Looking at the following schema diagram for an `accounts` table, we can the answer to each other those questions:
 
@@ -825,11 +825,11 @@ However, this is one requirement every table should satisfy: a **primary key**. 
 
 Each field must also have a specified datatype. The datatype available depends on our DBMS. Some supported datatype in SQLite include:
 
-* **Null:** Missing or unknown information.
-* **Integer:** Whole numbers.
-* **Real:** Any number, including decimals.
-* **Text:** Character data.
-* **Blob:** a large binary object that can be used to store miscellaneous data.
+- **Null:** Missing or unknown information.
+- **Integer:** Whole numbers.
+- **Real:** Any number, including decimals.
+- **Text:** Character data.
+- **Blob:** a large binary object that can be used to store miscellaneous data.
 
 Any data inserted into the table must match the datatypes determined in schema design.
 
@@ -837,10 +837,10 @@ Any data inserted into the table must match the datatypes determined in schema d
 
 Beyond datatypes, we may add additional **constraints** on each field. Some examples include:
 
-* **Not Null:** The field cannot be left empty
-* **Unique:** No two records can have the same value in this field
-* **Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.
-* **Default:** — Sets a default value if none is provided.
+- **Not Null:** The field cannot be left empty
+- **Unique:** No two records can have the same value in this field
+- **Primary key:** — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.
+- **Default:** — Sets a default value if none is provided.
 
 As with data types, any data that does not satisfy the schema constraints will be rejected from the database.
 
@@ -848,7 +848,7 @@ As with data types, any data that does not satisfy the schema constraints will b
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### Multi-Table Design
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### Multi-Table Design
 
 Another critical component of schema design is to understand how different tables relate to each other. This will be covered in later lesson.
 
@@ -860,7 +860,7 @@ A `database migration` describes changes made to the structure of a database. Mi
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### Knex Cli
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### Knex Cli
 
 To use migrations (and to make Knex setup easier), we need to use **knex cli**. Install knex globally with `npm install -g knex`.
 
@@ -1017,7 +1017,7 @@ A `database migration` describes changes made to the structure of a database. Mi
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### Knex Cli
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### Knex Cli
 
 To use migrations (and to make Knex setup easier), we need to use **knex cli**. Install knex globally with `npm install -g knex`.
 
@@ -1222,11 +1222,11 @@ Run the seed files by typing:
 
 You can now use SQLite Studio to confirm that the accounts table has two entries.
 
-***
+---
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)### SQL & PostgreSQL
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)### SQL & PostgreSQL
 
 **Foreign keys** are a type of table field used for creating links between tables. Like **primary keys**, they are most often integers that identify (rather than store) data. However, whereas a primary key is used to id rows in a table, foreign keys are used to connect a record in one table to a record in a second table.
 
@@ -1250,22 +1250,22 @@ We can use a `JOIN` to combine query data from multiple tables using a single `S
 
 There are different types of joins; some are listed below:
 
-* inner joins.
-* outer joins.
-* left joins.
-* right joins.
-* cross joins.
-* non-equality joins.
-* self joins.
+- inner joins.
+- outer joins.
+- left joins.
+- right joins.
+- cross joins.
+- non-equality joins.
+- self joins.
 
-Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department\_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department\_id_ field of the employee table, we can use those fields to join both tables like so:
+Using `joins` requires that the two tables of interest contain at least one field with shared information. For example, if a _departments_ table has an _id_ field, and an employee table has a _department_id_ field, and the values that exist in the _id_ column of the _departments_ table live in the _department_id_ field of the employee table, we can use those fields to join both tables like so:
 
 ```
 select * from employees
 join departments on employees.department_id = departments.id
 ```
 
-This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department_id or where the value stored in the field does not correspond to an existing id in the_ departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department\_id for an employee, it won't be able to join.
+This query will return the data from both tables for every instance where the `ON` condition is true. If there are employees with no value for department*id or where the value stored in the field does not correspond to an existing id in the* departments _table, then that record will NOT be returned. In a similar fashion, any records from the_ departments _table that don't have an employee associated with them will also be omitted from the results. Basically, if the_ id\* does not show as the value of department_id for an employee, it won't be able to join.
 
 We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:
 
@@ -1305,10 +1305,10 @@ JOIN keeps the base tables (structure and data) unchanged.
 
 #### Join vs. Subquery
 
-* JOINs are faster than a subquery and it is very rare that the opposite.
-* In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.
-* A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.
-* When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.
+- JOINs are faster than a subquery and it is very rare that the opposite.
+- In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.
+- A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.
+- When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.
 
 #### SQL JOINS: EQUI JOIN and NON EQUI JOIN
 
@@ -1352,7 +1352,7 @@ join_type table2
 
 **Pictorial Presentation of SQL Joins:**
 
-![](https://cdn-images-1.medium.com/max/800/0\*2DcsnJXF\_FOGhUtL.gif)\*\*Example:\*\*
+![](https://cdn-images-1.medium.com/max/800/0*2DcsnJXF_FOGhUtL.gif)\*\*Example:\*\*
 
 **Sample table: company**
 
@@ -1482,11 +1482,11 @@ router.get('/', (req, res) => {
 
 There should no be `knex` code in the endpoints themselves.
 
-***
+---
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)###
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)###
 
 `Normalization` is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.
 
@@ -1572,9 +1572,9 @@ The `farm_id` is the foreign key that links `farms` and `projections` together.
 
 Notes about one-to-one relationships:
 
-* The foreign key should always have a `unique` constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.
-* The foreign key can be in either table. For example, we may have had a `projection_id` in the `farms` table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.
-* You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.
+- The foreign key should always have a `unique` constraint to prevent duplicate entries. In the example above, we wouldn't want to allow multiple projections records for one farm.
+- The foreign key can be in either table. For example, we may have had a `projection_id` in the `farms` table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.
+- You can represent one-to-one data in a single table _without_ creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.
 
 #### One to Many Relationships
 
@@ -1584,9 +1584,9 @@ This is called a **one-to-many** relationship.
 
 This is the most common type of relationship between entities. Some other examples:
 
-* One `customer` can have many `orders`.
-* One `user` can have many `posts`.
-* One `post` can have many `comments`.
+- One `customer` can have many `orders`.
+- One `user` can have many `posts`.
+- One `post` can have many `comments`.
 
 Manage this type of relationship by adding a foreign key on the “many” table of the relationship that points to the primary key on the “one” table. Consider the `farms` and `ranchers` tables.
 
@@ -1602,8 +1602,8 @@ If we want to track animals on a farm as well, we must explore the **many-to-man
 
 Some other examples:
 
-* an `order` can have many `products` and the same `product` will appear in many `orders`.
-* a `book` can have more than one `author`, and an `author` can write more than one `book`.
+- an `order` can have many `products` and the same `product` will appear in many `orders`.
+- a `book` can have more than one `author`, and an `author` can write more than one `book`.
 
 To model this relationship, we need to introduce an **intermediary table** that holds foreign keys that reference the primary key on the related tables. We now have a `farms`, `animals`, and `farm_animals` table.
 
@@ -1617,7 +1617,7 @@ While each foreign key on the intermediary table is not unique, the combinations
 
 ####
 
-![](https://cdn-images-1.medium.com/max/800/1\*9xpwm\_56lgvHkFTKsmoMqg.gif)The Knex query builder library also allows us to create multi-table schemas include foreign keys. However, there are a few extra things to keep in mind when designing a multi-table schema, such as using the correct order when creating tables, dropping tables, seeding data, and removing data.
+![](https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif)The Knex query builder library also allows us to create multi-table schemas include foreign keys. However, there are a few extra things to keep in mind when designing a multi-table schema, such as using the correct order when creating tables, dropping tables, seeding data, and removing data.
 
 We have to consider the way that `delete` and `updates` through our API will impact related data.
 

@@ -6,45 +6,45 @@
 
 Here's a list of bash commands that stand between me and insanity.
 
-***
+---
 
 #### Bash Commands That Save Me Time and Frustration
 
 **Here's a list of bash commands that stand between me and insanity.**
 
-![](https://cdn-images-1.medium.com/max/800/0\*w0J8u6jWTikYVZzW.jpg)[https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
+![](https://cdn-images-1.medium.com/max/800/0*w0J8u6jWTikYVZzW.jpg)[https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
 
 > **This article will be accompanied by the following** [**github repository**](https://github.com/bgoonz/bash-commands-walkthrough) **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
 [**bgoonz/bash-commands-walkthrough**\
-_to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…_github.com](https://github.com/bgoonz/bash-commands-walkthrough)
+\_to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…\_github.com](https://github.com/bgoonz/bash-commands-walkthrough)
 
 > The [readme](https://github.com/bgoonz/bash-commands-walkthrough#readme) for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images & links!
 
 **I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you're like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
 
-![](https://cdn-images-1.medium.com/max/1200/1\*3m\_UcQOAyKtIpHQ6j9JzZw.gif)
+![](https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif)
 
 #### Here's a Cheatsheet:
 
 #### Getting Started (Advanced Users Skip Section):
 
-***
+---
 
 **✔ Check the Current Directory ➡ `pwd`:**
 
 On the command line, it's important to know the directory we are currently working on. For that, we can use `pwd` command.
 
-![](https://cdn-images-1.medium.com/max/800/0\*dimzLUrmDI4Ufev6.gif)It shows that I'm working on my Desktop directory.
+![](https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif)It shows that I'm working on my Desktop directory.
 
 **✔ Display List of Files ➡ `ls`:**
 
 To see the list of files and directories in the current directory use `ls` command in your CLI.
 
-![](https://cdn-images-1.medium.com/max/800/0\*HHzVrK2CtTPwTdYT.gif)Shows all of my files and directories of my Desktop directory.
+![](https://cdn-images-1.medium.com/max/800/0*HHzVrK2CtTPwTdYT.gif)Shows all of my files and directories of my Desktop directory.
 
-* To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
-* Some useful `ls` command options:-
+- To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+- Some useful `ls` command options:-
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
@@ -52,7 +52,7 @@ OptionDescriptionls -alist all files including hidden file starting with '.'ls -
 
 We can create a new folder using the `mkdir` command. To use it type `mkdir folder_name`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*m3dDyC9vRJBUZSxR.gif)Use \`ls\` command to see the directory is created or not.
+![](https://cdn-images-1.medium.com/max/800/0*m3dDyC9vRJBUZSxR.gif)Use \`ls\` command to see the directory is created or not.
 
 I created a cli-practice directory in my working directory i.e. Desktop directory.
 
@@ -60,7 +60,7 @@ I created a cli-practice directory in my working directory i.e. Desktop director
 
 It's used to change directory or to move other directories. To use it type `cd directory_name`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*34KGxT2G8oNMDnIc.gif)Can use \`pwd\` command to confirm your directory name.
+![](https://cdn-images-1.medium.com/max/800/0*34KGxT2G8oNMDnIc.gif)Can use \`pwd\` command to confirm your directory name.
 
 Changed my directory to the cli-practice directory. And the rest of the tutorial I'm gonna work within this directory.
 
@@ -72,7 +72,7 @@ We have seen `cd` command to change directory but if we want to move back or wan
 
 We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory (the directory you are currently in) with your provided name.
 
-![](https://cdn-images-1.medium.com/max/800/0\*xu1wtv7gJ2NMvP60.gif)I created a hello.txt file in my current working directory. Again you can use \`ls\` command to see the file is created or not.
+![](https://cdn-images-1.medium.com/max/800/0*xu1wtv7gJ2NMvP60.gif)I created a hello.txt file in my current working directory. Again you can use \`ls\` command to see the file is created or not.
 
 Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
 
@@ -80,7 +80,7 @@ Now open your hello.txt file in your text editor and write _Hello Everyone!_ int
 
 We can display the content of a file using the `cat` command. To use it type `cat file_name`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*iKf5w9QFNCeLRv8a.gif)Shows the content of my hello.txt file.
+![](https://cdn-images-1.medium.com/max/800/0*iKf5w9QFNCeLRv8a.gif)Shows the content of my hello.txt file.
 
 **✔ Move Files & Directories ➡ `mv`:**
 
@@ -94,7 +94,7 @@ Before using this command, we are going to create two more directories and anoth
 
 `mkdir html css touch bye.txt`
 
-![](https://cdn-images-1.medium.com/max/800/0\*piaAQz\_MQpzo7DPH.gif)Yes, we can use multiple directories & files names one after another to create multiple directories & files in one command.![](https://cdn-images-1.medium.com/max/800/0\*5jmj\_ZyNz46GuQKz.gif)Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
+![](https://cdn-images-1.medium.com/max/800/0*piaAQz_MQpzo7DPH.gif)Yes, we can use multiple directories & files names one after another to create multiple directories & files in one command.![](https://cdn-images-1.medium.com/max/800/0*5jmj_ZyNz46GuQKz.gif)Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
 
 **✔ Rename Files & Directories ➡ `mv`:**
 
@@ -102,33 +102,33 @@ Before using this command, we are going to create two more directories and anoth
 
 You can rename a file by typing `mv old_file_name new_file_name` & also rename a directory by typing `mv old_directory_name new_directory_name`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*WTVu1dd6gr-nmWhD.gif)Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
+![](https://cdn-images-1.medium.com/max/800/0*WTVu1dd6gr-nmWhD.gif)Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
 
 **✔ Copy Files & Directories ➡ `cp`:**
 
 To do this, we use the `cp` command.
 
-* You can copy a file by entering `cp file_to_copy new_file_name`.
+- You can copy a file by entering `cp file_to_copy new_file_name`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*kCLVtKN9oKPbHfRF.gif)Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
+![](https://cdn-images-1.medium.com/max/800/0*kCLVtKN9oKPbHfRF.gif)Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
-* You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+- You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
 _The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
-![](https://cdn-images-1.medium.com/max/800/0\*MnmzMiioIYCuK92B.gif)Here I copied all of the files from the folder to folder-copy.
+![](https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif)Here I copied all of the files from the folder to folder-copy.
 
 **✔ Remove Files & Directories ➡ `rm`:**
 
 To do this, we use the `rm` command.
 
-* To remove a file, you can use the command like `rm file_to_remove`.
+- To remove a file, you can use the command like `rm file_to_remove`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*ohCmdthd92\_HA6Ze.gif)Here I removed my hi.txt file.
+![](https://cdn-images-1.medium.com/max/800/0*ohCmdthd92_HA6Ze.gif)Here I removed my hi.txt file.
 
-* To remove a directory, use the command like `rm -r directory_to_remove`.
+- To remove a directory, use the command like `rm -r directory_to_remove`.
 
-![](https://cdn-images-1.medium.com/max/800/0\*voDbzwSpw24A2RjQ.gif)I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
+![](https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif)I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
 **✔ Clear Screen ➡ `clear`:**
 
@@ -138,7 +138,7 @@ Clear command is used to clear the terminal screen.
 
 The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
-***
+---
 
 #### MY COMMANDS:
 
@@ -152,7 +152,7 @@ find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"
 find . -name "*.zip" -type f -print -delete
 ```
 
-***
+---
 
 #### 2.) Install node modules recursively:
 
@@ -162,7 +162,7 @@ npm i -g recursive-install
 npm-recursive-install
 ```
 
-***
+---
 
 #### 3.) Clean up unnecessary files/folders in git repo:
 
@@ -190,12 +190,12 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt
 The following output from my bash shell corresponds to the directory:
 
 [**bgoonz/bash-commands-walkthrough**\
-_Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…_github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master)
+\_Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…\_github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master)
 
 **which was created by running the aforementioned commands in in a perfect copy of this directory:**
 
 [**bgoonz/DS-ALGO-OFFICIAL**\
-_Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…_github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
+\_Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…\_github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
 
 > **…..below is the terminal output for the following commands:**
 
@@ -251,9 +251,9 @@ find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".g
 
 #### !!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!
 
-![!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!](https://cdn-images-1.medium.com/max/800/0\*r5dGhtbeZ4VdO54U)!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!find . \\( -name "\*SECURITY.txt" -o -name "\*RELEASE.txt" -o -name "\*CHANGELOG.txt" -o -name "\*LICENSE.txt" -o -name "\*CONTRIBUTING.txt" -name "\*HISTORY.md" -o -name "\*LICENSE" -o -name "\*SECURITY.md" -o -name "\*RELEASE.md" -o -name "\*CHANGELOG.md" -o -name "\*LICENSE.md" -o -name "\*CODE\_OF\_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \\) -exec rm -rf -- {} +
+![!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!](https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U)!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!find . \\( -name "\*SECURITY.txt" -o -name "\*RELEASE.txt" -o -name "\*CHANGELOG.txt" -o -name "\*LICENSE.txt" -o -name "\*CONTRIBUTING.txt" -name "\*HISTORY.md" -o -name "\*LICENSE" -o -name "\*SECURITY.md" -o -name "\*RELEASE.md" -o -name "\*CHANGELOG.md" -o -name "\*LICENSE.md" -o -name "\*CODE_OF_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \\) -exec rm -rf -- {} +
 
-***
+---
 
 #### 4.) Generate index.html file that links to all other files in working directory:
 
@@ -334,18 +334,18 @@ cmd $listing --sort=extension >>$html
 **I will use this copy of my Data Structures Practice Site to demonstrate the result:**
 
 [**side-projects-42/DS-Bash-Examples-Deploy**\
-_Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…_github.com](https://github.com/side-projects-42/DS-Bash-Examples-Deploy)
+\_Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…\_github.com](https://github.com/side-projects-42/DS-Bash-Examples-Deploy)
 
-![](https://cdn-images-1.medium.com/max/800/1\*PuuDTUviX5G6mja-5eKUIw.png)#### The result is a index.html file that contains a list of links to each file in the directory:
+![](https://cdn-images-1.medium.com/max/800/1*PuuDTUviX5G6mja-5eKUIw.png)#### The result is a index.html file that contains a list of links to each file in the directory:
 
 > here is a link to and photo of the resulting html file:
 
 [**index.html**\
-_CONTENT/DS-n-Algos/_quirky-meninsky-4181b5.netlify.app](https://quirky-meninsky-4181b5.netlify.app)
+\_CONTENT/DS-n-Algos/\_quirky-meninsky-4181b5.netlify.app](https://quirky-meninsky-4181b5.netlify.app)
 
-![](https://cdn-images-1.medium.com/max/800/1\*AOYbWvUGN9yJ4ceNzAGGsw.png)
+![](https://cdn-images-1.medium.com/max/800/1*AOYbWvUGN9yJ4ceNzAGGsw.png)
 
-***
+---
 
 #### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
 
@@ -355,9 +355,9 @@ wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K
 
 > The result is stored in [this directory:](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/5-download-all-pdf)
 
-![](https://cdn-images-1.medium.com/max/1200/1\*8evVPO\_z-\_TATzkcDTp15Q.png)
+![](https://cdn-images-1.medium.com/max/1200/1*8evVPO_z-_TATzkcDTp15Q.png)
 
-***
+---
 
 #### 6.)Recursively remove lines of text containing the string badFolder from files in the working directory.
 
@@ -445,14 +445,14 @@ Pyodide Spin Out and 0.17 Release
 Posted Thursday, April 22, 2021 by Teon Brooks
 ```
 
-![](https://cdn-images-1.medium.com/max/1200/1\*Up5as-MkHcHbvI\_qX1AqPw.png)
+![](https://cdn-images-1.medium.com/max/1200/1*Up5as-MkHcHbvI_qX1AqPw.png)
 
 **the test.txt and result.md files can be found here:**
 
 [**bgoonz/bash-commands-walkthrough**\
-_to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…_github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text)
+\_to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…\_github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text)
 
-***
+---
 
 #### 7.) Execute command recursively:
 
@@ -462,7 +462,7 @@ _to accompany the medium article I am writing. Contribute to bgoonz/bash-command
 
 **That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the **_**find/pandoc**_** line once in every subfolder of the working directory… is working properly!**
 
-![](https://cdn-images-1.medium.com/max/600/1\*5C\_uzLnuCSlTiioi2EtnUA.png)\*\*Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.\*\*
+![](https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png)\*\*Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.\*\*
 
 **The results of said operation can be found in the** [**following directory**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run)
 
@@ -470,11 +470,11 @@ _to accompany the medium article I am writing. Contribute to bgoonz/bash-command
 
 🢃 Below 🢃
 
-![](https://cdn-images-1.medium.com/max/1200/1\*k9c1QRKY07TLJnp9Se89lQ.gif)
+![](https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif)
 
 **The final result is:**
 
-![](https://cdn-images-1.medium.com/max/1200/1\*jqrjNeBuRmTrDt3vmQ50LQ.png)
+![](https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png)
 
 _If you want to run any bash script recursively all you have to do is substitue out line #9 with the command you want to run once in every sub-folder._
 
@@ -506,7 +506,7 @@ if [[ -d "${f}" ]]; then
 RecurseDirs "./"
 ```
 
-***
+---
 
 #### TBC….
 
@@ -518,15 +518,15 @@ RecurseDirs "./"
 sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 ```
 
-***
+---
 
-#### 10. Recursively Delete node\_modules folders
+#### 10. Recursively Delete node_modules folders
 
 ```
 find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 ```
 
-***
+---
 
 #### 11. Sanatize file and folder names to remove illegal characters and reserved words.
 
@@ -555,7 +555,7 @@ sanitize_dir() {
 sanitize_dir '/path/to/somewhere'
 ```
 
-***
+---
 
 #### 12. Start postgresql in terminal
 
@@ -563,7 +563,7 @@ sanitize_dir '/path/to/somewhere'
 sudo -u postgres psql
 ```
 
-***
+---
 
 #### 13. Add closing body and script tags to each html file in working directory.
 
@@ -576,7 +576,7 @@ doneecho "<form>
   </body></html>" | tee -a *.html
 ```
 
-***
+---
 
 #### 14. Batch Download Videos
 
@@ -598,7 +598,7 @@ do
 done
 ```
 
-***
+---
 
 #### 15. Change File Extension from '.txt' to .doc for all files in working directory.
 
@@ -614,7 +614,7 @@ rename 's/\.txt$/.doc/' *.txt
 find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 ```
 
-***
+---
 
 #### 17. Copy folder structure including only files of a specific extension into an ouput Folder
 
@@ -622,19 +622,19 @@ find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 find . -name '*.md' | cpio -pdm './../outputFolder'
 ```
 
-***
+---
 
 #### Discover More:
 
 [**Web-Dev-Hub**\
-_Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…_bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app)
+\_Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…\_bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app)
 
 #### Part 2 of this series:
 
 [**Medium**\
 _Continued!!!medium.com_](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
 
-***
+---
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
 
@@ -644,7 +644,7 @@ Exported from [Medium](https://medium.com) on August 31, 2021.
 
 ## Resources:
 
-* [holy grail](https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee)
+- [holy grail](https://gist.github.com/bgoonz/df74dfa73bb5edd239ac738a14104eee)
 
 ## 1. Remove spaces from file and folder names and then remove numbers from files and folder names....
 
@@ -692,7 +692,7 @@ fs.writeFile('output.md', cat, err => {
 
 ````
 
-***
+---
 
 ## 2. Download Website Using Wget:
 
@@ -707,7 +707,7 @@ fs.writeFile('output.md', cat, err => {
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 ```
 
-***
+---
 
 ## 3. Clean Out Messy Git Repo:
 
@@ -730,7 +730,7 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ```
 
-***
+---
 
 ## 4. clone all of a user's git repositories
 
@@ -776,7 +776,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ```
 
-***
+---
 
 ## 5. Git Workflow
 
@@ -821,7 +821,7 @@ git commit -m"update"
 git push -u origin preview
 ```
 
-***
+---
 
 ## 6. Recursive Unzip In Place
 
@@ -840,7 +840,7 @@ find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"
 find . -name "*.zip" -type f -print -delete
 ```
 
-***
+---
 
 ## 7. git pull keeping local changes:
 
@@ -859,7 +859,7 @@ git stash pop
 
 ```
 
-***
+---
 
 ## 8. Prettier Code Formatter:
 
@@ -878,7 +878,7 @@ prettier --write .
 
 ```
 
-***
+---
 
 ## 9. Pandoc
 
@@ -902,7 +902,7 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ```
 
-***
+---
 
 ## 10. Gitpod Installs
 
@@ -931,7 +931,7 @@ prettier --write .
 npm-recursive-install
 ```
 
-***
+---
 
 ## 11. Repo Utils Package:
 
@@ -945,7 +945,7 @@ npm-recursive-install
 npm i @bgoonz11/repoutils
 ```
 
-***
+---
 
 ## 12. Unix Tree Package Usage:
 
@@ -972,7 +972,7 @@ tree -f  -I  'node_modules' -d >TREE.md
 tree -f >README.md
 ```
 
-***
+---
 
 ## 13. Find & Replace string in file & folder names recursively..
 
@@ -1009,7 +1009,7 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ```
 
-***
+---
 
 ## 14. Remove double extensions :
 
@@ -1051,7 +1051,7 @@ do
 done
 ```
 
-***
+---
 
 ## 15. Truncate folder names down to 12 characters:
 
@@ -1066,7 +1066,7 @@ done
 for d in ./*; do mv $d ${d:0:12}; done
 ```
 
-***
+---
 
 ## 16.Appendir.js
 
@@ -1078,14 +1078,14 @@ for d in ./*; do mv $d ${d:0:12}; done
 
 ```js
 //APPEND-DIR.js
-const fs = require('fs');
-let cat = require('child_process').execSync('cat *').toString('UTF-8');
-fs.writeFile('output.md', cat, (err) => {
-    if (err) throw err;
+const fs = require("fs");
+let cat = require("child_process").execSync("cat *").toString("UTF-8");
+fs.writeFile("output.md", cat, (err) => {
+  if (err) throw err;
 });
 ```
 
-***
+---
 
 ## 17. Replace space in filename with underscore
 
@@ -1101,7 +1101,7 @@ find . -name "* *" -type f | rename 's/_//g'
 find . -name "* *" -type d | rename 's/#/_/g'
 ```
 
-***
+---
 
 ## 18. Filter & delete files by name and extension
 
@@ -1127,7 +1127,7 @@ find . -name 'right.html' -type f -prune -exec rm -rf '{}' +
 find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 ```
 
-***
+---
 
 ## 19. Remove lines containing string:
 
@@ -1157,7 +1157,7 @@ sudo sed -i '/github\.com/d' ./*out.md
 sudo sed -i '/author/d' ./*
 ```
 
-***
+---
 
 ## 20. Remove duplicate lines from a text file
 
@@ -1174,7 +1174,7 @@ sudo apt install uniq
 uniq -u input.txt output.txt
 ```
 
-***
+---
 
 ## 21. Remove lines containing string:
 
@@ -1216,9 +1216,9 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ```
 
-***
+---
 
-## 22. Zip directory excluding .git and node\_modules all the way down (Linux)
+## 22. Zip directory excluding .git and node_modules all the way down (Linux)
 
 #### Description:
 
@@ -1244,7 +1244,7 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ```
 
-***
+---
 
 ## 23. Delete files containing a certain string:
 
@@ -1260,7 +1260,7 @@ vi doit.sh // check for murphy and his law
 source doit.sh
 ```
 
-***
+---
 
 ## 24.
 
@@ -1369,7 +1369,7 @@ echo '  </style>'
 cmd $listing --sort=extension >>$html
 ```
 
-***
+---
 
 ## 25. Index of Iframes
 
@@ -1485,7 +1485,7 @@ echo '  </style>'
 cmd $listing --sort=extension >>$html
 ```
 
-***
+---
 
 ## 26. Filter Corrupted Git Repo For Troublesome File:
 
@@ -1501,7 +1501,7 @@ git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_in
 
 ```
 
-***
+---
 
 ## 27. OVERWRITE LOCAL CHANGES:
 
@@ -1533,7 +1533,7 @@ git fetch --all
 git reset --hard origin/master
 ```
 
-***
+---
 
 ## 28. Remove Submodules:
 
@@ -1541,7 +1541,7 @@ git reset --hard origin/master
 
 > Notes:
 
-> Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm --cached path\_to\_submodule (no trailing slash). Run rm -rf .git/modules/path\_to\_submodule (no trailing slash). Commit git commit -m "Removed submodule " Delete the now untracked submodule files rm -rf path\_to\_submodule
+> Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .gitmodules Delete the relevant section from .git/config. Run git rm --cached path_to_submodule (no trailing slash). Run rm -rf .git/modules/path_to_submodule (no trailing slash). Commit git commit -m "Removed submodule " Delete the now untracked submodule files rm -rf path_to_submodule
 
 **code:**
 
@@ -1549,7 +1549,7 @@ git reset --hard origin/master
 git submodule deinit
 ```
 
-***
+---
 
 ## 29. GET GISTS
 
@@ -1576,7 +1576,7 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ```
 
-***
+---
 
 ## 30. Remove Remote OriginL
 
@@ -1591,7 +1591,7 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 git remote remove origin
 ```
 
-***
+---
 
 ## 31. just clone .git folder:
 
@@ -1607,7 +1607,7 @@ git remote remove origin
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 ```
 
-***
+---
 
 ## 32. Undo recent pull request:
 
@@ -1623,7 +1623,7 @@ git reset --hard master@{"10 minutes ago"}
 
 ```
 
-***
+---
 
 ## 33. Lebab
 
@@ -1682,7 +1682,7 @@ lebab --replace ./ --transform includes
 
 ```
 
-***
+---
 
 ## 34. Troubleshoot Ubuntu Input/Output Error
 
@@ -1700,7 +1700,7 @@ lebab --replace ./ --transform includes
 
 ```
 
-***
+---
 
 ## 35. Export Medium as Markdown
 
@@ -1718,7 +1718,7 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ```
 
-***
+---
 
 ## 36. Delete files in violation of a given size range (100MB for git)
 
@@ -1738,7 +1738,7 @@ find . -size +75M -a -print -a -exec rm -f {} \;
 find . -size +98M -a -print -a -exec rm -f {} \;
 ```
 
-***
+---
 
 ## 37. download all links of given file type
 
@@ -1755,7 +1755,7 @@ wget -r -A.pdf https://overapi.com/git
 
 ```
 
-***
+---
 
 ## 38. Kill all node processes
 
@@ -1769,7 +1769,7 @@ wget -r -A.pdf https://overapi.com/git
 killall -s KILL node
 ```
 
-***
+---
 
 ## 39. Remove string from file names recursively
 
@@ -1797,7 +1797,7 @@ find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 find . -type d -exec rename 's/-master//g' {} +
 ```
 
-***
+---
 
 ## 40. Remove spaces from file and folder names recursively
 
@@ -1813,7 +1813,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-***
+---
 
 ## 41. Zip Each subdirectories in a given directory into their own zip file
 
@@ -1827,7 +1827,7 @@ find . -name "* *" -type f | rename 's/ /_/g'
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 ```
 
-***
+---
 
 ## 42.
 
@@ -1838,9 +1838,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 43.
 
@@ -1851,9 +1852,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 44.
 
@@ -1864,9 +1866,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 45.
 
@@ -1877,9 +1880,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 46.
 
@@ -1890,9 +1894,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 47.
 
@@ -1903,9 +1908,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 48.
 
@@ -1916,9 +1922,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 49.
 
@@ -1929,9 +1936,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 50.
 
@@ -1942,9 +1950,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 51.
 
@@ -1955,9 +1964,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 52.
 
@@ -1968,9 +1978,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 53.
 
@@ -1981,9 +1992,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 54.
 
@@ -1994,9 +2006,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 55.
 
@@ -2007,9 +2020,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 56.
 
@@ -2020,9 +2034,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 57.
 
@@ -2033,9 +2048,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 58.
 
@@ -2046,9 +2062,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 59.
 
@@ -2059,9 +2076,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 60.
 
@@ -2072,9 +2090,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 61.
 
@@ -2085,9 +2104,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 62.
 
@@ -2098,9 +2118,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 63.
 
@@ -2111,9 +2132,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 64.
 
@@ -2124,9 +2146,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 65.
 
@@ -2137,9 +2160,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 66.
 
@@ -2150,9 +2174,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 67.
 
@@ -2163,9 +2188,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 68.
 
@@ -2176,9 +2202,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 69.
 
@@ -2189,9 +2216,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 70.
 
@@ -2202,9 +2230,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 71.
 
@@ -2215,9 +2244,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 72.
 
@@ -2228,9 +2258,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 73.
 
@@ -2241,9 +2272,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 74.
 
@@ -2254,9 +2286,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 75.
 
@@ -2267,9 +2300,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 76.
 
@@ -2280,9 +2314,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 77.
 
@@ -2293,9 +2328,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 78.
 
@@ -2306,9 +2342,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 79.
 
@@ -2319,9 +2356,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 80.
 
@@ -2332,9 +2370,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 81.
 
@@ -2345,9 +2384,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 82.
 
@@ -2358,9 +2398,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 83.
 
@@ -2371,9 +2412,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 84.
 
@@ -2384,9 +2426,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 85.
 
@@ -2397,9 +2440,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 86.
 
@@ -2410,9 +2454,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 87.
 
@@ -2423,9 +2468,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 88.
 
@@ -2436,9 +2482,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 89.
 
@@ -2449,9 +2496,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 90.
 
@@ -2462,9 +2510,10 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
+
 ```
 
-***
+---
 
 ## 91. Unzip PowerShell
 
@@ -2498,7 +2547,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ```
 
-***
+---
 
 ## 92. return to bash from zsh
 
@@ -2512,7 +2561,7 @@ foreach ($ZipFile in $ZipFiles) {
  sudo apt --purge remove zsh
 ```
 
-***
+---
 
 ## 93. Symbolic Link
 
@@ -2529,7 +2578,7 @@ ln -s "$(pwd)" ~/NameOfLink
 ln -s "$(pwd)" ~/Downloads
 ```
 
-***
+---
 
 ## 94. auto generate readme
 
@@ -2545,7 +2594,7 @@ npx @appnest/readme generate
 
 ```
 
-***
+---
 
 ## 95. Log into postgres:
 
@@ -2559,7 +2608,7 @@ npx @appnest/readme generate
 sudo -u postgres psql
 ```
 
-***
+---
 
 ## 96. URL To Subscribe To YouTube Channel
 
@@ -2574,7 +2623,7 @@ sudo -u postgres psql
 https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 ```
 
-***
+---
 
 ## 97. Embed Repl.it In Medium Post:
 
@@ -2594,7 +2643,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ```
 
-***
+---
 
 ## 98.
 
@@ -2613,7 +2662,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ```
 
-***
+---
 
 ## 99. Cheat Sheet
 
@@ -3175,4 +3224,4 @@ printf "${Red} This is red \n"
 
 ```
 
-***
+---

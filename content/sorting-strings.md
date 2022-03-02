@@ -1,9 +1,9 @@
 # Sorting Strings
 
-Javascript has a native method [**sort**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/sort) that allows sorting arrays. Doing a simple `array.sort()` will treat each array entry as a string and sort it alphabetically. Also you can provide your [own custom sorting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/sort#Parameters) function.
+Javascript has a native method [**sort**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) that allows sorting arrays. Doing a simple `array.sort()` will treat each array entry as a string and sort it alphabetically. Also you can provide your [own custom sorting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters) function.
 
 ```javascript
-['Shanghai', 'New York', 'Mumbai', 'Buenos Aires'].sort();
+["Shanghai", "New York", "Mumbai", "Buenos Aires"].sort();
 // ["Buenos Aires", "Mumbai", "New York", "Shanghai"]
 ```
 
@@ -13,28 +13,28 @@ See the next example:
 
 ```javascript
 // Spanish
-['único', 'árbol', 'cosas', 'fútbol'].sort();
+["único", "árbol", "cosas", "fútbol"].sort();
 // ["cosas", "fútbol", "árbol", "único"] // bad order
 
 // German
-['Woche', 'wöchentlich', 'wäre', 'Wann'].sort();
+["Woche", "wöchentlich", "wäre", "Wann"].sort();
 // ["Wann", "Woche", "wäre", "wöchentlich"] // bad order
 ```
 
-Fortunately, there are two ways to overcome this behavior [localeCompare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/localeCompare) and [Intl.Collator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Collator) provided by ECMAScript Internationalization API.
+Fortunately, there are two ways to overcome this behavior [localeCompare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare) and [Intl.Collator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Collator) provided by ECMAScript Internationalization API.
 
 > Both methods have their own custom parameters in order to configure it to work adequately.
 
 #### Using `localeCompare()`
 
 ```javascript
-['único', 'árbol', 'cosas', 'fútbol'].sort(function (a, b) {
-    return a.localeCompare(b);
+["único", "árbol", "cosas", "fútbol"].sort(function (a, b) {
+  return a.localeCompare(b);
 });
 // ["árbol", "cosas", "fútbol", "único"]
 
-['Woche', 'wöchentlich', 'wäre', 'Wann'].sort(function (a, b) {
-    return a.localeCompare(b);
+["Woche", "wöchentlich", "wäre", "Wann"].sort(function (a, b) {
+  return a.localeCompare(b);
 });
 // ["Wann", "wäre", "Woche", "wöchentlich"]
 ```
@@ -42,14 +42,14 @@ Fortunately, there are two ways to overcome this behavior [localeCompare](https:
 #### Using `Intl.Collator()`
 
 ```javascript
-['único', 'árbol', 'cosas', 'fútbol'].sort(Intl.Collator().compare);
+["único", "árbol", "cosas", "fútbol"].sort(Intl.Collator().compare);
 // ["árbol", "cosas", "fútbol", "único"]
 
-['Woche', 'wöchentlich', 'wäre', 'Wann'].sort(Intl.Collator().compare);
+["Woche", "wöchentlich", "wäre", "Wann"].sort(Intl.Collator().compare);
 // ["Wann", "wäre", "Woche", "wöchentlich"]
 ```
 
-* For each method you can customize the location.
-* According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
+- For each method you can customize the location.
+- According to [Firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare#Performance) Intl.Collator is faster when comparing large numbers of strings.
 
 So when you are working with arrays of strings in a language other than English, remember to use this method to avoid unexpected sorting.
