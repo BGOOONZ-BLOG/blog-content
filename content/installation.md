@@ -4,7 +4,7 @@
 
 ### Callouts
 
----
+***
 
 There are two types of callouts available in this theme, **note** and **important**. To add a callout to your documentation simply add the following `html` code with class `important` or `note`. Like in the example bellow.
 
@@ -14,16 +14,18 @@ Copy the code and modify these blocks according to your needs.
 
 ```html
 <div class="important">
-  <strong>Important:</strong>
-  This is an "Important" callout block of text. This block indicates a warning
-  or caution. Use it for an important message.
+  <strong>Important:</strong> 
+  This is an "Important" callout block of text.
+  This block indicates a warning or caution. 
+  Use it for an important message. 
 </div>
 ```
 
 ```html
 <div class="note">
-  <strong>Note:</strong>
-  This is a "Note" callout block of text. This block signifies a general note.
+  <strong>Note:</strong> 
+  This is a "Note" callout block of text. 
+  This block signifies a general note.
 </div>
 ```
 
@@ -33,7 +35,7 @@ Copy the code and modify these blocks according to your needs.
 
 ### Code blocks
 
----
+***
 
 **Note:** Code blocks have copy functionality. To copy the code press the grey button located in the right side top corner.
 
@@ -83,7 +85,7 @@ if (condition) {
 
 ### Tables
 
----
+***
 
 You can build tables with markdown to help you organize information. To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column like in the example below.
 
@@ -99,15 +101,16 @@ You can build tables with markdown to help you organize information. To add a ta
 | Text  | Text  |
 | Text  | Text  |
 
-**Note:** Creating tables with hyphens and pipes can be time-consuming. To speed up the process, try using the [Markdown Tables Generator](http://www.tablesgenerator.com/markdown_tables).
+**Note:** Creating tables with hyphens and pipes can be time-consuming. To speed up the process, try using the [Markdown Tables Generator](http://www.tablesgenerator.com/markdown\_tables).
 
 ### Start using Libris theme
 
----
+***
 
 We’ve packed this theme with powerful features to help you have awesome documentation for your current or next project.
 
 \
+
 
 **Why not start using this theme today?**
 

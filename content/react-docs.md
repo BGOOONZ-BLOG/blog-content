@@ -9,7 +9,7 @@
 ## The smallest React example looks like this:
 
 ```js
-ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById("root"));
+ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById('root'));
 ```
 
 It displays a heading saying "Hello, world!" on the page.
@@ -32,7 +32,7 @@ Every chapter in this guide builds on the knowledge introduced in earlier chapte
 
 ## Knowledge Level Assumptions
 
-React is a JavaScript library, and so we'll assume you have a basic understanding of the JavaScript language. **If you don't feel very confident, we recommend** [**going through a JavaScript tutorial**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) **to check your knowledge level** and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won't have to feel like you're learning both React and JavaScript at the same time.
+React is a JavaScript library, and so we'll assume you have a basic understanding of the JavaScript language. **If you don't feel very confident, we recommend** [**going through a JavaScript tutorial**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A\_re-introduction\_to\_JavaScript) **to check your knowledge level** and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won't have to feel like you're learning both React and JavaScript at the same time.
 
 > NoteThis guide occasionally uses some newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, these three points should get you most of the way.
 
@@ -54,7 +54,7 @@ JSX produces React "elements". We will explore rendering them to the DOM in the 
 
 React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
 
-Instead of artificially separating _technologies_ by putting markup and logic in separate files, React [separates _concerns_](https://en.wikipedia.org/wiki/Separation_of_concerns) with loosely coupled units called "components" that contain both. We will come back to components in a [further section](https://reactjs.org/docs/components-and-props.html), but if you're not yet comfortable putting markup in JS, [this talk](https://www.youtube.com/watch?v=x7cQ3mrcKaY) might convince you otherwise.
+Instead of artificially separating _technologies_ by putting markup and logic in separate files, React [separates _concerns_](https://en.wikipedia.org/wiki/Separation\_of\_concerns) with loosely coupled units called "components" that contain both. We will come back to components in a [further section](https://reactjs.org/docs/components-and-props.html), but if you're not yet comfortable putting markup in JS, [this talk](https://www.youtube.com/watch?v=x7cQ3mrcKaY) might convince you otherwise.
 
 React [doesn't require](https://reactjs.org/docs/react-without-jsx.html) using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.
 
@@ -65,28 +65,28 @@ With that out of the way, let's get started!
 In the example below, we declare a variable called `name` and then use it inside JSX by wrapping it in curly braces:
 
 ```js
-const name = "Josh Perez";
+const name = 'Josh Perez';
 const element = <h1>Hello, {name}</h1>;
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
-You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2`, `user.firstName`, or `formatName(user)` are all valid JavaScript expressions.
+You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions\_and\_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2`, `user.firstName`, or `formatName(user)` are all valid JavaScript expressions.
 
 In the example below, we embed the result of calling a JavaScript function, `formatName(user)`, into an `<h1>` element.
 
 ```js
 function formatName(user) {
-  return user.firstName + " " + user.lastName;
+    return user.firstName + ' ' + user.lastName;
 }
 
 const user = {
-  firstName: "Harper",
-  lastName: "Perez",
+    firstName: 'Harper',
+    lastName: 'Perez'
 };
 
 const element = <h1> Hello, {formatName(user)}! </h1>;
 
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/introducing-jsx)
@@ -103,10 +103,10 @@ This means that you can use JSX inside of `if` statements and `for` loops, assig
 
 ```js
 function getGreeting(user) {
-  if (user) {
-    return <h1>Hello, {formatName(user)}!</h1>;
-  }
-  return <h1>Hello, Stranger.</h1>;
+    if (user) {
+        return <h1>Hello, {formatName(user)}!</h1>;
+    }
+    return <h1>Hello, Stranger.</h1>;
 }
 ```
 
@@ -140,10 +140,10 @@ JSX tags may contain children:
 
 ```js
 const element = (
-  <div>
-    <h1>Hello!</h1>
-    <h2>Good to see you here.</h2>
-  </div>
+    <div>
+        <h1>Hello!</h1>
+        <h2>Good to see you here.</h2>
+    </div>
 );
 ```
 
@@ -157,7 +157,7 @@ const title = response.potentiallyMaliciousInput;
 const element = <h1>{title}</h1>;
 ```
 
-By default, React DOM [escapes](https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html) any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that's not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent [XSS (cross-site-scripting)](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
+By default, React DOM [escapes](https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html) any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that's not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent [XSS (cross-site-scripting)](https://en.wikipedia.org/wiki/Cross-site\_scripting) attacks.
 
 ## JSX Represents Objects
 
@@ -170,11 +170,7 @@ const element = <h1 className="greeting">Hello, world!</h1>;
 ```
 
 ```js
-const element = React.createElement(
-  "h1",
-  { className: "greeting" },
-  "Hello, world!"
-);
+const element = React.createElement('h1', { className: 'greeting' }, 'Hello, world!');
 ```
 
 `React.createElement()` performs a few checks to help you write bug-free code but essentially it creates an object like this:
@@ -182,11 +178,11 @@ const element = React.createElement(
 ```js
 // Note: this structure is simplified
 const element = {
-  type: "h1",
-  props: {
-    className: "greeting",
-    children: "Hello, world!",
-  },
+    type: 'h1',
+    props: {
+        className: 'greeting',
+        children: 'Hello, world!'
+    }
 };
 ```
 
@@ -224,7 +220,7 @@ To render a React element into a root DOM node, pass both to `[ReactDOM.render()
 
 ```js
 const element = <h1>Hello, world</h1>;
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/rendering-elements/render-an-element)
@@ -235,7 +231,7 @@ It displays "Hello, world" on the page.
 
 ## Updating the Rendered Element
 
-React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object). Once you create an element, you can't change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
+React elements are [immutable](https://en.wikipedia.org/wiki/Immutable\_object). Once you create an element, you can't change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
 
 With our knowledge so far, the only way to update the UI is to create a new element, and pass it to `[ReactDOM.render()](<https://reactjs.org/docs/react-dom.html#render>)`.
 
@@ -243,15 +239,13 @@ Consider this ticking clock example:
 
 ```js
 function tick() {
-  const element = (
-    <div>
-      {" "}
-      <h1>Hello, world!</h1> <h2>
-        It is {new Date().toLocaleTimeString()}.
-      </h2>{" "}
-    </div>
-  );
-  ReactDOM.render(element, document.getElementById("root"));
+    const element = (
+        <div>
+            {' '}
+            <h1>Hello, world!</h1> <h2>It is {new Date().toLocaleTimeString()}.</h2>{' '}
+        </div>
+    );
+    ReactDOM.render(element, document.getElementById('root'));
 }
 
 setInterval(tick, 1000);
@@ -289,7 +283,7 @@ The simplest way to define a component is to write a JavaScript function:
 
 ```js
 function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
+    return <h1>Hello, {props.name}</h1>;
 }
 ```
 
@@ -299,9 +293,9 @@ You can also use an [ES6 class](https://developer.mozilla.org/en/docs/Web/JavaSc
 
 ```js
 class Welcome extends React.Component {
-  render() {
-    return <h1>Hello, {this.props.name}</h1>;
-  }
+    render() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
 }
 ```
 
@@ -329,11 +323,11 @@ For example, this code renders "Hello, Sara" on the page:
 
 ```js
 function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
+    return <h1>Hello, {props.name}</h1>;
 }
 
 const element = <Welcome name="Sara" />;
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/components-and-props/rendering-a-component)
@@ -359,19 +353,19 @@ For example, we can create an `App` component that renders `Welcome` many times:
 
 ```js
 function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
+    return <h1>Hello, {props.name}</h1>;
 }
 
 function App() {
-  return (
-    <div>
-      {" "}
-      <Welcome name="Sara" /> <Welcome name="Cahal" /> <Welcome name="Edite" />{" "}
-    </div>
-  );
+    return (
+        <div>
+            {' '}
+            <Welcome name="Sara" /> <Welcome name="Cahal" /> <Welcome name="Edite" />{' '}
+        </div>
+    );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://reactjs.org/redirect-to-codepen/components-and-props/composing-components)
@@ -388,20 +382,16 @@ For example, consider this `Comment` component:
 
 ```js
 function Comment(props) {
-  return (
-    <div className="Comment">
-      <div className="UserInfo">
-        <img
-          className="Avatar"
-          src={props.author.avatarUrl}
-          alt={props.author.name}
-        />
-        <div className="UserInfo-name">{props.author.name}</div>
-      </div>
-      <div className="Comment-text">{props.text}</div>
-      <div className="Comment-date">{formatDate(props.date)}</div>
-    </div>
-  );
+    return (
+        <div className="Comment">
+            <div className="UserInfo">
+                <img className="Avatar" src={props.author.avatarUrl} alt={props.author.name} />
+                <div className="UserInfo-name">{props.author.name}</div>
+            </div>
+            <div className="Comment-text">{props.text}</div>
+            <div className="Comment-date">{formatDate(props.date)}</div>
+        </div>
+    );
 }
 ```
 
@@ -417,9 +407,7 @@ First, we will extract `Avatar`:
 
 ```js
 function Avatar(props) {
-  return (
-    <img className="Avatar" src={props.user.avatarUrl} alt={props.user.name} />
-  );
+    return <img className="Avatar" src={props.user.avatarUrl} alt={props.user.name} />;
 }
 ```
 
@@ -431,21 +419,15 @@ We can now simplify `Comment` a tiny bit:
 
 ```js
 function Comment(props) {
-  return (
-    <div className="Comment">
-      {" "}
-      <div className="UserInfo">
-        {" "}
-        <Avatar user={props.author} /> <div className="UserInfo-name">
-          {" "}
-          {props.author.name}
-        </div>{" "}
-      </div> <div className="Comment-text"> {props.text}</div> <div className="Comment-date">
-        {" "}
-        {formatDate(props.date)}
-      </div>{" "}
-    </div>
-  );
+    return (
+        <div className="Comment">
+            {' '}
+            <div className="UserInfo">
+                {' '}
+                <Avatar user={props.author} /> <div className="UserInfo-name"> {props.author.name}</div>{' '}
+            </div> <div className="Comment-text"> {props.text}</div> <div className="Comment-date"> {formatDate(props.date)}</div>{' '}
+        </div>
+    );
 }
 ```
 
@@ -457,15 +439,15 @@ This lets us simplify `Comment` even further:
 
 ```js
 function Comment(props) {
-  return (
-    <div className="Comment">
-      {" "}
-      <UserInfo user={props.author} /> <div className="Comment-text">
-        {" "}
-        {props.text}
-      </div> <div className="Comment-date"> {formatDate(props.date)}</div>{" "}
-    </div>
-  );
+    return (
+        <div className="Comment">
+            {' '}
+            <UserInfo user={props.author} /> <div className="Comment-text"> {props.text}</div> <div className="Comment-date">
+                {' '}
+                {formatDate(props.date)}
+            </div>{' '}
+        </div>
+    );
 }
 ```
 
@@ -481,11 +463,11 @@ Whether you declare a component [as a function or a class](https://reactjs.org/d
 
 ```js
 function sum(a, b) {
-  return a + b;
+    return a + b;
 }
 ```
 
-Such functions are called ["pure"](https://en.wikipedia.org/wiki/Pure_function) because they do not attempt to change their inputs, and always return the same result for the same inputs.
+Such functions are called ["pure"](https://en.wikipedia.org/wiki/Pure\_function) because they do not attempt to change their inputs, and always return the same result for the same inputs.
 
 In contrast, this function is impure because it changes its own input:
 
@@ -527,18 +509,16 @@ We can start by encapsulating how the clock looks:
 
 ```js
 function Clock(props) {
-  return (
-    <div>
-      {" "}
-      <h1>Hello, world!</h1> <h2>
-        It is {props.date.toLocaleTimeString()}.
-      </h2>{" "}
-    </div>
-  );
+    return (
+        <div>
+            {' '}
+            <h1>Hello, world!</h1> <h2>It is {props.date.toLocaleTimeString()}.</h2>{' '}
+        </div>
+    );
 }
 
 function tick() {
-  ReactDOM.render(<Clock date={new Date()} />, document.getElementById("root"));
+    ReactDOM.render(<Clock date={new Date()} />, document.getElementById('root'));
 }
 
 setInterval(tick, 1000);
@@ -553,7 +533,7 @@ However, it misses a crucial requirement: the fact that the `Clock` sets up a ti
 Ideally we want to write this once and have the `Clock` update itself:
 
 ```js
-ReactDOM.render(<Clock />, document.getElementById("root"));
+ReactDOM.render(<Clock />, document.getElementById('root'));
 ```
 
 To implement this, we need to add "state" to the `Clock` component.
@@ -572,14 +552,14 @@ You can convert a function component like `Clock` to a class in five steps:
 
 ```js
 class Clock extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <h1>Hello, world!</h1>
+                <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
+            </div>
+        );
+    }
 }
 ```
 
@@ -599,16 +579,14 @@ We will move the `date` from props to state in three steps:
 
 ```js
 class Clock extends React.Component {
-  render() {
-    return (
-      <div>
-        {" "}
-        <h1>Hello, world!</h1> <h2>
-          It is {this.state.date.toLocaleTimeString()}.
-        </h2>{" "}
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                {' '}
+                <h1>Hello, world!</h1> <h2>It is {this.state.date.toLocaleTimeString()}.</h2>{' '}
+            </div>
+        );
+    }
 }
 ```
 
@@ -616,21 +594,19 @@ class Clock extends React.Component {
 
 ```js
 class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { date: new Date() };
-  }
+    constructor(props) {
+        super(props);
+        this.state = { date: new Date() };
+    }
 
-  render() {
-    return (
-      <div>
-        {" "}
-        <h1>Hello, world!</h1> <h2>
-          It is {this.state.date.toLocaleTimeString()}.
-        </h2>{" "}
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                {' '}
+                <h1>Hello, world!</h1> <h2>It is {this.state.date.toLocaleTimeString()}.</h2>{' '}
+            </div>
+        );
+    }
 }
 ```
 
@@ -647,7 +623,7 @@ Class components should always call the base constructor with `props`.
 1. Remove the `date` prop from the `<Clock />` element:
 
 ```js
-ReactDOM.render(<Clock />, document.getElementById("root"));
+ReactDOM.render(<Clock />, document.getElementById('root'));
 ```
 
 We will later add the timer code back to the component itself.
@@ -656,23 +632,21 @@ The result looks like this:
 
 ```js
 class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { date: new Date() };
-  }
-  render() {
-    return (
-      <div>
-        {" "}
-        <h1>Hello, world!</h1> <h2>
-          It is {this.state.date.toLocaleTimeString()}.
-        </h2>{" "}
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+        this.state = { date: new Date() };
+    }
+    render() {
+        return (
+            <div>
+                {' '}
+                <h1>Hello, world!</h1> <h2>It is {this.state.date.toLocaleTimeString()}.</h2>{' '}
+            </div>
+        );
+    }
 }
 
-ReactDOM.render(<Clock />, document.getElementById("root"));
+ReactDOM.render(<Clock />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/KgQpJd?editors=0010)
@@ -693,23 +667,21 @@ We can declare special methods on the component class to run some code when a co
 
 ```js
 class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { date: new Date() };
-  }
+    constructor(props) {
+        super(props);
+        this.state = { date: new Date() };
+    }
 
-  componentDidMount() {}
-  componentWillUnmount() {}
-  render() {
-    return (
-      <div>
-        {" "}
-        <h1>Hello, world!</h1> <h2>
-          It is {this.state.date.toLocaleTimeString()}.
-        </h2>{" "}
-      </div>
-    );
-  }
+    componentDidMount() {}
+    componentWillUnmount() {}
+    render() {
+        return (
+            <div>
+                {' '}
+                <h1>Hello, world!</h1> <h2>It is {this.state.date.toLocaleTimeString()}.</h2>{' '}
+            </div>
+        );
+    }
 }
 ```
 
@@ -739,35 +711,33 @@ It will use `this.setState()` to schedule updates to the component local state:
 
 ```js
 class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { date: new Date() };
-  }
+    constructor(props) {
+        super(props);
+        this.state = { date: new Date() };
+    }
 
-  componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
-  }
+    componentDidMount() {
+        this.timerID = setInterval(() => this.tick(), 1000);
+    }
 
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
+    componentWillUnmount() {
+        clearInterval(this.timerID);
+    }
 
-  tick() {
-    this.setState({ date: new Date() });
-  }
-  render() {
-    return (
-      <div>
-        {" "}
-        <h1>Hello, world!</h1> <h2>
-          It is {this.state.date.toLocaleTimeString()}.
-        </h2>{" "}
-      </div>
-    );
-  }
+    tick() {
+        this.setState({ date: new Date() });
+    }
+    render() {
+        return (
+            <div>
+                {' '}
+                <h1>Hello, world!</h1> <h2>It is {this.state.date.toLocaleTimeString()}.</h2>{' '}
+            </div>
+        );
+    }
 }
 
-ReactDOM.render(<Clock />, document.getElementById("root"));
+ReactDOM.render(<Clock />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
@@ -792,14 +762,14 @@ For example, this will not re-render a component:
 
 ```js
 // Wrong
-this.state.comment = "Hello";
+this.state.comment = 'Hello';
 ```
 
 Instead, use `setState()`:
 
 ```js
 // Correct
-this.setState({ comment: "Hello" });
+this.setState({ comment: 'Hello' });
 ```
 
 The only place where you can assign `this.state` is the constructor.
@@ -815,7 +785,7 @@ For example, this code may fail to update the counter:
 ```js
 // Wrong
 this.setState({
-  counter: this.state.counter + this.props.increment,
+    counter: this.state.counter + this.props.increment
 });
 ```
 
@@ -824,18 +794,18 @@ To fix it, use a second form of `setState()` that accepts a function rather than
 ```js
 // Correct
 this.setState((state, props) => ({
-  counter: state.counter + props.increment,
+    counter: state.counter + props.increment
 }));
 ```
 
-We used an [arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) above, but it also works with regular functions:
+We used an [arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow\_functions) above, but it also works with regular functions:
 
 ```js
 // Correct
 this.setState(function (state, props) {
-  return {
-    counter: state.counter + props.increment,
-  };
+    return {
+        counter: state.counter + props.increment
+    };
 });
 ```
 
@@ -887,7 +857,7 @@ The `FormattedDate` component would receive the `date` in its props and wouldn't
 
 ```js
 function FormattedDate(props) {
-  return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
+    return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
 }
 ```
 
@@ -903,15 +873,15 @@ To show that all components are truly isolated, we can create an `App` component
 
 ```js
 function App() {
-  return (
-    <div>
-      {" "}
-      <Clock /> <Clock /> <Clock />{" "}
-    </div>
-  );
+    return (
+        <div>
+            {' '}
+            <Clock /> <Clock /> <Clock />{' '}
+        </div>
+    );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/vXdGmd?editors=0010)
@@ -926,8 +896,8 @@ In React apps, whether a component is stateful or stateless is considered an imp
 
 ## Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
 
-- React events are named using camelCase, rather than lowercase.
-- With JSX you pass a function as the event handler, rather than a string.
+* React events are named using camelCase, rather than lowercase.
+* With JSX you pass a function as the event handler, rather than a string.
 
 For example, the HTML:
 
@@ -945,7 +915,7 @@ Another difference is that you cannot return `false` to prevent default behavior
 
 ```js
 <form onsubmit="console.log('You clicked submit.'); return false">
-  <button type="submit">Submit</button>
+    <button type="submit">Submit</button>
 </form>
 ```
 
@@ -953,17 +923,17 @@ In React, this could instead be:
 
 ```js
 function Form() {
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log("You clicked submit.");
-  }
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log('You clicked submit.');
+    }
 
-  return (
-    <form onSubmit={handleSubmit}>
-      {" "}
-      <button type="submit">Submit</button>{" "}
-    </form>
-  );
+    return (
+        <form onSubmit={handleSubmit}>
+            {' '}
+            <button type="submit">Submit</button>{' '}
+        </form>
+    );
 }
 ```
 
@@ -996,7 +966,7 @@ ReactDOM.render(
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/xEmzGg?editors=0010)
 
-You have to be careful about the meaning of `this` in JSX callbacks. In JavaScript, class methods are not [bound](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind) by default. If you forget to bind `this.handleClick` and pass it to `onClick`, `this` will be `undefined` when the function is actually called.
+You have to be careful about the meaning of `this` in JSX callbacks. In JavaScript, class methods are not [bound](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_objects/Function/bind) by default. If you forget to bind `this.handleClick` and pass it to `onClick`, `this` will be `undefined` when the function is actually called.
 
 This is not React-specific behavior; it is a part of [how functions work in JavaScript](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/). Generally, if you refer to a method without `()` after it, such as `onClick={this.handleClick}`, you should bind that method.
 
@@ -1014,7 +984,7 @@ class LoggingButton extends React.Component {
 
 This syntax is enabled by default in [Create React App](https://github.com/facebookincubator/create-react-app).
 
-If you aren't using class fields syntax, you can use an [arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) in the callback:
+If you aren't using class fields syntax, you can use an [arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow\_functions) in the callback:
 
 ```js
 class LoggingButton extends React.Component {
@@ -1037,7 +1007,7 @@ Inside a loop, it is common to want to pass an extra parameter to an event handl
 
 `<button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button><button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>`
 
-The above two lines are equivalent, and use [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and `[Function.prototype.bind](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind>)` respectively.
+The above two lines are equivalent, and use [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow\_functions) and `[Function.prototype.bind](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind>)` respectively.
 
 In both cases, the `e` argument representing the React event will be passed as a second argument after the ID. With an arrow function, we have to pass it explicitly, but with `bind` any further arguments are automatically forwarded.
 
@@ -1045,17 +1015,17 @@ In both cases, the `e` argument representing the React event will be passed as a
 
 ## In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
 
-Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like `[if](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else>)` or the [conditional operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) to create elements representing the current state, and let React update the UI to match them.
+Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like `[if](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else>)` or the [conditional operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional\_Operator) to create elements representing the current state, and let React update the UI to match them.
 
 Consider these two components:
 
 ```js
 function UserGreeting(props) {
-  return <h1>Welcome back!</h1>;
+    return <h1>Welcome back!</h1>;
 }
 
 function GuestGreeting(props) {
-  return <h1>Please sign up.</h1>;
+    return <h1>Please sign up.</h1>;
 }
 ```
 
@@ -1063,16 +1033,16 @@ We'll create a `Greeting` component that displays either of these components dep
 
 ```js
 function Greeting(props) {
-  const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn) {
-    return <UserGreeting />;
-  }
-  return <GuestGreeting />;
+    const isLoggedIn = props.isLoggedIn;
+    if (isLoggedIn) {
+        return <UserGreeting />;
+    }
+    return <GuestGreeting />;
 }
 ReactDOM.render(
-  // Try changing to isLoggedIn={true}:
-  <Greeting isLoggedIn={false} />,
-  document.getElementById("root")
+    // Try changing to isLoggedIn={true}:
+    <Greeting isLoggedIn={false} />,
+    document.getElementById('root')
 );
 ```
 
@@ -1090,11 +1060,11 @@ Consider these two new components representing Logout and Login buttons:
 
 ```js
 function LoginButton(props) {
-  return <button onClick={props.onClick}>Login</button>;
+    return <button onClick={props.onClick}>Login</button>;
 }
 
 function LogoutButton(props) {
-  return <button onClick={props.onClick}>Logout</button>;
+    return <button onClick={props.onClick}>Logout</button>;
 }
 ```
 
@@ -1104,39 +1074,39 @@ It will render either `<LoginButton />` or `<LogoutButton />` depending on its c
 
 ```js
 class LoginControl extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleLoginClick = this.handleLoginClick.bind(this);
-    this.handleLogoutClick = this.handleLogoutClick.bind(this);
-    this.state = { isLoggedIn: false };
-  }
-
-  handleLoginClick() {
-    this.setState({ isLoggedIn: true });
-  }
-
-  handleLogoutClick() {
-    this.setState({ isLoggedIn: false });
-  }
-
-  render() {
-    const isLoggedIn = this.state.isLoggedIn;
-    let button;
-    if (isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
-    } else {
-      button = <LoginButton onClick={this.handleLoginClick} />;
+    constructor(props) {
+        super(props);
+        this.handleLoginClick = this.handleLoginClick.bind(this);
+        this.handleLogoutClick = this.handleLogoutClick.bind(this);
+        this.state = { isLoggedIn: false };
     }
-    return (
-      <div>
-        {" "}
-        <Greeting isLoggedIn={isLoggedIn} /> {button}{" "}
-      </div>
-    );
-  }
+
+    handleLoginClick() {
+        this.setState({ isLoggedIn: true });
+    }
+
+    handleLogoutClick() {
+        this.setState({ isLoggedIn: false });
+    }
+
+    render() {
+        const isLoggedIn = this.state.isLoggedIn;
+        let button;
+        if (isLoggedIn) {
+            button = <LogoutButton onClick={this.handleLogoutClick} />;
+        } else {
+            button = <LoginButton onClick={this.handleLoginClick} />;
+        }
+        return (
+            <div>
+                {' '}
+                <Greeting isLoggedIn={isLoggedIn} /> {button}{' '}
+            </div>
+        );
+    }
 }
 
-ReactDOM.render(<LoginControl />, document.getElementById("root"));
+ReactDOM.render(<LoginControl />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)
@@ -1149,22 +1119,17 @@ You may [embed expressions in JSX](https://reactjs.org/docs/introducing-jsx.html
 
 ```js
 function Mailbox(props) {
-  const unreadMessages = props.unreadMessages;
-  return (
-    <div>
-      {" "}
-      <h1>Hello!</h1> {unreadMessages.length > 0 && (
-        <h2> You have {unreadMessages.length} unread messages. </h2>
-      )}{" "}
-    </div>
-  );
+    const unreadMessages = props.unreadMessages;
+    return (
+        <div>
+            {' '}
+            <h1>Hello!</h1> {unreadMessages.length > 0 && <h2> You have {unreadMessages.length} unread messages. </h2>}{' '}
+        </div>
+    );
 }
 
-const messages = ["React", "Re: React", "Re:Re: React"];
-ReactDOM.render(
-  <Mailbox unreadMessages={messages} />,
-  document.getElementById("root")
-);
+const messages = ['React', 'Re: React', 'Re:Re: React'];
+ReactDOM.render(<Mailbox unreadMessages={messages} />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/ozJddz?editors=0010)
@@ -1219,41 +1184,39 @@ In the example below, the `<WarningBanner />` is rendered depending on the value
 
 ```js
 function WarningBanner(props) {
-  if (!props.warn) {
-    return null;
-  }
-  return <div className="warning"> Warning!</div>;
+    if (!props.warn) {
+        return null;
+    }
+    return <div className="warning"> Warning!</div>;
 }
 
 class Page extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { showWarning: true };
-    this.handleToggleClick = this.handleToggleClick.bind(this);
-  }
+    constructor(props) {
+        super(props);
+        this.state = { showWarning: true };
+        this.handleToggleClick = this.handleToggleClick.bind(this);
+    }
 
-  handleToggleClick() {
-    this.setState((state) => ({
-      showWarning: !state.showWarning,
-    }));
-  }
+    handleToggleClick() {
+        this.setState((state) => ({
+            showWarning: !state.showWarning
+        }));
+    }
 
-  render() {
-    return (
-      <div>
-        {" "}
-        <WarningBanner warn={this.state.showWarning} /> <button
-          onClick={this.handleToggleClick}
-        >
-          {" "}
-          {this.state.showWarning ? "Hide" : "Show"}
-        </button>{" "}
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                {' '}
+                <WarningBanner warn={this.state.showWarning} /> <button onClick={this.handleToggleClick}>
+                    {' '}
+                    {this.state.showWarning ? 'Hide' : 'Show'}
+                </button>{' '}
+            </div>
+        );
+    }
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<Page />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/Xjoqwm?editors=0010)
@@ -1290,7 +1253,7 @@ const listItems = numbers.map((number) => <li>{number}</li>);
 We include the entire `listItems` array inside a `<ul>` element, and [render it to the DOM](https://reactjs.org/docs/rendering-elements.html#rendering-an-element-into-the-dom):
 
 ```js
-ReactDOM.render(<ul>{listItems}</ul>, document.getElementById("root"));
+ReactDOM.render(<ul>{listItems}</ul>, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/GjPyQr?editors=0011)
@@ -1307,16 +1270,13 @@ We can refactor the previous example into a component that accepts an array of `
 
 ```js
 function NumberList(props) {
-  const numbers = props.numbers;
-  const listItems = numbers.map((number) => <li>{number}</li>);
-  return <ul>{listItems}</ul>;
+    const numbers = props.numbers;
+    const listItems = numbers.map((number) => <li>{number}</li>);
+    return <ul>{listItems}</ul>;
 }
 
 const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById("root")
-);
+ReactDOM.render(<NumberList numbers={numbers} />, document.getElementById('root'));
 ```
 
 When you run this code, you'll be given a warning that a key should be provided for list items. A "key" is a special string attribute you need to include when creating lists of elements. We'll discuss why it's important in the next section.
@@ -1325,18 +1285,13 @@ Let's assign a `key` to our list items inside `numbers.map()` and fix the missin
 
 ```js
 function NumberList(props) {
-  const numbers = props.numbers;
-  const listItems = numbers.map((number) => (
-    <li key={number.toString()}> {number}</li>
-  ));
-  return <ul>{listItems}</ul>;
+    const numbers = props.numbers;
+    const listItems = numbers.map((number) => <li key={number.toString()}> {number}</li>);
+    return <ul>{listItems}</ul>;
 }
 
 const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById("root")
-);
+ReactDOM.render(<NumberList numbers={numbers} />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/jrXYRR?editors=0011)
@@ -1349,9 +1304,7 @@ Keys help React identify which items have changed, are added, or are removed. Ke
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
-const listItems = numbers.map((number) => (
-  <li key={number.toString()}> {number}</li>
-));
+const listItems = numbers.map((number) => <li key={number.toString()}> {number}</li>);
 ```
 
 The best way to pick a key is to use a string that uniquely identifies a list item among its siblings. Most often you would use IDs from your data as keys:
@@ -1436,33 +1389,33 @@ Keys used within arrays should be unique among their siblings. However, they don
 
 ```js
 function Blog(props) {
-  const sidebar = (
-    <ul>
-      {" "}
-      {props.posts.map((post) => (
-        <li key={post.id}> {post.title}</li>
-      ))}
-    </ul>
-  );
-  const content = props.posts.map((post) => (
-    <div key={post.id}>
-      {" "}
-      <h3>{post.title}</h3> <p>{post.content}</p>{" "}
-    </div>
-  ));
-  return (
-    <div>
-      {" "}
-      {sidebar} <hr /> {content}{" "}
-    </div>
-  );
+    const sidebar = (
+        <ul>
+            {' '}
+            {props.posts.map((post) => (
+                <li key={post.id}> {post.title}</li>
+            ))}
+        </ul>
+    );
+    const content = props.posts.map((post) => (
+        <div key={post.id}>
+            {' '}
+            <h3>{post.title}</h3> <p>{post.content}</p>{' '}
+        </div>
+    ));
+    return (
+        <div>
+            {' '}
+            {sidebar} <hr /> {content}{' '}
+        </div>
+    );
 }
 
 const posts = [
-  { id: 1, title: "Hello World", content: "Welcome to learning React!" },
-  { id: 2, title: "Installation", content: "You can install React from npm." },
+    { id: 1, title: 'Hello World', content: 'Welcome to learning React!' },
+    { id: 2, title: 'Installation', content: 'You can install React from npm.' }
 ];
-ReactDOM.render(<Blog posts={posts} />, document.getElementById("root"));
+ReactDOM.render(<Blog posts={posts} />, document.getElementById('root'));
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/NRZYGN?editors=0010)
@@ -1472,9 +1425,7 @@ ReactDOM.render(<Blog posts={posts} />, document.getElementById("root"));
 Keys serve as a hint to React but they don't get passed to your components. If you need the same value in your component, pass it explicitly as a prop with a different name:
 
 ```js
-const content = posts.map((post) => (
-  <Post key={post.id} id={post.id} title={post.title} />
-));
+const content = posts.map((post) => <Post key={post.id} id={post.id} title={post.title} />);
 ```
 
 With the example above, the `Post` component can read `props.id`, but not `props.key`.
@@ -1485,11 +1436,9 @@ In the examples above we declared a separate `listItems` variable and included i
 
 ```js
 function NumberList(props) {
-  const numbers = props.numbers;
-  const listItems = numbers.map((number) => (
-    <ListItem key={number.toString()} value={number} />
-  ));
-  return <ul> {listItems}</ul>;
+    const numbers = props.numbers;
+    const listItems = numbers.map((number) => <ListItem key={number.toString()} value={number} />);
+    return <ul> {listItems}</ul>;
 }
 ```
 
@@ -1497,15 +1446,15 @@ JSX allows [embedding any expression](https://reactjs.org/docs/introducing-jsx.h
 
 ```js
 function NumberList(props) {
-  const numbers = props.numbers;
-  return (
-    <ul>
-      {" "}
-      {numbers.map((number) => (
-        <ListItem key={number.toString()} value={number} />
-      ))}{" "}
-    </ul>
-  );
+    const numbers = props.numbers;
+    return (
+        <ul>
+            {' '}
+            {numbers.map((number) => (
+                <ListItem key={number.toString()} value={number} />
+            ))}{' '}
+        </ul>
+    );
 }
 ```
 
@@ -1521,11 +1470,11 @@ Sometimes this results in clearer code, but this style can also be abused. Like 
 
 ```js
 <form>
-  <label>
-    Name:
-    <input type="text" name="name" />
-  </label>
-  <input type="submit" value="Submit" />
+    <label>
+        Name:
+        <input type="text" name="name" />
+    </label>
+    <input type="submit" value="Submit" />
 </form>
 ```
 
@@ -1541,37 +1490,33 @@ For example, if we want to make the previous example log the name when it is sub
 
 ```js
 class NameForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { value: "" };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+    constructor(props) {
+        super(props);
+        this.state = { value: '' };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
-  handleSubmit(event) {
-    alert("A name was submitted: " + this.state.value);
-    event.preventDefault();
-  }
+    handleChange(event) {
+        this.setState({ value: event.target.value });
+    }
+    handleSubmit(event) {
+        alert('A name was submitted: ' + this.state.value);
+        event.preventDefault();
+    }
 
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        {" "}
-        <label>
-          {" "}
-          Name:
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
-          />{" "}
-        </label> <input type="submit" value="Submit" />{" "}
-      </form>
-    );
-  }
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                {' '}
+                <label>
+                    {' '}
+                    Name:
+                    <input type="text" value={this.state.value} onChange={this.handleChange} />{' '}
+                </label> <input type="submit" value="Submit" />{' '}
+            </form>
+        );
+    }
 }
 ```
 
@@ -1595,38 +1540,33 @@ In React, a `<textarea>` uses a `value` attribute instead. This way, a form usin
 
 ```js
 class EssayForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: "Please write an essay about your favorite DOM element.",
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+    constructor(props) {
+        super(props);
+        this.state = { value: 'Please write an essay about your favorite DOM element.' };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
-  handleSubmit(event) {
-    alert("An essay was submitted: " + this.state.value);
-    event.preventDefault();
-  }
+    handleChange(event) {
+        this.setState({ value: event.target.value });
+    }
+    handleSubmit(event) {
+        alert('An essay was submitted: ' + this.state.value);
+        event.preventDefault();
+    }
 
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        {" "}
-        <label>
-          {" "}
-          Essay:
-          <textarea
-            value={this.state.value}
-            onChange={this.handleChange}
-          />{" "}
-        </label> <input type="submit" value="Submit" />{" "}
-      </form>
-    );
-  }
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                {' '}
+                <label>
+                    {' '}
+                    Essay:
+                    <textarea value={this.state.value} onChange={this.handleChange} />{' '}
+                </label> <input type="submit" value="Submit" />{' '}
+            </form>
+        );
+    }
 }
 ```
 
@@ -1642,40 +1582,38 @@ Note that the Coconut option is initially selected, because of the `selected` at
 
 ```js
 class FlavorForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { value: "coconut" };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+    constructor(props) {
+        super(props);
+        this.state = { value: 'coconut' };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
-  handleSubmit(event) {
-    alert("Your favorite flavor is: " + this.state.value);
-    event.preventDefault();
-  }
+    handleChange(event) {
+        this.setState({ value: event.target.value });
+    }
+    handleSubmit(event) {
+        alert('Your favorite flavor is: ' + this.state.value);
+        event.preventDefault();
+    }
 
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        {" "}
-        <label>
-          {" "}
-          Pick your favorite flavor:
-          <select value={this.state.value} onChange={this.handleChange}>
-            {" "}
-            <option value="grapefruit">Grapefruit</option> <option value="lime">
-              Lime
-            </option> <option value="coconut">Coconut</option> <option value="mango">
-              Mango
-            </option>{" "}
-          </select>{" "}
-        </label> <input type="submit" value="Submit" />{" "}
-      </form>
-    );
-  }
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                {' '}
+                <label>
+                    {' '}
+                    Pick your favorite flavor:
+                    <select value={this.state.value} onChange={this.handleChange}>
+                        {' '}
+                        <option value="grapefruit">Grapefruit</option> <option value="lime">Lime</option> <option value="coconut">Coconut</option> <option value="mango">
+                            Mango
+                        </option>{' '}
+                    </select>{' '}
+                </label> <input type="submit" value="Submit" />{' '}
+            </form>
+        );
+    }
 }
 ```
 
@@ -1687,7 +1625,7 @@ Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select
 
 ## The file input Tag
 
-In HTML, an `<input type="file">` lets the user choose one or more files from their device storage to be uploaded to a server or manipulated by JavaScript via the [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications).
+In HTML, an `<input type="file">` lets the user choose one or more files from their device storage to be uploaded to a server or manipulated by JavaScript via the [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using\_files\_from\_web\_applications).
 
 `<input type="file" />`
 
@@ -1701,61 +1639,51 @@ For example:
 
 ```js
 class Reservation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isGoing: true,
-      numberOfGuests: 2,
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            isGoing: true,
+            numberOfGuests: 2
+        };
 
-    this.handleInputChange = this.handleInputChange.bind(this);
-  }
+        this.handleInputChange = this.handleInputChange.bind(this);
+    }
 
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
-    const name = target.name;
-    this.setState({
-      [name]: value,
-    });
-  }
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+        this.setState({
+            [name]: value
+        });
+    }
 
-  render() {
-    return (
-      <form>
-        {" "}
-        <label>
-          {" "}
-          Is going:
-          <input
-            name="isGoing"
-            type="checkbox"
-            checked={this.state.isGoing}
-            onChange={this.handleInputChange}
-          />{" "}
-        </label> <br /> <label>
-          {" "}
-          Number of guests:
-          <input
-            name="numberOfGuests"
-            type="number"
-            value={this.state.numberOfGuests}
-            onChange={this.handleInputChange}
-          />{" "}
-        </label>{" "}
-      </form>
-    );
-  }
+    render() {
+        return (
+            <form>
+                {' '}
+                <label>
+                    {' '}
+                    Is going:
+                    <input name="isGoing" type="checkbox" checked={this.state.isGoing} onChange={this.handleInputChange} />{' '}
+                </label> <br /> <label>
+                    {' '}
+                    Number of guests:
+                    <input name="numberOfGuests" type="number" value={this.state.numberOfGuests} onChange={this.handleInputChange} />{' '}
+                </label>{' '}
+            </form>
+        );
+    }
 }
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/wgedvV?editors=0010)
 
-Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) syntax to update the state key corresponding to the given input name:
+Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object\_initializer#Computed\_property\_names) syntax to update the state key corresponding to the given input name:
 
 ```js
 this.setState({
-  [name]: value,
+    [name]: value
 });
 ```
 
@@ -1779,7 +1707,7 @@ The following code demonstrates this. (The input is locked at first but becomes 
 ReactDOM.render(<input value="hi" />, mountNode);
 
 setTimeout(function () {
-  ReactDOM.render(<input value={null} />, mountNode);
+    ReactDOM.render(<input value={null} />, mountNode);
 }, 1000);
 ```
 
@@ -1801,10 +1729,10 @@ We will start with a component called `BoilingVerdict`. It accepts the `celsius`
 
 ```js
 function BoilingVerdict(props) {
-  if (props.celsius >= 100) {
-    return <p>The water would boil.</p>;
-  }
-  return <p>The water would not boil.</p>;
+    if (props.celsius >= 100) {
+        return <p>The water would boil.</p>;
+    }
+    return <p>The water would not boil.</p>;
 }
 ```
 
@@ -1814,28 +1742,27 @@ Additionally, it renders the `BoilingVerdict` for the current input value.
 
 ```js
 class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-    this.state = { temperature: "" };
-  }
+    constructor(props) {
+        super(props);
+        this.handleChange = this.handleChange.bind(this);
+        this.state = { temperature: '' };
+    }
 
-  handleChange(e) {
-    this.setState({ temperature: e.target.value });
-  }
+    handleChange(e) {
+        this.setState({ temperature: e.target.value });
+    }
 
-  render() {
-    const temperature = this.state.temperature;
-    return (
-      <fieldset>
-        {" "}
-        <legend>Enter temperature in Celsius:</legend> <input
-          value={temperature}
-          onChange={this.handleChange}
-        /> <BoilingVerdict celsius={parseFloat(temperature)} />{" "}
-      </fieldset>
-    );
-  }
+    render() {
+        const temperature = this.state.temperature;
+        return (
+            <fieldset>
+                {' '}
+                <legend>Enter temperature in Celsius:</legend> <input value={temperature} onChange={this.handleChange} /> <BoilingVerdict
+                    celsius={parseFloat(temperature)}
+                />{' '}
+            </fieldset>
+        );
+    }
 }
 ```
 
@@ -1850,31 +1777,28 @@ Our new requirement is that, in addition to a Celsius input, we provide a Fahren
 We can start by extracting a `TemperatureInput` component from `Calculator`. We will add a new `scale` prop to it that can either be `"c"` or `"f"`:
 
 ```js
-const scaleNames = { c: "Celsius", f: "Fahrenheit" };
+const scaleNames = { c: 'Celsius', f: 'Fahrenheit' };
 class TemperatureInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-    this.state = { temperature: "" };
-  }
+    constructor(props) {
+        super(props);
+        this.handleChange = this.handleChange.bind(this);
+        this.state = { temperature: '' };
+    }
 
-  handleChange(e) {
-    this.setState({ temperature: e.target.value });
-  }
+    handleChange(e) {
+        this.setState({ temperature: e.target.value });
+    }
 
-  render() {
-    const temperature = this.state.temperature;
-    const scale = this.props.scale;
-    return (
-      <fieldset>
-        {" "}
-        <legend>Enter temperature in {scaleNames[scale]}:</legend> <input
-          value={temperature}
-          onChange={this.handleChange}
-        />{" "}
-      </fieldset>
-    );
-  }
+    render() {
+        const temperature = this.state.temperature;
+        const scale = this.props.scale;
+        return (
+            <fieldset>
+                {' '}
+                <legend>Enter temperature in {scaleNames[scale]}:</legend> <input value={temperature} onChange={this.handleChange} />{' '}
+            </fieldset>
+        );
+    }
 }
 ```
 
@@ -1882,14 +1806,14 @@ We can now change the `Calculator` to render two separate temperature inputs:
 
 ```js
 class Calculator extends React.Component {
-  render() {
-    return (
-      <div>
-        {" "}
-        <TemperatureInput scale="c" /> <TemperatureInput scale="f" />{" "}
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                {' '}
+                <TemperatureInput scale="c" /> <TemperatureInput scale="f" />{' '}
+            </div>
+        );
+    }
 }
 ```
 
@@ -1907,11 +1831,11 @@ First, we will write two functions to convert from Celsius to Fahrenheit and bac
 
 ```js
 function toCelsius(fahrenheit) {
-  return ((fahrenheit - 32) * 5) / 9;
+    return ((fahrenheit - 32) * 5) / 9;
 }
 
 function toFahrenheit(celsius) {
-  return (celsius * 9) / 5 + 32;
+    return (celsius * 9) / 5 + 32;
 }
 ```
 
@@ -1921,13 +1845,13 @@ It returns an empty string on an invalid `temperature`, and it keeps the output 
 
 ```js
 function tryConvert(temperature, convert) {
-  const input = parseFloat(temperature);
-  if (Number.isNaN(input)) {
-    return "";
-  }
-  const output = convert(input);
-  const rounded = Math.round(output * 1000) / 1000;
-  return rounded.toString();
+    const input = parseFloat(temperature);
+    if (Number.isNaN(input)) {
+        return '';
+    }
+    const output = convert(input);
+    const rounded = Math.round(output * 1000) / 1000;
+    return rounded.toString();
 }
 ```
 
@@ -1987,28 +1911,25 @@ Before diving into the changes in the `Calculator`, let's recap our changes to t
 
 ```js
 class TemperatureInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-  }
+    constructor(props) {
+        super(props);
+        this.handleChange = this.handleChange.bind(this);
+    }
 
-  handleChange(e) {
-    this.props.onTemperatureChange(e.target.value);
-  }
+    handleChange(e) {
+        this.props.onTemperatureChange(e.target.value);
+    }
 
-  render() {
-    const temperature = this.props.temperature;
-    const scale = this.props.scale;
-    return (
-      <fieldset>
-        {" "}
-        <legend>Enter temperature in {scaleNames[scale]}:</legend> <input
-          value={temperature}
-          onChange={this.handleChange}
-        />{" "}
-      </fieldset>
-    );
-  }
+    render() {
+        const temperature = this.props.temperature;
+        const scale = this.props.scale;
+        return (
+            <fieldset>
+                {' '}
+                <legend>Enter temperature in {scaleNames[scale]}:</legend> <input value={temperature} onChange={this.handleChange} />{' '}
+            </fieldset>
+        );
+    }
 }
 ```
 
@@ -2065,14 +1986,14 @@ Now, no matter which input you edit, `this.state.temperature` and `this.state.sc
 
 Let's recap what happens when you edit an input:
 
-- React calls the function specified as `onChange` on the DOM `<input>`. In our case, this is the `handleChange` method in the `TemperatureInput` component.
-- The `handleChange` method in the `TemperatureInput` component calls `this.props.onTemperatureChange()` with the new desired value. Its props, including `onTemperatureChange`, were provided by its parent component, the `Calculator`.
-- When it previously rendered, the `Calculator` had specified that `onTemperatureChange` of the Celsius `TemperatureInput` is the `Calculator`'s `handleCelsiusChange` method, and `onTemperatureChange` of the Fahrenheit `TemperatureInput` is the `Calculator`'s `handleFahrenheitChange` method. So either of these two `Calculator` methods gets called depending on which input we edited.
-- Inside these methods, the `Calculator` component asks React to re-render itself by calling `this.setState()` with the new input value and the current scale of the input we just edited.
-- React calls the `Calculator` component's `render` method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
-- React calls the `render` methods of the individual `TemperatureInput` components with their new props specified by the `Calculator`. It learns what their UI should look like.
-- React calls the `render` method of the `BoilingVerdict` component, passing the temperature in Celsius as its props.
-- React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
+* React calls the function specified as `onChange` on the DOM `<input>`. In our case, this is the `handleChange` method in the `TemperatureInput` component.
+* The `handleChange` method in the `TemperatureInput` component calls `this.props.onTemperatureChange()` with the new desired value. Its props, including `onTemperatureChange`, were provided by its parent component, the `Calculator`.
+* When it previously rendered, the `Calculator` had specified that `onTemperatureChange` of the Celsius `TemperatureInput` is the `Calculator`'s `handleCelsiusChange` method, and `onTemperatureChange` of the Fahrenheit `TemperatureInput` is the `Calculator`'s `handleFahrenheitChange` method. So either of these two `Calculator` methods gets called depending on which input we edited.
+* Inside these methods, the `Calculator` component asks React to re-render itself by calling `this.setState()` with the new input value and the current scale of the input we just edited.
+* React calls the `Calculator` component's `render` method to learn what the UI should look like. The values of both inputs are recomputed based on the current temperature and the active scale. The temperature conversion is performed here.
+* React calls the `render` methods of the individual `TemperatureInput` components with their new props specified by the `Calculator`. It learns what their UI should look like.
+* React calls the `render` method of the `BoilingVerdict` component, passing the temperature in Celsius as its props.
+* React DOM updates the DOM with the boiling verdict and to match the desired input values. The input we just edited receives its current value, and the other input is updated to the temperature after conversion.
 
 Every update goes through the same steps so the inputs stay in sync.
 
@@ -2102,12 +2023,7 @@ We recommend that such components use the special `children` prop to pass childr
 
 ```js
 function FancyBorder(props) {
-  return (
-    <div className={"FancyBorder FancyBorder-" + props.color}>
-      {" "}
-      {props.children}{" "}
-    </div>
-  );
+    return <div className={'FancyBorder FancyBorder-' + props.color}> {props.children} </div>;
 }
 ```
 
@@ -2115,15 +2031,12 @@ This lets other components pass arbitrary children to them by nesting the JSX:
 
 ```js
 function WelcomeDialog() {
-  return (
-    <FancyBorder color="blue">
-      {" "}
-      <h1 className="Dialog-title"> Welcome </h1> <p className="Dialog-message">
-        {" "}
-        Thank you for visiting our spacecraft!{" "}
-      </p>{" "}
-    </FancyBorder>
-  );
+    return (
+        <FancyBorder color="blue">
+            {' '}
+            <h1 className="Dialog-title"> Welcome </h1> <p className="Dialog-message"> Thank you for visiting our spacecraft! </p>{' '}
+        </FancyBorder>
+    );
 }
 ```
 
@@ -2159,21 +2072,16 @@ In React, this is also achieved by composition, where a more "specific" componen
 
 ```js
 function Dialog(props) {
-  return (
-    <FancyBorder color="blue">
-      {" "}
-      <h1 className="Dialog-title"> {props.title} </h1> <p className="Dialog-message">
-        {" "}
-        {props.message}{" "}
-      </p>{" "}
-    </FancyBorder>
-  );
+    return (
+        <FancyBorder color="blue">
+            {' '}
+            <h1 className="Dialog-title"> {props.title} </h1> <p className="Dialog-message"> {props.message} </p>{' '}
+        </FancyBorder>
+    );
 }
 
 function WelcomeDialog() {
-  return (
-    <Dialog title="Welcome" message="Thank you for visiting our spacecraft!" />
-  );
+    return <Dialog title="Welcome" message="Thank you for visiting our spacecraft!" />;
 }
 ```
 
@@ -2183,49 +2091,38 @@ Composition works equally well for components defined as classes:
 
 ```js
 function Dialog(props) {
-  return (
-    <FancyBorder color="blue">
-      {" "}
-      <h1 className="Dialog-title"> {props.title}</h1> <p className="Dialog-message">
-        {" "}
-        {props.message}
-      </p> {props.children}{" "}
-    </FancyBorder>
-  );
+    return (
+        <FancyBorder color="blue">
+            {' '}
+            <h1 className="Dialog-title"> {props.title}</h1> <p className="Dialog-message"> {props.message}</p> {props.children}{' '}
+        </FancyBorder>
+    );
 }
 
 class SignUpDialog extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSignUp = this.handleSignUp.bind(this);
-    this.state = { login: "" };
-  }
+    constructor(props) {
+        super(props);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSignUp = this.handleSignUp.bind(this);
+        this.state = { login: '' };
+    }
 
-  render() {
-    return (
-      <Dialog
-        title="Mars Exploration Program"
-        message="How should we refer to you?"
-      >
-        {" "}
-        <input value={this.state.login} onChange={this.handleChange} /> <button
-          onClick={this.handleSignUp}
-        >
-          {" "}
-          Sign Me Up!{" "}
-        </button>{" "}
-      </Dialog>
-    );
-  }
+    render() {
+        return (
+            <Dialog title="Mars Exploration Program" message="How should we refer to you?">
+                {' '}
+                <input value={this.state.login} onChange={this.handleChange} /> <button onClick={this.handleSignUp}> Sign Me Up! </button>{' '}
+            </Dialog>
+        );
+    }
 
-  handleChange(e) {
-    this.setState({ login: e.target.value });
-  }
+    handleChange(e) {
+        this.setState({ login: e.target.value });
+    }
 
-  handleSignUp() {
-    alert(`Welcome aboard, ${this.state.login}!`);
-  }
+    handleSignUp() {
+        alert(`Welcome aboard, ${this.state.login}!`);
+    }
 }
 ```
 
@@ -2255,37 +2152,12 @@ Our JSON API returns some data that looks like this:
 
 ```js
 [
-  {
-    category: "Sporting Goods",
-    price: "$49.99",
-    stocked: true,
-    name: "Football",
-  },
-  {
-    category: "Sporting Goods",
-    price: "$9.99",
-    stocked: true,
-    name: "Baseball",
-  },
-  {
-    category: "Sporting Goods",
-    price: "$29.99",
-    stocked: false,
-    name: "Basketball",
-  },
-  {
-    category: "Electronics",
-    price: "$99.99",
-    stocked: true,
-    name: "iPod Touch",
-  },
-  {
-    category: "Electronics",
-    price: "$399.99",
-    stocked: false,
-    name: "iPhone 5",
-  },
-  { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" },
+    { category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football' },
+    { category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball' },
+    { category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball' },
+    { category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch' },
+    { category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5' },
+    { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' }
 ];
 ```
 
@@ -2293,7 +2165,7 @@ Our JSON API returns some data that looks like this:
 
 The first thing you'll want to do is to draw boxes around every component (and subcomponent) in the mock and give them all names. If you're working with a designer, they may have already done this, so go talk to them! Their Photoshop layer names may end up being the names of your React components!
 
-But how do you know what should be its own component? Use the same techniques for deciding if you should create a new function or object. One such technique is the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), that is, a component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents.
+But how do you know what should be its own component? Use the same techniques for deciding if you should create a new function or object. One such technique is the [single responsibility principle](https://en.wikipedia.org/wiki/Single\_responsibility\_principle), that is, a component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents.
 
 Since you're often displaying a JSON data model to a user, you'll find that if your model was built correctly, your UI (and therefore your component structure) will map nicely. That's because UI and data models tend to adhere to the same _information architecture_. Separate your UI into components, where each component matches one piece of your data model.
 
@@ -2311,11 +2183,11 @@ If you look at `ProductTable`, you'll see that the table header (containing the 
 
 Now that we've identified the components in our mock, let's arrange them into a hierarchy. Components that appear within another component in the mock should appear as a child in the hierarchy:
 
-- `FilterableProductTable`
-  - `SearchBar`
-  - `ProductTable`
-    - `ProductCategoryRow`
-    - `ProductRow`
+* `FilterableProductTable`
+  * `SearchBar`
+  * `ProductTable`
+    * `ProductCategoryRow`
+    * `ProductRow`
 
 ## Step 2: Build A Static Version in React
 
@@ -2339,14 +2211,14 @@ There are two types of "model" data in React: props and state. It's important to
 
 To make your UI interactive, you need to be able to trigger changes to your underlying data model. React achieves this with **state**.
 
-To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is [DRY: _Don't Repeat Yourself_](https://en.wikipedia.org/wiki/Don't_repeat_yourself). Figure out the absolute minimal representation of the state your application needs and compute everything else you need on-demand. For example, if you're building a TODO list, keep an array of the TODO items around; don't keep a separate state variable for the count. Instead, when you want to render the TODO count, take the length of the TODO items array.
+To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is [DRY: _Don't Repeat Yourself_](https://en.wikipedia.org/wiki/Don't\_repeat\_yourself). Figure out the absolute minimal representation of the state your application needs and compute everything else you need on-demand. For example, if you're building a TODO list, keep an array of the TODO items around; don't keep a separate state variable for the count. Instead, when you want to render the TODO count, take the length of the TODO items array.
 
 Think of all the pieces of data in our example application. We have:
 
-- The original list of products
-- The search text the user has entered
-- The value of the checkbox
-- The filtered list of products
+* The original list of products
+* The search text the user has entered
+* The value of the checkbox
+* The filtered list of products
 
 Let's go through each one and figure out which one is state. Ask three questions about each piece of data:
 
@@ -2358,8 +2230,8 @@ The original list of products is passed in as props, so that's not state. The se
 
 So finally, our state is:
 
-- The search text the user has entered
-- The value of the checkbox
+* The search text the user has entered
+* The value of the checkbox
 
 ## Step 4: Identify Where Your State Should Live
 
@@ -2371,16 +2243,16 @@ Remember: React is all about one-way data flow down the component hierarchy. It 
 
 For each piece of state in your application:
 
-- Identify every component that renders something based on that state.
-- Find a common owner component (a single component above all the components that need the state in the hierarchy).
-- Either the common owner or another component higher up in the hierarchy should own the state.
-- If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+* Identify every component that renders something based on that state.
+* Find a common owner component (a single component above all the components that need the state in the hierarchy).
+* Either the common owner or another component higher up in the hierarchy should own the state.
+* If you can't find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 Let's run through this strategy for our application:
 
-- `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
-- The common owner component is `FilterableProductTable`.
-- It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
+* `ProductTable` needs to filter the product list based on state and `SearchBar` needs to display the search text and checked state.
+* The common owner component is `FilterableProductTable`.
+* It conceptually makes sense for the filter text and checked value to live in `FilterableProductTable`
 
 Cool, so we've decided that our state lives in `FilterableProductTable`. First, add an instance property `this.state = {filterText: '', inStockOnly: false}` to `FilterableProductTable`'s `constructor` to reflect the initial state of your application. Then, pass `filterText` and `inStockOnly` to `ProductTable` and `SearchBar` as a prop. Finally, use these props to filter the rows in `ProductTable` and set the values of the form fields in `SearchBar`.
 

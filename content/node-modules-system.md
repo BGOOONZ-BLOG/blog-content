@@ -36,17 +36,17 @@ The first exposes the object it points to. The latter exposes _the properties_ o
 
 Differences between Node.js and browsers
 
----
+***
 
 #### Modules in Javascript
 
 **Differences between Node.js and browsers**
 
-There are many differences between Node.js and browser environments, but many of them are small and inconsequential in practice. For example, in our _Asynchronous_ lesson, we noted how [Node’s setTimeout](https://nodejs.org/api/timers.html#timers_settimeout_callback_delay_args) has a slightly different return value from [a browser’s setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Let’s go over a few notable differences between the two environments.
+There are many differences between Node.js and browser environments, but many of them are small and inconsequential in practice. For example, in our _Asynchronous_ lesson, we noted how [Node’s setTimeout](https://nodejs.org/api/timers.html#timers\_settimeout\_callback\_delay\_args) has a slightly different return value from [a browser’s setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Let’s go over a few notable differences between the two environments.
 
 **Global vs Window**
 
-In the Node.js runtime, the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object) is the object where global variables are stored. In browsers, the [window object](https://developer.mozilla.org/en-US/docs/Web/API/Window) is where global variables are stored. The window also includes properties and methods that deal with drawing things on the screen like images, links, and buttons. Node doesn’t need to draw anything, and so it does not come with such properties. This means that you can’t reference window in Node.
+In the Node.js runtime, the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global\_object) is the object where global variables are stored. In browsers, the [window object](https://developer.mozilla.org/en-US/docs/Web/API/Window) is where global variables are stored. The window also includes properties and methods that deal with drawing things on the screen like images, links, and buttons. Node doesn’t need to draw anything, and so it does not come with such properties. This means that you can’t reference window in Node.
 
 _Most browsers allow you to reference global but it is really the same object as window._
 
@@ -124,7 +124,7 @@ My code works
 I do not know why
 ```
 
-Success! From here, you can do anything you please with the data read from the file. For example, since `data` is a string, we could split the string on the newline character to obtain an array of the file's lines:
+Success! From here, you can do anything you please with the data read from the file. For example, since `data` is a string, we could split the string on the newline character  to obtain an array of the file's lines:
 
 ```
 THE CONTENTS ARE:
@@ -179,4 +179,4 @@ I should know why
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 
 [**bgoonz — Overview**\
-\_Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…\_github.com](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…_github.com](https://github.com/bgoonz)

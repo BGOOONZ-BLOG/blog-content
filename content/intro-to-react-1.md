@@ -4,7 +4,7 @@
 
 All of the code examples below will be included a second time at the bottom of this article as an embedded gist.
 
----
+***
 
 #### Introduction to React for Complete Beginners
 
@@ -12,7 +12,7 @@ All of the code examples below will be included a second time at the bottom of t
 
 React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript.
 
-![](https://cdn-images-1.medium.com/max/1200/0*Olfj44MF6WSzvlSM.png)
+![](https://cdn-images-1.medium.com/max/1200/0\*Olfj44MF6WSzvlSM.png)
 
 #### React
 
@@ -30,7 +30,7 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 > _For instance, several JSX elements written as siblings with no parent wrapper element will not transpile._
 
----
+***
 
 #### From the React Docs:
 
@@ -72,7 +72,7 @@ return React.createElement('div', {className: 'shopping-list'},
 );
 ```
 
----
+***
 
 #### Valid JSX:
 
@@ -84,7 +84,7 @@ return React.createElement('div', {className: 'shopping-list'},
 </div>
 ```
 
----
+***
 
 #### Invalid JSX:
 
@@ -110,7 +110,7 @@ const JSX = (
 );
 ```
 
----
+***
 
 > _With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM._
 
@@ -118,14 +118,14 @@ const JSX = (
 
 `ReactDOM.render(componentToRender, targetNode)`
 
-- the first argument is the React element or component that you want to render,
-- and the second argument is the DOM node that you want to render the component to.
+* the first argument is the React element or component that you want to render,
+* and the second argument is the DOM node that you want to render the component to.
 
 > _ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them._
 
 > _key difference in JSX is that you can no longer use the word class to define HTML classes._
 
-- — -> This is because class is a reserved word in JavaScript. Instead, JSX uses className
+* — -> This is because class is a reserved word in JavaScript. Instead, JSX uses className
 
 > _the naming convention for all HTML attributes and event references in JSX become camelCase_
 
@@ -133,8 +133,8 @@ const JSX = (
 
 #### Apply a class of myDiv to the div provided in the JSX code.
 
-- The constant JSX should return a div element.
-- The div should have a class of myDiv.
+* The constant JSX should return a div element.
+* The div should have a class of myDiv.
 
 ```
 const JSX = (
@@ -193,7 +193,7 @@ const JSX = (
 );
 ```
 
----
+***
 
 #### React: Create a Stateless Functional Component
 
@@ -205,7 +205,7 @@ const JSX = (
 
 **To create a component with a function, you simply write a JavaScript function that returns either JSX or null**
 
-- React requires your function name to begin with a capital letter.
+* React requires your function name to begin with a capital letter.
 
 > _Here's an example of a stateless functional component that assigns an HTML class in JSX:_
 
@@ -246,7 +246,7 @@ return (
 };
 ```
 
----
+***
 
 #### React: Create a React Component
 
@@ -313,7 +313,7 @@ class MyComponent extends React.Component {
 };
 ```
 
----
+***
 
 #### React: Create a Component with Composition
 
@@ -321,7 +321,7 @@ class MyComponent extends React.Component {
 
 > _To compose these components together, you could create an App parent component which renders each of these three components as children. To render a component as a child in a React component, you include the component name written as a custom HTML tag in the JSX._
 
-- For example, in the render method you could write:
+* For example, in the render method you could write:
 
 ```
 return (
@@ -339,8 +339,8 @@ return (
 
 > _In the code editor, there is a simple functional component called ChildComponent and a class component called ParentComponent. Compose the two together by rendering the ChildComponent within the ParentComponent. Make sure to close the ChildComponent tag with a forward slash._
 
-- Note:**ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React**.
-- However, know that this is just a function.
+* Note:**ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React**.
+* However, know that this is just a function.
 
 ```
 const ChildComponent = () => {
@@ -405,7 +405,7 @@ class ParentComponent extends React.Component {
 For more content follow me on GitHub:
 
 [**bgoonz - Overview**\
-\_Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…\_github.com](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…_github.com](https://github.com/bgoonz)
 
 _More content at_ [_plainenglish.io_](http://plainenglish.io)
 
@@ -419,13 +419,13 @@ Exported from [Medium](https://medium.com) on May 23, 2021.
 
 Renders an accordion menu with multiple collapsible content elements.
 
-- Define an `AccordionItem` component, that renders a `<button>` which is used to update the component and notify its parent via the `handleClick` callback.
-- Use the `isCollapsed` prop in `AccordionItem` to determine its appearance and set an appropriate `className`.
-- Define an `Accordion` component that uses the `useState()` hook to initialize the value of the `bindIndex` state variable to `defaultIndex`.
-- Filter `children` to remove unnecessary nodes except for `AccordionItem` by identifying the function's name.
-- Use `Array.prototype.map()` on the collected nodes to render the individual collapsible elements.
-- Define `changeItem`, which will be executed when clicking an `AccordionItem`'s `<button>`.
-- `changeItem` executes the passed callback, `onItemClick`, and updates `bindIndex` based on the clicked element.
+* Define an `AccordionItem` component, that renders a `<button>` which is used to update the component and notify its parent via the `handleClick` callback.
+* Use the `isCollapsed` prop in `AccordionItem` to determine its appearance and set an appropriate `className`.
+* Define an `Accordion` component that uses the `useState()` hook to initialize the value of the `bindIndex` state variable to `defaultIndex`.
+* Filter `children` to remove unnecessary nodes except for `AccordionItem` by identifying the function's name.
+* Use `Array.prototype.map()` on the collected nodes to render the individual collapsible elements.
+* Define `changeItem`, which will be executed when clicking an `AccordionItem`'s `<button>`.
+* `changeItem` executes the passed callback, `onItemClick`, and updates `bindIndex` based on the clicked element.
 
 ```
 .accordion-item.collapsed {
@@ -500,14 +500,14 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders an alert component with `type` prop.
 
-- Use the `useState()` hook to create the `isShown` and `isLeaving` state variables and set both to `false` initially.
-- Define `timeoutId` to keep the timer instance for clearing on component unmount.
-- Use the `useEffect()` hook to update the value of `isShown` to `true` and clear the interval by using `timeoutId` when the component is unmounted.
-- Define a `closeAlert` function to set the component as removed from the DOM by displaying a fading out animation and set `isShown` to `false` via `setTimeout()`.
+* Use the `useState()` hook to create the `isShown` and `isLeaving` state variables and set both to `false` initially.
+* Define `timeoutId` to keep the timer instance for clearing on component unmount.
+* Use the `useEffect()` hook to update the value of `isShown` to `true` and clear the interval by using `timeoutId` when the component is unmounted.
+* Define a `closeAlert` function to set the component as removed from the DOM by displaying a fading out animation and set `isShown` to `false` via `setTimeout()`.
 
 ```
 @keyframes leave {
@@ -606,13 +606,13 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders a string as plaintext, with URLs converted to appropriate link elements.
 
-- Use `String.prototype.split()` and `String.prototype.match()` with a regular expression to find URLs in a string.
-- Return matched URLs rendered as `<a>` elements, dealing with missing protocol prefixes if necessary.
-- Render the rest of the string as plaintext.
+* Use `String.prototype.split()` and `String.prototype.match()` with a regular expression to find URLs in a string.
+* Return matched URLs rendered as `<a>` elements, dealing with missing protocol prefixes if necessary.
+* Render the rest of the string as plaintext.
 
 ```js
 
@@ -637,7 +637,7 @@ return word;
 };
 ```
 
----
+***
 
 ```js
 
@@ -647,12 +647,12 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a link formatted to call a phone number (`tel:` link).
 
-- Use `phone` to create a `<a>` element with an appropriate `href` attribute.
-- Render the link with `children` as its content.
+* Use `phone` to create a `<a>` element with an appropriate `href` attribute.
+* Render the link with `children` as its content.
 
 ```js
 
@@ -661,7 +661,7 @@ const Callto = ({ phone, children }) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -671,14 +671,14 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a carousel component.
 
-- Use the `useState()` hook to create the `active` state variable and give it a value of `0` (index of the first item).
-- Use the `useEffect()` hook to update the value of `active` to the index of the next item, using `setTimeout`.
-- Compute the `className` for each carousel item while mapping over them and applying it accordingly.
-- Render the carousel items using `React.cloneElement()` and pass down `...rest` along with the computed `className`.
+* Use the `useState()` hook to create the `active` state variable and give it a value of `0` (index of the first item).
+* Use the `useEffect()` hook to update the value of `active` to the index of the next item, using `setTimeout`.
+* Compute the `className` for each carousel item while mapping over them and applying it accordingly.
+* Render the carousel items using `React.cloneElement()` and pass down `...rest` along with the computed `className`.
 
 ```
 .carousel {
@@ -737,14 +737,14 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders a component with collapsible content.
 
-- Use the `useState()` hook to create the `isCollapsed` state variable with an initial value of `collapsed`.
-- Use the `<button>` to change the component's `isCollapsed` state and the content of the component, passed down via `children`.
-- Determine the appearance of the content, based on `isCollapsed` and apply the appropriate `className`.
-- Update the value of the `aria-expanded` attribute based on `isCollapsed` to make the component accessible.
+* Use the `useState()` hook to create the `isCollapsed` state variable with an initial value of `collapsed`.
+* Use the `<button>` to change the component's `isCollapsed` state and the content of the component, passed down via `children`.
+* Determine the appearance of the content, based on `isCollapsed` and apply the appropriate `className`.
+* Update the value of the `aria-expanded` attribute based on `isCollapsed` to make the component accessible.
 
 ```
 .collapse-button {
@@ -797,13 +797,13 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders a controlled `<input>` element that uses a callback function to inform its parent about value updates.
 
-- Use the `value` passed down from the parent as the controlled input field's value.
-- Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
-- The parent must update the input field's `value` prop in order for its value to change on user input.
+* Use the `value` passed down from the parent as the controlled input field's value.
+* Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
+* The parent must update the input field's `value` prop in order for its value to change on user input.
 
 ```js
 
@@ -818,7 +818,7 @@ const ControlledInput = ({ value, onValueChange, ...rest }) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -838,16 +838,16 @@ onValueChange={setValue}
 ReactDOM.render(&lt;Form /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Renders a countdown timer that prints a message when it reaches zero.
 
-- Use the `useState()` hook to create a state variable to hold the time value, initialize it from the props and destructure it into its components.
-- Use the `useState()` hook to create the `paused` and `over` state variables, used to prevent the timer from ticking if it's paused or the time has run out.
-- Create a method `tick`, that updates the time values based on the current value (i.e. decreasing the time by one second).
-- Create a method `reset`, that resets all state variables to their initial states.
-- Use the the `useEffect()` hook to call the `tick` method every second via the use of `setInterval()` and use `clearInterval()` to clean up when the component is unmounted.
-- Use `String.prototype.padStart()` to pad each part of the time array to two characters to create the visual representation of the timer.
+* Use the `useState()` hook to create a state variable to hold the time value, initialize it from the props and destructure it into its components.
+* Use the `useState()` hook to create the `paused` and `over` state variables, used to prevent the timer from ticking if it's paused or the time has run out.
+* Create a method `tick`, that updates the time values based on the current value (i.e. decreasing the time by one second).
+* Create a method `reset`, that resets all state variables to their initial states.
+* Use the the `useEffect()` hook to call the `tick` method every second via the use of `setInterval()` and use `clearInterval()` to clean up when the component is unmounted.
+* Use `String.prototype.padStart()` to pad each part of the time array to two characters to create the visual representation of the timer.
 
 ```js
 
@@ -892,7 +892,7 @@ return (
 };
 ```
 
----
+***
 
 ```js
 
@@ -902,12 +902,12 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a list of elements from an array of primitives.
 
-- Use the value of the `isOrdered` prop to conditionally render an `<ol>` or a `<ul>` list.
-- Use `Array.prototype.map()` to render every item in `data` as a `<li>` element with an appropriate `key`.
+* Use the value of the `isOrdered` prop to conditionally render an `<ol>` or a `<ul>` list.
+* Use `Array.prototype.map()` to render every item in `data` as a `<li>` element with an appropriate `key`.
 
 ```js
 
@@ -917,7 +917,7 @@ const DataList = ({ isOrdered = false, data }) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -929,12 +929,12 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a table with rows dynamically created from an array of primitives.
 
-- Render a `<table>` element with two columns (`ID` and `Value`).
-- Use `Array.prototype.map()` to render every item in `data` as a `<tr>` element with an appropriate `key`.
+* Render a `<table>` element with two columns (`ID` and `Value`).
+* Use `Array.prototype.map()` to render every item in `data` as a `<tr>` element with an appropriate `key`.
 
 ```js
 
@@ -960,7 +960,7 @@ const DataTable = ({ data }) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -968,16 +968,16 @@ const people = [&quot;John&quot;, &quot;Jesse&quot;];
 ReactDOM.render(&lt;DataTable data={people} /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Renders a file drag and drop component for a single file.
 
-- Create a ref, called `dropRef` and bind it to the component's wrapper.
-- Use the `useState()` hook to create the `drag` and `filename` variables, initialized to `false` and `''` respectively.
-- The variables `dragCounter` and `drag` are used to determine if a file is being dragged, while `filename` is used to store the dropped file's name.
-- Create the `handleDrag`, `handleDragIn`, `handleDragOut` and `handleDrop` methods to handle drag and drop functionality.
-- `handleDrag` prevents the browser from opening the dragged file, `handleDragIn` and `handleDragOut` handle the dragged file entering and exiting the component, while `handleDrop` handles the file being dropped and passes it to `onDrop`.
-- Use the `useEffect()` hook to handle each of the drag and drop events using the previously created methods.
+* Create a ref, called `dropRef` and bind it to the component's wrapper.
+* Use the `useState()` hook to create the `drag` and `filename` variables, initialized to `false` and `''` respectively.
+* The variables `dragCounter` and `drag` are used to determine if a file is being dragged, while `filename` is used to store the dropped file's name.
+* Create the `handleDrag`, `handleDragIn`, `handleDragOut` and `handleDrop` methods to handle drag and drop functionality.
+* `handleDrag` prevents the browser from opening the dragged file, `handleDragIn` and `handleDragOut` handle the dragged file entering and exiting the component, while `handleDrop` handles the file being dropped and passes it to `onDrop`.
+* Use the `useEffect()` hook to handle each of the drag and drop events using the previously created methods.
 
 ```
 .filedrop {
@@ -1073,13 +1073,13 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders a textarea component with a character limit.
 
-- Use the `useState()` hook to create the `content` state variable and set its value to that of `value` prop, trimmed down to `limit` characters.
-- Create a method `setFormattedContent`, which trims the content down to `limit` characters and memoize it, using the `useCallback()` hook.
-- Bind the `onChange` event of the `<textarea>` to call `setFormattedContent` with the value of the fired event.
+* Use the `useState()` hook to create the `content` state variable and set its value to that of `value` prop, trimmed down to `limit` characters.
+* Create a method `setFormattedContent`, which trims the content down to `limit` characters and memoize it, using the `useCallback()` hook.
+* Bind the `onChange` event of the `<textarea>` to call `setFormattedContent` with the value of the fired event.
 
 ```js
 
@@ -1109,7 +1109,7 @@ value={content}
 };
 ```
 
----
+***
 
 ```js
 
@@ -1119,15 +1119,15 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a textarea component with a word limit.
 
-- Use the `useState()` hook to create a state variable, containing `content` and `wordCount`, using the `value` prop and `0` as the initial values respectively.
-- Use the `useCallback()` hooks to create a memoized function, `setFormattedContent`, that uses `String.prototype.split()` to turn the input into an array of words.
-- Check if the result of applying `Array.prototype.filter()` combined with `Boolean` has a `length` longer than `limit` and, if so, trim the input, otherwise return the raw input, updating state accordingly in both cases.
-- Use the `useEffect()` hook to call the `setFormattedContent` method on the value of the `content` state variable during the initial render.
-- Bind the `onChange` event of the `<textarea>` to call `setFormattedContent` with the value of `event.target.value`.
+* Use the `useState()` hook to create a state variable, containing `content` and `wordCount`, using the `value` prop and `0` as the initial values respectively.
+* Use the `useCallback()` hooks to create a memoized function, `setFormattedContent`, that uses `String.prototype.split()` to turn the input into an array of words.
+* Check if the result of applying `Array.prototype.filter()` combined with `Boolean` has a `length` longer than `limit` and, if so, trim the input, otherwise return the raw input, updating state accordingly in both cases.
+* Use the `useEffect()` hook to call the `setFormattedContent` method on the value of the `content` state variable during the initial render.
+* Bind the `onChange` event of the `<textarea>` to call `setFormattedContent` with the value of `event.target.value`.
 
 ```js
 
@@ -1172,7 +1172,7 @@ value={content}
 };
 ```
 
----
+***
 
 ```js
 
@@ -1182,12 +1182,12 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a spinning loader component.
 
-- Render an SVG, whose `height` and `width` are determined by the `size` prop.
-- Use CSS to animate the SVG, creating a spinning animation.
+* Render an SVG, whose `height` and `width` are determined by the `size` prop.
+* Use CSS to animate the SVG, creating a spinning animation.
 
 ```
 .loader {
@@ -1247,13 +1247,13 @@ const Loader = ({ size }) =&gt; {
 ReactDOM.render(&lt;Loader size={24} /&gt;, document.getElementById(&quot;root&quot;));
 ````
 
----
+***
 
 Renders a link formatted to send an email (`mailto:` link).
 
-- Use the `email`, `subject` and `body` props to create a `<a>` element with an appropriate `href` attribute.
-- Use `encodeURIcomponent` to safely encode the `subject` and `body` into the link URL.
-- Render the link with `children` as its content.
+* Use the `email`, `subject` and `body` props to create a `<a>` element with an appropriate `href` attribute.
+* Use `encodeURIcomponent` to safely encode the `subject` and `body` into the link URL.
+* Render the link with `children` as its content.
 
 ```js
 
@@ -1266,7 +1266,7 @@ return &lt;a href={`mailto:${email}${params}`}&gt;{children}&lt;/a&gt;;
 };
 ```
 
----
+***
 
 ```js
 
@@ -1278,14 +1278,14 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a table with rows dynamically created from an array of objects and a list of property names.
 
-- Use `Object.keys()`, `Array.prototype.filter()`, `Array.prototype.includes()` and `Array.prototype.reduce()` to produce a `filteredData` array, containing all objects with the keys specified in `propertyNames`.
-- Render a `<table>` element with a set of columns equal to the amount of values in `propertyNames`.
-- Use `Array.prototype.map()` to render each value in the `propertyNames` array as a `<th>` element.
-- Use `Array.prototype.map()` to render each object in the `filteredData` array as a `<tr>` element, containing a `<td>` for each key in the object.
+* Use `Object.keys()`, `Array.prototype.filter()`, `Array.prototype.includes()` and `Array.prototype.reduce()` to produce a `filteredData` array, containing all objects with the keys specified in `propertyNames`.
+* Render a `<table>` element with a set of columns equal to the amount of values in `propertyNames`.
+* Use `Array.prototype.map()` to render each value in the `propertyNames` array as a `<th>` element.
+* Use `Array.prototype.map()` to render each object in the `filteredData` array as a `<tr>` element, containing a `<td>` for each key in the object.
 
 _This component does not work with nested objects and will break if there are nested objects inside any of the properties specified in `propertyNames`_
 
@@ -1320,7 +1320,7 @@ const MappedTable = ({ data, propertyNames }) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -1335,15 +1335,15 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a Modal component, controllable through events.
 
-- Define `keydownHandler`, a method which handles all keyboard events and is used to call `onClose` when the `Esc` key is pressed.
-- Use the `useEffect()` hook to add or remove the `keydown` event listener to the `document`, calling `keydownHandler` for every event.
-- Add a styled `<span>` element that acts as a close button, calling `onClose` when clicked.
-- Use the `isVisible` prop passed down from the parent to determine if the modal should be displayed or not.
-- To use the component, import `Modal` only once and then display it by passing a boolean value to the `isVisible` attribute.
+* Define `keydownHandler`, a method which handles all keyboard events and is used to call `onClose` when the `Esc` key is pressed.
+* Use the `useEffect()` hook to add or remove the `keydown` event listener to the `document`, calling `keydownHandler` for every event.
+* Add a styled `<span>` element that acts as a close button, calling `onClose` when clicked.
+* Use the `isVisible` prop passed down from the parent to determine if the modal should be displayed or not.
+* To use the component, import `Modal` only once and then display it by passing a boolean value to the `isVisible` attribute.
 
 ```
 .modal {
@@ -1481,13 +1481,13 @@ const App = () =&gt; {
 ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;));
 ````
 
----
+***
 
 Renders a checkbox list that uses a callback function to pass its selected value/values to the parent component.
 
-- Use the `useState()` hook to create the `data` state variable and use the `options` prop to initialize its value.
-- Create a `toggle` function that uses the spread operator (`...`) and `Array.prototype.splice()` to update the `data` state variable and call the `onChange` callback with any `checked` options.
-- Use `Array.prototype.map()` to map the `data` state variable to individual `<input type="checkbox">` elements, each one wrapped in a `<label>`, binding the `onClick` handler to the `toggle` function.
+* Use the `useState()` hook to create the `data` state variable and use the `options` prop to initialize its value.
+* Create a `toggle` function that uses the spread operator (`...`) and `Array.prototype.splice()` to update the `data` state variable and call the `onChange` callback with any `checked` options.
+* Use `Array.prototype.map()` to map the `data` state variable to individual `<input type="checkbox">` elements, each one wrapped in a `<label>`, binding the `onClick` handler to the `toggle` function.
 
 ```js
 
@@ -1522,7 +1522,7 @@ onClick={() =&gt; toggle(index)}
 };
 ```
 
----
+***
 
 ```js
 
@@ -1539,12 +1539,12 @@ document.getElementById(&quot;root&quot;)
 );
 ```
 
----
+***
 
 Renders a password input field with a reveal button.
 
-- Use the `useState()` hook to create the `shown` state variable and set its value to `false`.
-- When the `<button>` is clicked, execute `setShown`, toggling the `type` of the `<input>` between `"text"` and `"password"`.
+* Use the `useState()` hook to create the `shown` state variable and set its value to `false`.
+* When the `<button>` is clicked, execute `setShown`, toggling the `type` of the `<input>` between `"text"` and `"password"`.
 
 ```js
 
@@ -1559,22 +1559,22 @@ const PasswordRevealer = ({ value }) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
 ReactDOM.render(&lt;PasswordRevealer /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Renders a button that animates a ripple effect when clicked.
 
-- Use the `useState()` hook to create the `coords` and `isRippling` state variables for the pointer's coordinates and the animation state of the button respectively.
-- Use a `useEffect()` hook to change the value of `isRippling` every time the `coords` state variable changes, starting the animation.
-- Use `setTimeout()` in the previous hook to clear the animation after it's done playing.
-- Use a `useEffect()` hook to reset `coords` whenever the `isRippling` state variable is `false.`
-- Handle the `onClick` event by updating the `coords` state variable and calling the passed callback.
+* Use the `useState()` hook to create the `coords` and `isRippling` state variables for the pointer's coordinates and the animation state of the button respectively.
+* Use a `useEffect()` hook to change the value of `isRippling` every time the `coords` state variable changes, starting the animation.
+* Use `setTimeout()` in the previous hook to clear the animation after it's done playing.
+* Use a `useEffect()` hook to reset `coords` whenever the `isRippling` state variable is `false.`
+* Handle the `onClick` event by updating the `coords` state variable and calling the passed callback.
 
 ```
 .ripple-button {
@@ -1673,14 +1673,14 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders an uncontrolled `<select>` element that uses a callback function to pass its value to the parent component.
 
-- Use the the `selectedValue` prop as the `defaultValue` of the `<select>` element to set its initial value..
-- Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
-- Use `Array.prototype.map()` on the `values` array to create an `<option>` element for each passed value.
-- Each item in `values` must be a 2-element array, where the first element is the `value` of the item and the second one is the displayed text for it.
+* Use the the `selectedValue` prop as the `defaultValue` of the `<select>` element to set its initial value..
+* Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
+* Use `Array.prototype.map()` on the `values` array to create an `<option>` element for each passed value.
+* Each item in `values` must be a 2-element array, where the first element is the `value` of the item and the second one is the displayed text for it.
 
 ```js
 
@@ -1701,7 +1701,7 @@ const Select = ({ values, onValueChange, selectedValue, ...rest }) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -1721,13 +1721,13 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders an uncontrolled range input element that uses a callback function to pass its value to the parent component.
 
-- Set the `type` of the `<input>` element to `"range"` to create a slider.
-- Use the `defaultValue` passed down from the parent as the uncontrolled input field's initial value.
-- Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
+* Set the `type` of the `<input>` element to `"range"` to create a slider.
+* Use the `defaultValue` passed down from the parent as the uncontrolled input field's initial value.
+* Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
 
 ```js
 
@@ -1751,7 +1751,7 @@ const Slider = ({
 };
 ```
 
----
+***
 
 ```js
 
@@ -1761,15 +1761,15 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a star rating component.
 
-- Define a component, called `Star` that will render each individual star with the appropriate appearance, based on the parent component's state.
-- In the `StarRating` component, use the `useState()` hook to define the `rating` and `selection` state variables with the appropriate initial values.
-- Create a method, `hoverOver`, that updates `selected` according to the provided `event`, using the .`data-star-id` attribute of the event's target or resets it to `0` if called with a `null` argument.
-- Use `Array.from()` to create an array of `5` elements and `Array.prototype.map()` to create individual `<Star>` components.
-- Handle the `onMouseOver` and `onMouseLeave` events of the wrapping element using `hoverOver` and the `onClick` event using `setRating`.
+* Define a component, called `Star` that will render each individual star with the appropriate appearance, based on the parent component's state.
+* In the `StarRating` component, use the `useState()` hook to define the `rating` and `selection` state variables with the appropriate initial values.
+* Create a method, `hoverOver`, that updates `selected` according to the provided `event`, using the .`data-star-id` attribute of the event's target or resets it to `0` if called with a `null` argument.
+* Use `Array.from()` to create an array of `5` elements and `Array.prototype.map()` to create individual `<Star>` components.
+* Handle the `onMouseOver` and `onMouseLeave` events of the wrapping element using `hoverOver` and the `onClick` event using `setRating`.
 
 ```
 .star {
@@ -1826,15 +1826,15 @@ marked={selection ? selection &gt;= i + 1 : rating &gt;= i + 1}
 ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;root&quot;));
 ````
 
----
+***
 
 Renders a tabbed menu and view component.
 
-- Define a `Tabs` component that uses the `useState()` hook to initialize the value of the `bindIndex` state variable to `defaultIndex`.
-- Define a `TabItem` component and filter `children` passed to the `Tabs` component to remove unnecessary nodes except for `TabItem` by identifying the function's name.
-- Define `changeTab`, which will be executed when clicking a `<button>` from the menu.
-- `changeTab` executes the passed callback, `onTabClick`, and updates `bindIndex` based on the clicked element.
-- Use `Array.prototype.map()` on the collected nodes to render the menu and view of the tabs, using the value of `binIndex` to determine the active tab and apply the correct `className`.
+* Define a `Tabs` component that uses the `useState()` hook to initialize the value of the `bindIndex` state variable to `defaultIndex`.
+* Define a `TabItem` component and filter `children` passed to the `Tabs` component to remove unnecessary nodes except for `TabItem` by identifying the function's name.
+* Define `changeTab`, which will be executed when clicking a `<button>` from the menu.
+* `changeTab` executes the passed callback, `onTabClick`, and updates `bindIndex` based on the clicked element.
+* Use `Array.prototype.map()` on the collected nodes to render the menu and view of the tabs, using the value of `binIndex` to determine the active tab and apply the correct `className`.
 
 ```
 .tab-menu > button {
@@ -1915,16 +1915,16 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders a tag input field.
 
-- Define a `TagInput` component and use the `useState()` hook to initialize an array from `tags`.
-- Use `Array.prototype.map()` on the collected nodes to render the list of tags.
-- Define the `addTagData` method, which will be executed when pressing the `Enter` key.
-- The `addTagData` method calls `setTagData` to add the new tag using the spread (`...`) operator to prepend the existing tags and add the new tag at the end of the `tagData` array.
-- Define the `removeTagData` method, which will be executed on clicking the delete icon in the tag.
-- Use `Array.prototype.filter()` in the `removeTagData` method to remove the tag using its `index` to filter it out from the `tagData` array.
+* Define a `TagInput` component and use the `useState()` hook to initialize an array from `tags`.
+* Use `Array.prototype.map()` on the collected nodes to render the list of tags.
+* Define the `addTagData` method, which will be executed when pressing the `Enter` key.
+* The `addTagData` method calls `setTagData` to add the new tag using the spread (`...`) operator to prepend the existing tags and add the new tag at the end of the `tagData` array.
+* Define the `removeTagData` method, which will be executed on clicking the delete icon in the tag.
+* Use `Array.prototype.filter()` in the `removeTagData` method to remove the tag using its `index` to filter it out from the `tagData` array.
 
 ```
 .tag-input {
@@ -2032,12 +2032,12 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders an uncontrolled `<textarea>` element that uses a callback function to pass its value to the parent component.
 
-- Use the `defaultValue` passed down from the parent as the uncontrolled input field's initial value.
-- Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
+* Use the `defaultValue` passed down from the parent as the uncontrolled input field's initial value.
+* Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
 
 ```js
 
@@ -2060,7 +2060,7 @@ const TextArea = ({
 };
 ```
 
----
+***
 
 ```js
 
@@ -2073,12 +2073,12 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Renders a toggle component.
 
-- Use the `useState()` hook to initialize the `isToggleOn` state variable to `defaultToggled`.
-- Render an `<input>` and bind its `onClick` event to update the `isToggledOn` state variable, applying the appropriate `className` to the wrapping `<label>`.
+* Use the `useState()` hook to initialize the `isToggleOn` state variable to `defaultToggled`.
+* Render an `<input>` and bind its `onClick` event to update the `isToggledOn` state variable, applying the appropriate `className` to the wrapping `<label>`.
 
 ```
 .toggle input[type="checkbox"] {
@@ -2118,13 +2118,13 @@ onChange={() =&gt; setIsToggleOn(!isToggleOn)}
 ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 ````
 
----
+***
 
 Renders a tooltip component.
 
-- Use the `useState()` hook to create the `show` variable and initialize it to `false`.
-- Render a container element that contains the tooltip element and the `children` passed to the component.
-- Handle the `onMouseEnter` and `onMouseLeave` methods, by altering the value of the `show` variable, toggling the `className` of the tooltip.
+* Use the `useState()` hook to create the `show` variable and initialize it to `false`.
+* Render a container element that contains the tooltip element and the `children` passed to the component.
+* Handle the `onMouseEnter` and `onMouseLeave` methods, by altering the value of the `show` variable, toggling the `className` of the tooltip.
 
 ```
 .tooltip-container {
@@ -2188,15 +2188,15 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders a tree view of a JSON object or array with collapsible content.
 
-- Use the value of the `toggled` prop to determine the initial state of the content (collapsed/expanded).
-- Use the `useState()` hook to create the `isToggled` state variable and give it the value of the `toggled` prop initially.
-- Render a `<span>` element and bind its `onClick` event to alter the component's `isToggled` state.
-- Determine the appearance of the component, based on `isParentToggled`, `isToggled`, `name` and checking for `Array.isArray()` on `data`.
-- For each child in `data`, determine if it is an object or array and recursively render a sub-tree or a text element with the appropriate style.
+* Use the value of the `toggled` prop to determine the initial state of the content (collapsed/expanded).
+* Use the `useState()` hook to create the `isToggled` state variable and give it the value of the `toggled` prop initially.
+* Render a `<span>` element and bind its `onClick` event to alter the component's `isToggled` state.
+* Determine the appearance of the component, based on `isParentToggled`, `isToggled`, `name` and checking for `Array.isArray()` on `data`.
+* For each child in `data`, determine if it is an object or array and recursively render a sub-tree or a text element with the appropriate style.
 
 ```
 .tree-element {
@@ -2321,12 +2321,12 @@ ReactDOM.render(
 );
 ````
 
----
+***
 
 Renders an uncontrolled `<input>` element that uses a callback function to inform its parent about value updates.
 
-- Use the `defaultValue` passed down from the parent as the uncontrolled input field's initial value.
-- Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
+* Use the `defaultValue` passed down from the parent as the uncontrolled input field's initial value.
+* Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
 
 ```js
 
@@ -2341,7 +2341,7 @@ const UncontrolledInput = ({ defaultValue, onValueChange, ...rest }) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -2355,15 +2355,15 @@ ReactDOM.render(
 );
 ```
 
----
+***
 
 Handles asynchronous calls.
 
-- Create a custom hook that takes a handler function, `fn`.
-- Define a reducer function and an initial state for the custom hook's state.
-- Use the `useReducer()` hook to initialize the `state` variable and the `dispatch` function.
-- Define an asynchronous `run` function that will run the provided callback, `fn`, while using `dispatch` to update `state` as necessary.
-- Return an object containing the properties of `state` (`value`, `error` and `loading`) and the `run` function.
+* Create a custom hook that takes a handler function, `fn`.
+* Define a reducer function and an initial state for the custom hook's state.
+* Use the `useReducer()` hook to initialize the `state` variable and the `dispatch` function.
+* Define an asynchronous `run` function that will run the provided callback, `fn`, while using `dispatch` to update `state` as necessary.
+* Return an object containing the properties of `state` (`value`, `error` and `loading`) and the `run` function.
 
 ```js
 
@@ -2396,7 +2396,7 @@ return { ...state, run };
 };
 ```
 
----
+***
 
 ```js
 
@@ -2431,13 +2431,13 @@ height=&quot;auto&quot;
 ReactDOM.render(&lt;RandomImage /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Handles the event of clicking inside the wrapped component.
 
-- Create a custom hook that takes a `ref` and a `callback` to handle the `'click'` event.
-- Use the `useEffect()` hook to append and clean up the `click` event.
-- Use the `useRef()` hook to create a `ref` for your click component and pass it to the `useClickInside` hook.
+* Create a custom hook that takes a `ref` and a `callback` to handle the `'click'` event.
+* Use the `useEffect()` hook to append and clean up the `click` event.
+* Use the `useRef()` hook to create a `ref` for your click component and pass it to the `useClickInside` hook.
 
 ```js
 
@@ -2456,7 +2456,7 @@ const useClickInside = (ref, callback) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -2487,13 +2487,13 @@ document.getElementById(&quot;root&quot;)
 );
 ```
 
----
+***
 
 Handles the event of clicking outside of the wrapped component.
 
-- Create a custom hook that takes a `ref` and a `callback` to handle the `click` event.
-- Use the `useEffect()` hook to append and clean up the `click` event.
-- Use the `useRef()` hook to create a `ref` for your click component and pass it to the `useClickOutside` hook.
+* Create a custom hook that takes a `ref` and a `callback` to handle the `click` event.
+* Use the `useEffect()` hook to append and clean up the `click` event.
+* Use the `useRef()` hook to create a `ref` for your click component and pass it to the `useClickOutside` hook.
 
 ```js
 
@@ -2512,7 +2512,7 @@ const useClickOutside = (ref, callback) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -2543,12 +2543,12 @@ document.getElementById(&quot;root&quot;)
 );
 ```
 
----
+***
 
 Executes a callback immediately after a component is mounted.
 
-- Use `useEffect()` with an empty array as the second argument to execute the provided callback only once when the component is mounted.
-- Behaves like the `componentDidMount()` lifecycle method of class components.
+* Use `useEffect()` with an empty array as the second argument to execute the provided callback only once when the component is mounted.
+* Behaves like the `componentDidMount()` lifecycle method of class components.
 
 ```js
 
@@ -2559,7 +2559,7 @@ const useComponentDidMount = (onMountHandler) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -2572,12 +2572,12 @@ return &lt;div&gt;Check the console!&lt;/div&gt;;
 ReactDOM.render(&lt;Mounter /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Executes a callback immediately before a component is unmounted and destroyed.
 
-- Use `useEffect()` with an empty array as the second argument and return the provided callback to be executed only once before cleanup.
-- Behaves like the `componentWillUnmount()` lifecycle method of class components.
+* Use `useEffect()` with an empty array as the second argument and return the provided callback to be executed only once before cleanup.
+* Behaves like the `componentWillUnmount()` lifecycle method of class components.
 
 ```js
 
@@ -2591,7 +2591,7 @@ const useComponentWillUnmount = (onUnmountHandler) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -2604,15 +2604,15 @@ return &lt;div&gt;Check the console!&lt;/div&gt;;
 ReactDOM.render(&lt;Unmounter /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Copies the given text to the clipboard.
 
-- Use the copyToClipboard snippet to copy the text to clipboard.
-- Use the `useState()` hook to initialize the `copied` variable.
-- Use the `useCallback()` hook to create a callback for the `copyToClipboard` method.
-- Use the `useEffect()` hook to reset the `copied` state variable if the `text` changes.
-- Return the `copied` state variable and the `copy` callback.
+* Use the copyToClipboard snippet to copy the text to clipboard.
+* Use the `useState()` hook to initialize the `copied` variable.
+* Use the `useCallback()` hook to create a callback for the `copyToClipboard` method.
+* Use the `useEffect()` hook to reset the `copied` state variable if the `text` changes.
+* Return the `copied` state variable and the `copy` callback.
 
 ```js
 
@@ -2649,7 +2649,7 @@ return [copied, copy];
 };
 ```
 
----
+***
 
 ```js
 
@@ -2666,16 +2666,16 @@ const TextCopy = (props) =&gt; {
 ReactDOM.render(&lt;TextCopy /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Debounces the given value.
 
-- Create a custom hook that takes a `value` and a `delay`.
-- Use the `useState()` hook to store the debounced value.
-- Use the `useEffect()` hook to update the debounced value every time `value` is updated.
-- Use `setTimeout()` to create a timeout that delays invoking the setter of the previous state variable by `delay` ms.
-- Use `clearTimeout()` to clean up when dismounting the component.
-- This is particularly useful when dealing with user input.
+* Create a custom hook that takes a `value` and a `delay`.
+* Use the `useState()` hook to store the debounced value.
+* Use the `useEffect()` hook to update the debounced value every time `value` is updated.
+* Use `setTimeout()` to create a timeout that delays invoking the setter of the previous state variable by `delay` ms.
+* Use `clearTimeout()` to clean up when dismounting the component.
+* This is particularly useful when dealing with user input.
 
 ```js
 
@@ -2697,7 +2697,7 @@ return debouncedValue;
 };
 ```
 
----
+***
 
 ```js
 
@@ -2718,14 +2718,14 @@ Current: {value} - Debounced: {lastValue}
 ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Implements `fetch` in a declarative manner.
 
-- Create a custom hook that takes a `url` and `options`.
-- Use the `useState()` hook to initialize the `response` and `error` state variables.
-- Use the `useEffect()` hook to asynchronously call `fetch()` and update the state variables accordingly.
-- Return an object containing the `response` and `error` state variables.
+* Create a custom hook that takes a `url` and `options`.
+* Use the `useState()` hook to initialize the `response` and `error` state variables.
+* Use the `useEffect()` hook to asynchronously call `fetch()` and update the state variables accordingly.
+* Return an object containing the `response` and `error` state variables.
 
 ```js
 
@@ -2750,7 +2750,7 @@ return { response, error };
 };
 ```
 
----
+***
 
 ```js
 
@@ -2770,14 +2770,14 @@ const ImageFetch = (props) =&gt; {
 ReactDOM.render(&lt;ImageFetch /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Implements `setInterval` in a declarative manner.
 
-- Create a custom hook that takes a `callback` and a `delay`.
-- Use the `useRef()` hook to create a `ref` for the callback function.
-- Use a `useEffect()` hook to remember the latest `callback` whenever it changes.
-- Use a `useEffect()` hook dependent on `delay` to set up the interval and clean up.
+* Create a custom hook that takes a `callback` and a `delay`.
+* Use the `useRef()` hook to create a `ref` for the callback function.
+* Use a `useEffect()` hook to remember the latest `callback` whenever it changes.
+* Use a `useEffect()` hook dependent on `delay` to set up the interval and clean up.
 
 ```js
 
@@ -2800,7 +2800,7 @@ return () =&gt; clearInterval(id);
 };
 ```
 
----
+***
 
 ```js
 
@@ -2816,14 +2816,14 @@ return &lt;p&gt;{seconds}&lt;/p&gt;;
 ReactDOM.render(&lt;Timer /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Checks if the current environment matches a given media query and returns the appropriate value.
 
-- Check if `window` and `window.matchMedia` exist, return `whenFalse` if not (e.g. SSR environment or unsupported browser).
-- Use `window.matchMedia()` to match the given `query`, cast its `matches` property to a boolean and store in a state variable, `match`, using the `useState()` hook.
-- Use the `useEffect()` hook to add a listener for changes and to clean up the listeners after the hook is destroyed.
-- Return either `whenTrue` or `whenFalse` based on the value of `match`.
+* Check if `window` and `window.matchMedia` exist, return `whenFalse` if not (e.g. SSR environment or unsupported browser).
+* Use `window.matchMedia()` to match the given `query`, cast its `matches` property to a boolean and store in a state variable, `match`, using the `useState()` hook.
+* Use the `useEffect()` hook to add a listener for changes and to clean up the listeners after the hook is destroyed.
+* Return either `whenTrue` or `whenFalse` based on the value of `match`.
 
 ```js
 
@@ -2844,7 +2844,7 @@ return match ? whenTrue : whenFalse;
 };
 ```
 
----
+***
 
 ```js
 
@@ -2861,14 +2861,14 @@ return &lt;span&gt;{text}&lt;/span&gt;;
 ReactDOM.render(&lt;ResponsiveText /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Checks if the client is online or offline.
 
-- Create a function, `getOnLineStatus`, that uses the `NavigatorOnLine` web API to get the online status of the client.
-- Use the `useState()` hook to create an appropriate state variable, `status`, and setter.
-- Use the `useEffect()` hook to add listeners for appropriate events, updating state, and cleanup those listeners when unmounting.
-- Finally return the `status` state variable.
+* Create a function, `getOnLineStatus`, that uses the `NavigatorOnLine` web API to get the online status of the client.
+* Use the `useState()` hook to create an appropriate state variable, `status`, and setter.
+* Use the `useEffect()` hook to add listeners for appropriate events, updating state, and cleanup those listeners when unmounting.
+* Finally return the `status` state variable.
 
 ```js
 
@@ -2898,7 +2898,7 @@ return status;
 };
 ```
 
----
+***
 
 ```js
 
@@ -2911,17 +2911,17 @@ return &lt;span&gt;You are {isOnline ? &quot;online&quot; : &quot;offline&quot;}
 ReactDOM.render(&lt;StatusIndicator /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Returns a stateful value, persisted in `localStorage`, and a function to update it.
 
-- Use the `useState()` hook to initialize the `value` to `defaultValue`.
-- Use the `useRef()` hook to create a ref that will hold the `name` of the value in `localStorage`.
-- Use 3 instances of the `useEffect()` hook for initialization, `value` change and `name` change respectively.
-- When the component is first mounted, use `Storage.getItem()` to update `value` if there's a stored value or `Storage.setItem()` to persist the current value.
-- When `value` is updated, use `Storage.setItem()` to store the new value.
-- When `name` is updated, use `Storage.setItem()` to create the new key, update the `nameRef` and use `Storage.removeItem()` to remove the previous key from `localStorage`.
-- **NOTE:** The hook is meant for use with primitive values (i.e. not objects) and doesn't account for changes to `localStorage` due to other code. Both of these issues can be easily handled (e.g. JSON serialization and handling the `'storage'` event).
+* Use the `useState()` hook to initialize the `value` to `defaultValue`.
+* Use the `useRef()` hook to create a ref that will hold the `name` of the value in `localStorage`.
+* Use 3 instances of the `useEffect()` hook for initialization, `value` change and `name` change respectively.
+* When the component is first mounted, use `Storage.getItem()` to update `value` if there's a stored value or `Storage.setItem()` to persist the current value.
+* When `value` is updated, use `Storage.setItem()` to store the new value.
+* When `name` is updated, use `Storage.setItem()` to create the new key, update the `nameRef` and use `Storage.removeItem()` to remove the previous key from `localStorage`.
+* **NOTE:** The hook is meant for use with primitive values (i.e. not objects) and doesn't account for changes to `localStorage` due to other code. Both of these issues can be easily handled (e.g. JSON serialization and handling the `'storage'` event).
 
 ```js
 
@@ -2960,7 +2960,7 @@ return [value, setValue];
 };
 ```
 
----
+***
 
 ```js
 
@@ -2994,13 +2994,13 @@ setName(e.target.value);
 ReactDOM.render(&lt;MyApp /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Stores the previous state or props.
 
-- Create a custom hook that takes a `value`.
-- Use the `useRef()` hook to create a `ref` for the `value`.
-- Use the `useEffect()` hook to remember the latest `value`.
+* Create a custom hook that takes a `value`.
+* Use the `useRef()` hook to create a `ref` for the `value`.
+* Use the `useEffect()` hook to remember the latest `value`.
 
 ```js
 
@@ -3013,7 +3013,7 @@ const usePrevious = (value) =&gt; {
 };
 ```
 
----
+***
 
 ```js
 
@@ -3034,15 +3034,15 @@ Current: {value} - Previous: {lastValue}
 ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Checks if the code is running on the browser or the server.
 
-- Create a custom hook that returns an appropriate object.
-- Use `typeof window`, `window.document` and `Document.createElement()` to check if the code is running on the browser.
-- Use the `useState()` hook to define the `inBrowser` state variable.
-- Use the `useEffect()` hook to update the `inBrowser` state variable and clean up at the end.
-- Use the `useMemo()` hook to memoize the return values of the custom hook.
+* Create a custom hook that returns an appropriate object.
+* Use `typeof window`, `window.document` and `Document.createElement()` to check if the code is running on the browser.
+* Use the `useState()` hook to define the `inBrowser` state variable.
+* Use the `useEffect()` hook to update the `inBrowser` state variable and clean up at the end.
+* Use the `useMemo()` hook to memoize the return values of the custom hook.
 
 ```js
 
@@ -3080,7 +3080,7 @@ return React.useMemo(
 };
 ```
 
----
+***
 
 ```js
 
@@ -3093,14 +3093,14 @@ return &lt;p&gt;{isBrowser ? &quot;Running on browser&quot; : &quot;Running on s
 ReactDOM.render(&lt;SSRChecker /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Implements `setTimeout` in a declarative manner.
 
-- Create a custom hook that takes a `callback` and a `delay`.
-- Use the `useRef()` hook to create a `ref` for the callback function.
-- Use the `useEffect()` hook to remember the latest callback.
-- Use the `useEffect()` hook to set up the timeout and clean up.
+* Create a custom hook that takes a `callback` and a `delay`.
+* Use the `useRef()` hook to create a `ref` for the callback function.
+* Use the `useEffect()` hook to remember the latest callback.
+* Use the `useEffect()` hook to set up the timeout and clean up.
 
 ```js
 
@@ -3123,7 +3123,7 @@ return () =&gt; clearTimeout(id);
 };
 ```
 
----
+***
 
 ```js
 
@@ -3139,13 +3139,13 @@ return &lt;p&gt;{seconds}&lt;/p&gt;;
 ReactDOM.render(&lt;OneSecondTimer /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Provides a boolean state variable that can be toggled between its two states.
 
-- Use the `useState()` hook to create the `value` state variable and its setter.
-- Create a function that toggles the value of the `value` state variable and memoize it, using the `useCallback()` hook.
-- Return the `value` state variable and the memoized toggler function.
+* Use the `useState()` hook to create the `value` state variable and its setter.
+* Create a function that toggles the value of the `value` state variable and memoize it, using the `useCallback()` hook.
+* Return the `value` state variable and the memoized toggler function.
 
 ```js
 
@@ -3158,7 +3158,7 @@ return [value, toggleValue];
 };
 ```
 
----
+***
 
 ```js
 
@@ -3169,13 +3169,13 @@ const Switch = () =&gt; {
 ReactDOM.render(&lt;Switch /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
 
 Handles the `beforeunload` window event.
 
-- Use the `useRef()` hook to create a ref for the callback function, `fn`.
-- Use the `useEffect()` hook and `EventTarget.addEventListener()` to handle the `'beforeunload'` (when the user is about to close the window).
-- Use `EventTarget.removeEventListener()` to perform cleanup after the component is unmounted.
+* Use the `useRef()` hook to create a ref for the callback function, `fn`.
+* Use the `useEffect()` hook and `EventTarget.addEventListener()` to handle the `'beforeunload'` (when the user is about to close the window).
+* Use `EventTarget.removeEventListener()` to perform cleanup after the component is unmounted.
 
 ```js
 
@@ -3192,7 +3192,7 @@ window.removeEventListener(&quot;beforeunload&quot;, onUnload);
 };
 ```
 
----
+***
 
 ```js
 
@@ -3207,4 +3207,4 @@ const App = () =&gt; {
 ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;));
 ```
 
----
+***
